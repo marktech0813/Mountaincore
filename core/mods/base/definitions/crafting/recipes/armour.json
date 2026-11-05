@@ -1,0 +1,40 @@
+[
+  {
+    "recipeName": "Craft leather armour",
+    "craftingTypeName": "LEATHERWORKING",
+    "verbOverrideI18nKey": "CRAFTING_TYPE.LEATHERWORKING",
+    "input": [
+      {
+        "itemTypeName": "Product-Leather",
+        "quantity": 3
+      }
+    ],
+    "output": {
+      "itemTypeName": "Armour-Leather",
+      "quantity": 1
+    },
+    "itemTypeRequiredName": "Tool-Kitchen-Knife",
+    "materialTypesToCopyOver": ["SKIN"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 8.5
+  },
+
+  {
+    "recipeName": "Craft plate armour",
+    "craftingTypeName": "WEAPONSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 8
+      }
+    ],
+    "output": {
+      "itemTypeName": "Armour-Plate",
+      "quantity": 1
+    },
+    "itemTypeRequiredName": "Tool-Tongs",
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 3.5,
+    "maximumTimeToCompleteCrafting": 16.5
+  }
+]

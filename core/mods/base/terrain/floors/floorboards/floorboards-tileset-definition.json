@@ -1,0 +1,23 @@
+{
+  "floorTypeName": "floorboards",
+  "i18nKey": "FLOOR.WOODEN",
+  "materialType": "WOOD",
+  "type": "floor",
+  "numSprites": 10,
+  "layer": 0,
+  "overlapType": {
+    "overlapName": "none"
+  },
+  "useMaterialColor": true,
+  "speedModifier": 1.3,
+  "selectionDrawableName": "preview_flooring_floorboards",
+  "craftingTypeName": "CARPENTRY",
+  "requirements": {
+    "WOOD": [
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ]
+  }
+}

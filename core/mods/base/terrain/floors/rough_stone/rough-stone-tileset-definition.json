@@ -1,0 +1,13 @@
+{
+  "floorTypeName": "rough_stone",
+  "i18nKey": "FLOOR.ROUGH_STONE",
+  "materialType": "STONE",
+  "type": "floor",
+  "numSprites": 5,
+  "layer": 1,
+  "overlapType": {
+    "overlapName": "ground"
+  },
+  "useMaterialColor": true,
+  "speedModifier": 0.9
+}

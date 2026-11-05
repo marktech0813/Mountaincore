@@ -1,0 +1,12 @@
+[ {
+  "uniqueName" : "Tool-Rolling-Pin-On-Ground",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Tool-Rolling-Pin",
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Tool-Rolling-Pin-On-Ground.png",
+      "coloringLayer" : "WOOD_COLOR"
+    }
+  }
+} ]

@@ -1,0 +1,23 @@
+{
+  "itemTypeName" : "Weapon-Crossbow",
+  "materialTypes" : [ "WOOD" ],
+  "primaryMaterialType" : "WOOD",
+  "baseValuePerItem": 14,
+  "holdPosition" : "RIGHT_HAND",
+  "relatedCraftingTypeNames" : [ "BLACKSMITHING" ],
+  "stockpileGroupName" : "WEAPONS",
+  "weaponInfo" : {
+    "range" : 7,
+    "damageType" : "STABBING",
+    "minDamage" : 3,
+    "maxDamage" : 8,
+    "requiresAmmoType" : "BOLTS",
+    "twoHanded" : true,
+    "combatSkillName" : "CROSSBOWS",
+    "fireWeaponSoundAssetName" : "SFX_Hunting_Attack_Bow",
+    "weaponHitSoundAssetName" : "SFX_Hunting_Impact_Stabbing_Bow",
+    "weaponMissSoundAssetName" : "SFX_Hunting_Miss_Bow",
+    "ranged" : true
+  },
+  "i18nKey" : "WEAPON.CROSSBOW"
+}

@@ -1,0 +1,20 @@
+{
+  "itemTypeName" : "Weapon-Battle-Axe",
+  "materialTypes" : [ "WOOD", "METAL" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem": 12,
+  "holdPosition" : "RIGHT_HAND",
+  "relatedCraftingTypeNames" : [ "BLACKSMITHING" ],
+  "stockpileGroupName" : "WEAPONS",
+  "weaponInfo" : {
+    "range" : 1,
+    "damageType" : "SLASHING",
+    "modifiedByStrength" : true,
+    "minDamage" : 3,
+    "maxDamage" : 12,
+    "combatSkillName" : "AXES",
+    "weaponHitSoundAssetName" : "SFX_Hunting_Impact_Slicing",
+    "animatedSpriteEffectName" : "Weapon slash"
+  },
+  "i18nKey" : "WEAPON.BATTLE.AXE"
+}

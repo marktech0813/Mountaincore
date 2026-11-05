@@ -1,0 +1,96 @@
+[ {
+  "uniqueName" : "Ingredient-Vegetable-Crate-Body-Carried",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Ingredient-Vegetable-Crate",
+  "maxQuantity" : 30,
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Vegetable-Crate-Body-Carried-NS.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 18.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -18.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Vegetable-Crate-Body-Carried-Diagonal.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "flipX" : true,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 22.0,
+          "y" : -10.0
+        },
+        "overrideRenderLayer" : -100
+      } ]
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Vegetable-Crate-Body-Carried-Diagonal.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -22.0,
+          "y" : -10.0
+        },
+        "overrideRenderLayer" : -100
+      } ]
+    },
+    "UP_RIGHT" : {
+      "filename" : "Vegetable-Crate-Body-Carried-Diagonal.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP_LEFT" : {
+      "filename" : "Vegetable-Crate-Body-Carried-Diagonal.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "flipX" : true,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP" : {
+      "filename" : "Vegetable-Crate-Body-Carried-NS.png",
+      "coloringLayer" : "WOOD_COLOR"
+    }
+  }
+} ]

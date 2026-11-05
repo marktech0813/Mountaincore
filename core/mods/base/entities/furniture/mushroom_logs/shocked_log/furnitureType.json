@@ -1,0 +1,20 @@
+{
+  "name": "SHOCKED_LOG",
+  "i18nKey": "FURNITURE.MUSHROOM_LOG",
+  "blocksMovement": true,
+  "defaultLayoutName": "1x1EW with workspaces",
+  "autoConstructed": true,
+  "hiddenFromPlacementMenu": true,
+  "requirements": {
+    "SEED": [
+      {
+        "itemTypeName": "Resource-Shocked-Mushroom-Log",
+        "quantity": 1
+      }
+    ]
+  },
+  "tags": {
+    "MUSHROOM_LOG_BEHAVIOUR": ["INNOCULATION_LOG"],
+    "REPLACEMENT_DESCONSTRUCTION_RESOURCES": ["Ingredient-Mushroom-Spawn"]
+  }
+}

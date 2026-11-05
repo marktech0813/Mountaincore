@@ -1,0 +1,78 @@
+[
+  {
+    "name": "Orc invasion",
+    "triggeredBy": "POPULATION",
+    "objective": "PILLAGE",
+    "minDaysUntilFirstInvasion": 50,
+    "minDaysBetweenInvasions": 28,
+    "invasionHappensWithinDays": 40,
+    "participants": [
+      {
+        "raceName": "Orc",
+        "basePointsCost": 50,
+        "itemQualities": {
+          "AWFUL": 0.2,
+          "POOR": 0.3,
+          "STANDARD": 0.5
+        },
+        "fixedInventory": [
+          {
+            "itemTypeName": "Product-Ration",
+            "materialName": "Rockbread",
+            "quantity": 10
+          }
+        ],
+        "equipmentOptions": {
+          "weapons": [
+            {
+              "itemTypeName": "Weapon-Battle-Axe",
+              "standardPointsCost": 18
+            },
+            {
+              "itemTypeName": "Weapon-Battle-Hammer",
+              "standardPointsCost": 18
+            },
+            {
+              "itemTypeName": "Weapon-Sword",
+              "standardPointsCost": 18
+            },
+            {
+              "itemTypeName": "Tool-Axe",
+              "standardPointsCost": 12
+            },
+            {
+              "itemTypeName": "Tool-Kitchen-Knife",
+              "standardPointsCost": 8
+            },
+            {
+              "itemTypeName": "Tool-Pickaxe",
+              "standardPointsCost": 10
+            }
+          ],
+          "shield": [
+            {
+              "none": true
+            },
+            {
+              "itemTypeName": "Weapon-Wooden-Shield",
+              "standardPointsCost": 14
+            }
+          ],
+          "armor": [
+            {
+              "none": true
+            },
+            {
+              "itemTypeName": "Armour-Orc-Light",
+              "standardPointsCost": 20
+            },
+            {
+              "itemTypeName": "Armour-Orc-Heavy",
+              "standardPointsCost": 28
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

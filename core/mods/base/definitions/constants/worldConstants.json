@@ -1,0 +1,19 @@
+{
+  "backgroundColor": "#666666FF",
+  "ambientLightingColor": "#404052FF",
+
+  "maxNeighbouringShrubs": 4,
+  "attachedLightSourceTogglePoint": 0.75,
+  "corpseDecayHours": 480.0,
+  "corpseDecayColor": "#8b9d89",
+
+  "stoneHarvestedItemType": "Resource-Stone-Unrefined",
+  "stoneHarvestMinSkillChance": 0.2,
+  "stoneHarvestMaxSkillChance": 0.6,
+  "oreHarvestedItemType": "Resource-Ore-Unrefined",
+  "oreHarvestMinSkillChance": 0.3,
+  "oreHarvestMaxSkillChance": 1.0,
+  "gemHarvestedItemType": "Resource-Gems-Unrefined",
+
+  "roofSupportMaxDistance": 3
+}

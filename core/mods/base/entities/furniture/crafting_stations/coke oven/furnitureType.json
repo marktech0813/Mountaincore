@@ -1,0 +1,21 @@
+{
+  "name": "COKE_OVEN",
+  "i18nKey": "FURNITURE.COKE_OVEN",
+  "blocksMovement": true,
+  "defaultLayoutName": "2x2 with lower workspaces",
+  "requirements": {
+    "STONE": [
+      {
+        "itemTypeName": "Resource-Stone-Block",
+        "quantity": 6
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 2
+      }
+    ]
+  },
+  "tags": {
+    "CRAFTING_STATION_BEHAVIOUR": ["COKE_OVEN_BAKING", "CRAFT_ITEM", "HAULING"]
+  }
+}

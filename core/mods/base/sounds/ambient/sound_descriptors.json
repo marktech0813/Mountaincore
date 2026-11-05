@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Daytime",
+    "filenames": [
+      "Daytime Ambiance (Loop).wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 0.5,
+    "looping": true
+  },
+  {
+    "name": "Nighttime",
+    "filenames": [
+      "Nighttime Ambiance (Loop).wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 0.5,
+    "looping": true
+  },
+  {
+    "name": "Rain",
+    "filenames": [
+      "Ambience_Rain.wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 1.4,
+    "looping": true
+  },
+  {
+    "name": "Thunderstorm with rain",
+    "filenames": [
+      "Ambience_Thunder.wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 1.4,
+    "looping": true
+  },
+  {
+    "name": "Isolated thunder",
+    "filenames": [
+      "isolated_thunder.wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 1.0,
+    "looping": true
+  },
+  {
+    "name": "Wind",
+    "filenames": [
+      "Ambience_Winter.wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 1.4,
+    "looping": true
+  },
+  {
+    "name": "River",
+    "filenames": [
+      "River Flowing (Loop).wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 0.3,
+    "looping": true
+  },
+  {
+    "name": "Flies",
+    "filenames": [
+      "Flies (Loop).wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 0.5,
+    "looping": true
+  },
+  {
+    "name": "Burning",
+    "filenames": [
+      "FireBarnInt_Short.wav"
+    ],
+    "minPitch": 1.0,
+    "maxPitch": 1.0,
+    "volumeModifier": 0.4,
+    "looping": true
+  }
+]

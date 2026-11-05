@@ -1,0 +1,28 @@
+[
+  {
+    "uniqueName": "Purple-Helmet-Cap01-Spots",
+    "type": "PLANT_FRUIT",
+    "speciesName": "Purple Helmet",
+    "growthStages": [0],
+    "spriteDescriptors": {
+      "DOWN": {
+        "filename": "Farmable-Mushroom-Cap01-Spots.png",
+        "scale": 0.75,
+        "coloringLayer": "FRUIT_COLOR"
+      }
+    }
+  },
+  {
+    "uniqueName": "Purple-Helmet-Cap02-Spots",
+    "type": "PLANT_FRUIT",
+    "speciesName": "Purple Helmet",
+    "growthStages": [0],
+    "spriteDescriptors": {
+      "DOWN": {
+        "filename": "Farmable-Mushroom-Cap02-Spots.png",
+        "scale": 0.75,
+        "coloringLayer": "FRUIT_COLOR"
+      }
+    }
+  }
+]

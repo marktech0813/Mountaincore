@@ -1,0 +1,22 @@
+{
+  "itemTypeName" : "Armour-Leather",
+  "materialTypes" : [ "SKIN" ],
+  "primaryMaterialType" : "SKIN",
+  "baseValuePerItem": 30,
+  "stockpileGroupName" : "WEAPONS",
+  "tags" : {
+    "ASSET_OVERRIDE_BY_SKILL" : [ "LIGHT_ARMOR", "CLOTHING_COLOR" ]
+  },
+  "defenseInfo" : {
+    "type" : "ARMOR",
+    "maxDefensePoints" : 12,
+    "maxDefenseRegainedPerRound" : 2,
+    "damageReduction" : {
+      "STABBING" : 1,
+      "SLASHING" : 2,
+      "CRUSHING" : 3
+    },
+    "restrictedToRaceNames" : [ "Dwarf" ]
+  },
+  "i18nKey" : "ARMOUR.LEATHER"
+}

@@ -1,0 +1,15 @@
+{
+  "name" : "Weapon_Rack",
+  "i18nKey" : "FURNITURE.WEAPON_RACK",
+  "defaultLayoutName" : "1x1NS",
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3
+    } ]
+  },
+  "tags" : {
+    "STOCKPILE" : [ "6", "IS_WEAPON", "IS_SHIELD", "ItemType_Weapon-Metal-Arrows", "ItemType_Weapon-Bone-Arrows", "ItemType_Weapon-Metal-Bolts" ],
+    "EXTRA_MATERIAL_TYPES" : [ "METAL" ]
+  }
+}

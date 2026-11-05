@@ -1,0 +1,10 @@
+{
+  "itemTypeName" : "Product-Rope",
+  "maxStackSize" : 4,
+  "materialTypes" : [ "ROPE" ],
+  "primaryMaterialType" : "ROPE",
+  "baseValuePerItem": 10,
+  "hoursInInventoryUntilUnused" : 1.0,
+  "stockpileGroupName" : "PRODUCTS",
+  "i18nKey" : "PRODUCT.ROPE"
+}

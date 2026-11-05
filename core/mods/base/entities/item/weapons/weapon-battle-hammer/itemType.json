@@ -1,0 +1,24 @@
+{
+  "itemTypeName" : "Weapon-Battle-Hammer",
+  "materialTypes" : [ "METAL" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem": 28,
+  "holdPosition" : "RIGHT_HAND",
+  "relatedCraftingTypeNames" : [ "BLACKSMITHING" ],
+  "stockpileGroupName" : "WEAPONS",
+  "weaponInfo" : {
+    "range" : 1,
+    "damageType" : "CRUSHING",
+    "modifiedByStrength" : true,
+    "minDamage" : 4,
+    "maxDamage" : 8,
+    "armorNegation" : 4,
+    "combatSkillName" : "MACES",
+    "weaponHitSoundAssetName" : "SFX_Hunting_Impact_Crushing",
+    "animatedSpriteEffectName" : "Weapon slash"
+  },
+  "i18nKey" : "WEAPON.BATTLE.HAMMER",
+  "tags": {
+    "EXTRA_MATERIAL_TYPES": [ "CLOTH" ]
+  }
+}

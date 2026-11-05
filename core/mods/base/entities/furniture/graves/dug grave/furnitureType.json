@@ -1,0 +1,16 @@
+{
+  "name": "DUG_GRAVE",
+  "i18nKey": "FURNITURE.GRAVE",
+  "blocksMovement": true,
+  "defaultLayoutName": "1x2 with workspaces",
+  "autoConstructed": true,
+  "requirements": {
+    "EARTH": []
+  },
+  "requiredFloorMaterialType": "EARTH",
+  "tags": {
+    "CONSTRUCTION_OVERRIDE": ["DO_NOT_ALLOCATE"],
+    "SPECIFIC_EXTRA_MATERIALS": ["Dirt"],
+    "DECEASED_CONTAINER": ["FILLED_GRAVE"]
+  }
+}

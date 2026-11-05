@@ -1,0 +1,71 @@
+[
+  {
+    "hintId": "open_priority_menu",
+    "i18nKeys": [
+      "HINT.OPEN_PRIORITY_MENU.1",
+      "HINT.OPEN_PRIORITY_MENU.2"
+    ],
+    "triggers": [
+      {
+        "triggerType": "GUI_SWITCH_VIEW",
+        "relatedTypeName": "PRIORITY_MENU"
+      }
+    ]
+  },
+  {
+    "hintId": "open_roofing_menu",
+    "i18nKeys": [
+      "HINT.BUILD_ROOFING.1",
+      "HINT.BUILD_ROOFING.2",
+      "HINT.BUILD_ROOFING.3"
+    ],
+    "triggers": [
+      {
+        "triggerType": "GUI_SWITCH_VIEW",
+        "relatedTypeName": "BUILD_ROOFING"
+      }
+    ]
+  },
+  {
+    "hintId": "open_pipes_menu",
+    "i18nKeys": [
+      "HINT.BUILD_PIPES.1",
+      "HINT.BUILD_PIPES.2",
+      "HINT.BUILD_PIPES.3"
+    ],
+    "triggers": [
+      {
+        "triggerType": "GUI_SWITCH_VIEW",
+        "relatedTypeName": "BUILD_PIPING"
+      }
+    ]
+  },
+  {
+    "hintId": "open_mechanisms_menu",
+    "i18nKeys": [
+      "HINT.BUILD_POWER.1",
+      "HINT.BUILD_POWER.2",
+      "HINT.BUILD_POWER.3"
+    ],
+    "triggers": [
+      {
+        "triggerType": "GUI_SWITCH_VIEW",
+        "relatedTypeName": "BUILD_MECHANISMS"
+      }
+    ]
+  },
+  {
+    "hintId": "open_weapon_selection",
+    "i18nKeys": [
+      "HINT.WEAPON_SELECTION.1",
+      "HINT.WEAPON_SELECTION.2",
+      "HINT.WEAPON_SELECTION.3"
+    ],
+    "triggers": [
+      {
+        "triggerType": "GUI_SWITCH_VIEW",
+        "relatedTypeName": "CHANGE_WEAPON_SELECTION"
+      }
+    ]
+  }
+]

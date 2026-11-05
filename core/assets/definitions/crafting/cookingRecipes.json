@@ -1,0 +1,115 @@
+[ {
+  "recipeName" : "Create soup",
+  "inputItemOptions" : [ {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Carrot"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Sack",
+    "materialName" : "Corn"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Sack",
+    "materialName" : "Potato"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Tomato"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Purple Helmet Mushroom"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Berserker Mushroom"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Rociomycota Mushroom"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Miltonia Mushroom"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Elfsbane Mushroom"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Sunglow Mushroom"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Glow Mushroom"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Syrup Powder Mushroom"
+  }, {
+    "itemTypeName" : "Ingredient-Vegetable-Crate",
+    "materialName" : "Fungolem Mushroom"
+  }, {
+    "itemTypeName" : "Carcass-Carp-Prepared",
+    "materialName" : "Carp Meat"
+  }, {
+    "itemTypeName" : "Carcass-Perch-Prepared",
+    "materialName" : "Perch Meat"
+  }, {
+    "itemTypeName" : "Carcass-Pike-Prepared",
+    "materialName" : "Pike Meat"
+  }, {
+    "itemTypeName" : "Carcass-Meat-Medium",
+    "materialName" : "Boar Meat"
+  }, {
+    "itemTypeName" : "Carcass-Meat-Medium",
+    "materialName" : "Deer Meat"
+  }, {
+    "itemTypeName" : "Carcass-Meat-Small",
+    "materialName" : "Fox Meat"
+  }, {
+    "itemTypeName" : "Carcass-Meat-Large",
+    "materialName" : "Elephant Meat"
+  } ],
+  "inputItemQuantity" : 3,
+  "inputLiquidOptions" : [ {
+    "itemTypeName" : "Product-Bucket",
+    "materialName" : "Water"
+  } ],
+  "inputLiquidQuantity" : 1,
+  "cookedInFurnitureName" : "CHEFS_CAULDRON",
+  "outputDescriptionI18nKey" : "COOKING.SOUP.DESCRIPTION",
+  "outputMaterialType" : "LIQUID",
+  "outputQuantity" : 12,
+  "outputProcess" : "COMBINE_ITEM_MATERIALS",
+  "minimumTimeToCompleteCooking" : 5.0,
+  "maximumTimeToCompleteCooking" : 20.0
+}, {
+  "recipeName" : "Bake bread",
+  "inputItemOptions" : [ {
+    "itemTypeName" : "Product-Bread-Dough",
+    "materialName" : "Wheat"
+  } ],
+  "inputItemQuantity" : 6,
+  "inputLiquidOptions" : [ ],
+  "inputLiquidQuantity" : 0,
+  "cookedInFurnitureName" : "BAKING_OVEN",
+  "verbOverrideI18nKey" : "PROFESSION.BAKER",
+  "outputDescriptionI18nKey" : "COOKING.BREAD.DESCRIPTION",
+  "outputMaterialType" : "FOODSTUFF",
+  "outputQuantity" : 13,
+  "outputProcess" : "SPECIFIED_MATERIAL",
+  "outputItemTypeName" : "Product-Bread-Loaf",
+  "outputMaterialName" : "Wheat-Bread",
+  "minimumTimeToCompleteCooking" : 5.0,
+  "maximumTimeToCompleteCooking" : 20.0
+}, {
+  "recipeName" : "Bake ration",
+  "inputItemOptions" : [ {
+    "itemTypeName" : "Product-Ration-Dough",
+    "materialName" : "Wheat"
+  } ],
+  "inputItemQuantity" : 16,
+  "inputLiquidOptions" : [ ],
+  "inputLiquidQuantity" : 0,
+  "cookedInFurnitureName" : "BAKING_OVEN",
+  "verbOverrideI18nKey" : "PROFESSION.BAKER",
+  "outputDescriptionI18nKey" : "COOKING.RATION.DESCRIPTION",
+  "outputMaterialType" : "FOODSTUFF",
+  "outputQuantity" : 35,
+  "outputProcess" : "SPECIFIED_MATERIAL",
+  "outputItemTypeName" : "Product-Ration",
+  "outputMaterialName" : "Rockbread",
+  "minimumTimeToCompleteCooking" : 5.0,
+  "maximumTimeToCompleteCooking" : 20.0
+} ]

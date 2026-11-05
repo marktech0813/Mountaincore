@@ -1,0 +1,62 @@
+{
+  "name": "Fox",
+  "i18nKey": "RACE.FOX",
+
+  "minStrength": 4.0,
+  "maxStrength": 10.0,
+
+  "bodyStructureName": "pawed-quadruped",
+
+  "bodyShapes": [
+    {
+      "value": "AVERAGE"
+    }
+  ],
+
+  "colors": {
+    "SKIN_COLOR": {
+      "swatch": "fox-skin-swatch.png"
+    },
+    "MARKING_COLOR": {
+      "swatch": "fox-markings-swatch.png"
+    }
+  },
+
+  "mapPlacement": "ANIMAL",
+
+  "behaviour": {
+    "behaviourName": "Creature",
+    "scheduleName": "Diurnal animal",
+    "needs": ["SLEEP"],
+    "aggressionResponse": "MIXED"
+  },
+
+  "genders": {
+    "MALE": {
+      "weighting": 0.5
+    },
+    "FEMALE": {
+      "weighting": 0.5
+    }
+  },
+
+  "features": {
+    "defense": {
+      "maxDefensePoints": 10,
+      "maxDefenseRegainedPerRound": 1
+    },
+    "meat": {
+      "itemTypeName": "Carcass-Meat-Small",
+      "materialName": "Fox Meat",
+      "quantity": 2
+    },
+    "skin": {
+    },
+    "bones": {
+      "materialName": "Bone"
+    },
+    "blood": {
+
+    }
+  }
+}

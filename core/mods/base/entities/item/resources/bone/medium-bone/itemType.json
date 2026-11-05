@@ -1,0 +1,11 @@
+{
+  "itemTypeName" : "Resource-Bone-Medium",
+  "maxStackSize" : 10,
+  "maxHauledAtOnce" : 2,
+  "materialTypes" : [ "BONE" ],
+  "baseValuePerItem": 3,
+  "primaryMaterialType" : "BONE",
+  "stockpileGroupName" : "RAW_MATERIALS",
+  "i18nKey" : "RESOURCE.BONE.MEDIUM",
+  "tradeExportable": true
+}

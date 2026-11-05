@@ -1,0 +1,92 @@
+{
+  "speciesName": "Shrub",
+  "plantType": "SHRUB",
+  "maxGrowthSpeedVariance": 0.3,
+  "materialName": "Shrub branch wood",
+  "defaultColors": {
+    "BRANCHES_COLOR": {
+      "swatch": "generic-shrub-b-branch-base-swatch.png"
+    },
+    "LEAF_COLOR": {
+      "swatch": "generic-shrub-b-leaf-base-swatch.png"
+    }
+  },
+  "seasons": {
+    "WINTER": {
+      "colors": {
+        "LEAF_COLOR": {
+          "hidden": true
+        }
+      },
+      "growth": false
+    }
+  },
+  "growthStages": [
+    {
+      "name": "Initial",
+      "nextGrowthStage": 1,
+      "seasonsUntilComplete": 3,
+      "initialPlantScale": 0.35,
+      "completionPlantScale": 1,
+      "tileHeight": 1
+    },
+    {
+      "name": "Fully grown",
+      "nextGrowthStage": 1,
+      "seasonsUntilComplete": 4.5,
+      "tileHeight": 1,
+      "harvestType": "FORAGING",
+      "harvestedItems": [
+        {
+          "itemTypeName": "Ingredient-Seeds",
+          "materialName": "Hops Seed",
+          "quantity": 1,
+          "chance": 0.0125
+        },
+        {
+          "itemTypeName": "Ingredient-Seeds",
+          "materialName": "Barley Seed",
+          "quantity": 1,
+          "chance": 0.0125
+        },
+        {
+          "itemTypeName": "Ingredient-Seeds",
+          "materialName": "Carrot Seed",
+          "quantity": 1,
+          "chance": 0.0125
+        },
+        {
+          "itemTypeName": "Ingredient-Seeds",
+          "materialName": "Hemp Seed",
+          "quantity": 1,
+          "chance": 0.0125
+        },
+        {
+          "itemTypeName": "Ingredient-Seeds",
+          "materialName": "Corn Seed",
+          "quantity": 1,
+          "chance": 0.0125
+        },
+        {
+          "itemTypeName": "Ingredient-Seeds",
+          "materialName": "Potato Seed",
+          "quantity": 1,
+          "chance": 0.0125
+        },
+        {
+          "itemTypeName": "Ingredient-Seeds",
+          "materialName": "Tomato Seed",
+          "quantity": 1,
+          "chance": 0.0125
+        },
+        {
+          "itemTypeName": "Ingredient-Seeds",
+          "materialName": "Wheat Seed",
+          "quantity": 1,
+          "chance": 0.0125
+        }
+      ],
+      "onCompletion": ["DISPERSE_SEEDS"]
+    }
+  ]
+}

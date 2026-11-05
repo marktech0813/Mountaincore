@@ -1,0 +1,12 @@
+{
+  "itemTypeName" : "Product-Ration-Dough",
+  "maxStackSize" : 28,
+  "maxHauledAtOnce" : 7,
+  "materialTypes" : [ "VEGETABLE" ],
+  "primaryMaterialType" : "VEGETABLE",
+  "baseValuePerItem": 9,
+  "equippedWhileWorkingOnJob" : false,
+  "hoursInInventoryUntilUnused" : 1.0,
+  "i18nKey" : "PRODUCT.RATION.DOUGH",
+  "specificMaterialNames": ["Wheat"]
+}

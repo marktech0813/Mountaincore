@@ -1,0 +1,97 @@
+[
+  {
+    "materialName": "Hematite",
+    "materialType": "ORE",
+    "prevalence": 1.5,
+    "valueMultiplier": 2,
+    "colorCode": "#991E1E"
+  },
+  {
+    "materialName": "Bituminous Coal",
+    "materialType": "ORE",
+    "prevalence": 2.2,
+    "valueMultiplier": 1.5,
+    "colorCode": "#3E3E3E",
+    "useAsExampleMaterialForMaterialType": true,
+    "combustible": true
+  },
+  {
+    "materialName": "Coke",
+    "materialType": "ORE",
+    "prevalence": 0.0,
+    "valueMultiplier": 1.4,
+    "colorCode": "#bdbdbd",
+    "combustible": true
+  },
+  {
+    "materialName": "Charcoal",
+    "materialType": "ORE",
+    "prevalence": 0.0,
+    "valueMultiplier": 1.4,
+    "colorCode": "#635f5b",
+    "combustible": true
+  },
+  {
+    "materialName": "Native Gold",
+    "materialType": "ORE",
+    "prevalence": 0.3,
+    "valueMultiplier": 10,
+    "colorCode": "#FFFF1C"
+  },
+  {
+    "materialName": "Native Platinum",
+    "materialType": "ORE",
+    "prevalence": 0.1,
+    "valueMultiplier": 15,
+    "colorCode": "#f6f6f6"
+  },
+  {
+    "materialName": "Cassiterite",
+    "materialType": "ORE",
+    "prevalence": 0.3,
+    "valueMultiplier": 1,
+    "colorCode": "#CCE6FF"
+  },
+  {
+    "materialName": "Native Copper",
+    "materialType": "ORE",
+    "prevalence": 0.6,
+    "valueMultiplier": 1,
+    "colorCode": "#FF8C1A"
+  },
+  {
+    "materialName": "Galena",
+    "materialType": "ORE",
+    "prevalence": 0.4,
+    "valueMultiplier": 1,
+    "colorCode": "#CCCCCC"
+  },
+  {
+    "materialName": "Native Silver",
+    "materialType": "ORE",
+    "prevalence": 0.4,
+    "valueMultiplier": 1,
+    "colorCode": "#EAEAEA"
+  },
+  {
+    "materialName": "Malachite",
+    "materialType": "ORE",
+    "prevalence": 0.6,
+    "valueMultiplier": 1,
+    "colorCode": "#8CC87E"
+  },
+  {
+    "materialName": "Chrysocolla",
+    "materialType": "ORE",
+    "prevalence": 0.2,
+    "valueMultiplier": 1.8,
+    "colorCode": "#54DDF2"
+  },
+  {
+    "materialName": "Bauxite",
+    "materialType": "ORE",
+    "prevalence": 0.1,
+    "valueMultiplier": 1.4,
+    "colorCode": "#996B4B"
+  }
+]

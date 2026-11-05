@@ -1,0 +1,374 @@
+Early Access 2.0.0
+
+- Added a save file migration system so that saved games can be reused between compatibility-breaking changes to the game
+- Added material hardness and weight, which is currently different for types of metal
+- Weapon damage adjusted by material properties
+- Display of weapon damage range in UI
+- Corrected regional pathfinding that can be broken when bridges that block off an area are removed
+- Fix for a crash when a stockpile allocation has no material set
+
+Early Access 1.2.5 - 12th June 2023
+
+- Adjusted chances of creating items from mining (stone is less likely, ore is more likely) and made this moddable
+- Deconstruction of furniture can now be cancelled
+- Skeletons will now eventually disappear
+- Made hops quicker to grow
+- Reduced the chance of fire from jobs that can cause fires
+- Barrels now need 2x staves and hoops to craft
+- Fire now lasts longer between state transitions (more time to extinguish it)
+- Fix for a crash when a creature has no schedule
+- Ignoring save file location when under Microsoft OneDrive as this causes many saves to fail.
+    - If affected, you will need to move your save files out of OneDrive to a different location (see preferences.properties file for your new location) if you want to continue using them.
+- Fix for a crash when a cooking job ingredient hauling has been cancelled
+- Fix for a crash when attempting to dump a stack of items that are partly allocated elsewhere
+
+Early Access 1.2.4 - 1st June 2023
+
+- Fix for liquid hauling jobs not working i.e. filling of water barrel
+- Improvement to furniture that collects items such as kitchen worktop
+
+Early Access 1.2.3 - 31st May 2023
+
+- Settlers will now hold on to their waterskins for a lot longer
+- Fix for walls and bridges not being built
+- Attempted fix for trading chests getting stuck and no longer collecting coins
+- Hauling items to stockpiles will now default the job to the priority of the target stockpile (room or furniture)
+    - Note that this does not affect the priority of jobs already created
+
+Early Access 1.2.2 - 29th May 2023
+
+- Reduced toughness of the undead (though they're still very hard to kill - bring hammers)
+- Made collection of ammo while in military more important than other goals (i.e. standing on guard)
+- Dwarves will no longer fight each other to the death because of a stray arrow hitting a friend in the back
+- Idling is no longer interrupted by low needs to ensure dwarves get themselves unstuck from under furniture
+- Fix for a crash when attempting to attack but no opponent is selected
+- Fix for a crash when a military squad member has been completely obliterated from the world
+- Fix for a crash when spawning a particle effect for an item and the target material can not be found
+- Fix for a crash that can happen when requesting items to a construction
+- Fix for a crash when closing the game multiple times(!)
+- Fix for a crash due to missing code in an AI action to refill waterskins
+
+Early Access 1.2.1 - 27th May 2023
+
+- Attempted fix for weapons sometimes going missing
+- Disabled exclusive full screen mode on Mac until we can fix the OS-level crash this is causing
+- Dwarves can no longer drink from the water barrel in a brewery to avoid blocking the production of wort
+    - Note that this change will auto-deconstruct any existing brewery water barrels
+- Health and Safety inspectors have banned the dwarves from drinking beer directly from fermentation tanks
+
+Early Access 1.2.0 - 25th May 2023
+
+- Updated underlying engine library to latest version
+    - This fixes some small issues like being able to launch the browser on Mac
+    - It also means we can have a splash screen!
+- Settlers can no longer die due to food poisoning (there is still a happiness malus)
+- Disabled beer tappers will no longer bring beer barrels to themselves
+- Farmers are now responsible for harvesting crops, rather than Haulers
+- Stonemasons are now responsible for placing pipes, rather than Haulers
+
+Early Access 1.1.37 - 24th May 2023
+
+- Settlers will now collect a stack of seeds when farming again rather than one seed at once
+- Reduced happiness malus from going sober
+- Fix for duplication of bread and rations placed on a feasting hall table
+- Settlers will no longer use disabled beer tappers
+- One of the starting settlers is now a Carpenter/Woodcutter rather than Woodcutter/Carpenter
+
+Early Access 1.1.36 - 24th May 2023
+
+- Settlers will now never interrupt a job to move food to the feasting hall
+- Fix for construction of flooring, walls and roofing not working correctly
+
+Early Access 1.1.35 - 24th May 2023
+
+- Settlers should now collect items needed to work on jobs before waiting until all other work is completed
+- Made the main menu background image smaller to reduce memory usage
+- Fix for a crash when destroying a butchery station
+
+Early Access 1.1.34 - 23rd May 2023
+
+- Reduced repelling force due to many entities in one location to avoid issues in very busy locations
+- Fix for the game not working in a Turkish locale
+- Fix for when cauldrons get stuck in transit between kitchen and feasting hall
+- Fix for a crash due to sorting algorithms making use of a random element
+- Fix for a crash when removing a zone from a region that no longer exists
+- Fix for a crash when a doorway was constructed with no materials
+- Fix for a crash when laying power lines along the map edge
+- Hopeful fix for a crash due to misallocation of funds when trading
+- Increased minimum memory usage to 2GB (We want to know if this affects you negatively)
+
+Early Access 1.1.33 - 22nd May 2023
+
+- "Add tiles" button when a stockpile is selected will now correctly use that stockpile's (first if several) stockpile group
+- Adding a stockpile will now use the settings of a stockpile that is being extended rather than what was selected
+- Note that merging two existing stockpiles together will keep both of their settings
+- Fixes and improvements to butchery station
+- Transferring water to soup cauldrons is now the responsibility of a Chef (was a Hauler previously, which was incorrect)
+- The construction of a feasting hall cauldron (and hauling a cauldron of soup to it) now gets set to the priority of the kitchen it is coming from
+- Improved logging to avoid writing too much to disk
+- Improved crash handling to keep stack trace instead of it being lost sometimes
+
+Early Access 1.1.32 - 21st May 2023
+
+- Added a label to export pallets to warn when a production limit has been reached
+- Updated French translation, with thanks to Crono Natsuga
+
+Early Access 1.1.31 - 19th May 2023
+
+- Fishing now only has a chance to catch a fish (depending on skill level) rather than always being successful
+- Ore crushing is now performed by the stonemason rather than blacksmith
+- Corn and Hemp now grow a little faster
+- Exposed the colour codes for roofing view to modding
+- Fix for a crash when a liquid container no longer has a valid access zone
+
+Early Access 1.1.30 - 19th May 2023
+
+- Corrected weapon rack tags
+- Prevented placement of rooms over irrigation channels
+- Removed state file for Asset Editor tool to prevent a crash
+
+Early Access 1.1.29 - 19th May 2023
+
+- Fix for crashes and other problems with messed up room tiles
+- Fix for a crash when merchants are paying but all coins are assigned elsewhere
+- Fix for a crash when a material is lost
+- Corrected an issue where merchants paying for items could cause extra piles of coins to appear in the resources screen
+- Added (crossbow) bolts to weapon rack storage
+
+Early Access 1.1.28 - 18th May 2023
+
+- Fixes for a few crashes when changing professions
+- Corrected file format of new music track
+- Renamed pallets in Trading Depot to make more sense
+
+Early Access 1.1.27 - 18th May 2023
+
+- Added a new peaceful music track, "Respite" by Jordan Chin
+- "Villager" profession renamed (in translation only) to "Hauler"
+- Settlers can now have 1, 2 or 3 professions set, and do not need to have the Hauler profession
+- Hauling can now be higher priority than other professions
+- The starting profession skills are now fixed to avoid issues with certain secondary professions being missing
+- Immigrants now only have the Hauler profession set (look out for ways to change this in the future)
+- Peaceful music now plays (again) in Winter
+- Changing priority of a construction now applies to the hauling jobs also
+- Fix for a crash on the settlers screen after loading an old save
+- Fix for a crash on the resources info button
+- Fix for an issue with text display after changing language
+- Exposed cameraMouseDragPanningSpeed in uiConstants to adjust panning speed due to holding middle mouse button
+- Corrected use of quotes in Spanish translation
+
+Early Access 1.1.26 - 17th May 2023
+
+- Music track volume levels have been normalised
+- Weapon racks can now also store shields
+- Added ability to copy map seed to clipboard from load game screen (will require the map to have been saved in this version or later)
+- Fix (for most cases) for incorrect display of filled irrigation channels under snow cover
+
+Early Access 1.1.25 - 16th May 2023
+
+- Jobs to remove pests from crops will no longer be generated in winter (though they might roll over from autumn)
+- Fix for incorrect display of "New area discovered!" when starting a new game
+- Dwarves have had their noontime lunch break revoked and will no longer try to eat or drink at midday unless their needs are urgent
+
+Early Access 1.1.24 - 16th May 2023
+
+- Fungolems can now be butchered for some bland, tasteless meat-like substance
+- Improvements to hauling of crafted items to export pallets
+- Set minimum level before water barrels will be refilled to avoid refilling after one drink
+- Fix for cavern exploration notifications not firing correctly
+- Fix for item availability when "Any" material selected
+
+Early Access 1.1.23 - 15th May 2023
+
+- Fix for items becoming stuck when trying to be hauled out of furniture
+- Fix for a crash when a settler does not have a skills component, might only affect old saves
+
+Early Access 1.1.22 - 12th May 2023
+
+- Material selections now use a drop-down select rather than left/right arrows
+- Fir for issues when hauling an item from a container
+- Fix for a crash when an entity has gone beyond the bounds of the world
+- Fix to allow farm plots and irrigation channels to be placed over snow
+
+Early Access 1.1.21 - 10th May 2023
+
+- Squads on guard will now get attacks of opportunity against opponents in range
+- Creatures can now regain consciousness after being knocked unconscious
+- Trading chests can now store multiple stacks of coins
+- Updated Spanish translation, thanks Harlmorl!
+- Fixes for when settlers get stuck in walls/furniture
+
+Early Access 1.1.20 - 6th May 2023
+
+- Fix for when a retting tank gets stuck at 3/4 full
+- Fix for a crash that is happening when a merchant goes to place payment and something is missing
+- Plants can now access water (e.g. from irrigation) up to 3 tiles away instead of 2 tiles away
+
+Early Access 1.1.19 - 5th May 2023
+
+- Added translators to in-game credits
+- A settler getting stuck should now post a notification to the player
+- Fully decayed non-dwarf corpses will now self-destruct rather than turn invisible
+- Fixes to liquid allocations for brewery jobs
+- Fix for unexplored areas not being revealed correctly
+- Fix for items teleporting around the map
+- Hopeful fix for trading chests getting stuck sometimes
+- Better resolution of AI goals that are failing
+- Danish translation courtesy of community member ShamblerDK
+- Updated Chinese translation
+
+Early Access 1.1.18 - 30th April 2023
+
+- Improved selection of materials on import pallets so you shouldn't end up with a useless item imported
+- Improvements to pathfinding during combat to hopefully avoid phasing into walls
+- Improvements to how items are dumped to avoid causing mis-allocations
+- Fix for keybindings to load correctly once modified
+- Fix for a crash that can happen when furniture is destroyed by a mining collapse
+- Fix for a crash when an item does not have a primary material set correctly
+- Fix for a crash when working on a job that has been removed
+
+Early Access 1.1.17 - 27th April 2023
+
+- Big improvement to pathfinding so that inaccessible jobs should no longer cause problems
+- Fix for immigration not working when the embark point becomes inaccessible
+- Improved dumping of unused items, the player should no longer require stockpiles except for neatness
+- Improved assignment of corpses to graves
+- Merchants will now respect the priority of import and export pallets
+- Fix for when a dwarf could get stuck trying to pick up an item
+
+Early Access 1.1.16 - 25th April 2023
+
+- This update was not released publicly
+
+Early Access 1.1.15 - 24th April 2023
+
+- Showing resource overview when tutorial is completed
+- Fix for jobs without a location (fishing being weird)
+- Fix for a crash that can happen when there are multiple hauling jobs on a tile with a dead dwarf
+- Fix for a crash when facing towards food when inside a container/vehicle
+- Fix for a crash when going to a job location but the job does not exist
+- Fix for a crash when trying to start crafting but the input ingredients have disappeared
+- Fix for a crash for trying to dump a corpse that is already allocated somewhere
+
+Early Access 1.1.14 - 21st April 2023
+
+- Further fix for crashes during merchant payment for goods
+- Filtering Twitch bots out of automatic settler names
+
+Early Access 1.1.13 - 21st April 2023
+
+- Fix for a crash happening with bad item allocations and merchant trading payments
+- Fix for a crash for where an item that has been lost is trying to assign itself to a stockpile
+
+Early Access 1.1.12 - 20th April 2023
+
+- You can now set a limit on the number of items to be produced via the crafting screen
+- Fire will no longer spread to furniture and items that contain water
+- Walls with no material set should no longer be able to be constructed
+- Merchants will now actually pay for goods with no payment chest available, rather than just taking stuff and leaving
+- Fixed merchant coinage so that 1 of their gold coins are not worth 1.3 gold coins (further cheating from thieving merchants)
+- Fixed a few issues around payment for goods and placing coins
+- Fix for a crash when transferring liquids where the target liquid has been forgotten
+- Corrected items bought from merchants to change faction to settlement upon placement
+- Made shrubs grow slower
+- Added a note to the tutorial about the crafting recipes screen available from crafting stations
+- Hopefully fixed a crash when writing a save file with trading export furniture behaviour that could contain a circular reference
+
+Early Access 1.1.11 - 18th April 2023
+
+- Increased the threshold for a creature to retreat from combat due to a need (food/drink/sleep) running low
+- Fungolems will either attack or flee rather than always fleeing so they aren't quite so annoying to deal with
+- Stackable items that rust will no longer be listed as "awful" quality
+- Keeping main menu background in memory so there is no delay when pressing escape to return to the main menu
+- Fix for resources overview to not show duplicate groups
+- Fix for a crash when removing a job with no location
+- Fix for a crash when rendering a room tile with no room
+- Fix for a crash when moving to shoot an opponent but no longer in combat with anyone
+- Fix for a crash when a long-running crafting process finishes with nothing left in inventory
+- Fix for a crash when rendering an entity that no longer has a world position
+- Fix for a crash when attempting to replace a profession the settler does not have
+
+Early Access 1.1.10 - 17th April 2023
+
+- Reworked the order in which jobs are selected so high priority is more important than which skill is involved
+- Fix for the game not launching on Mac
+- Adjusted innate damage reduction on undead dwarves to not be quite so invulnerable to slashing and stabbing weapons, maybe
+- Made crafting stations randomly pick between potential export pallet assignments of the same priority
+- Crafting stations will no longer produce items for export pallets set to disabled priority
+- Furniture/plants next to other furniture/plants should no longer flicker between the two
+- Fix for a crash that can happen when loading a saved game that no longer exists
+
+Early Access 1.1.9 - 14th April 2023
+
+- Displaying number of Twitch viewers watching on main menu (when connected to Twitch)
+- Made bloomery furnace require Tongs to construct, rather than be in the inventory of the smelter, to avoid confusion when the job isn't being done. This may cause existing furnaces to stop working or crash.
+- Fix for an issue with tools on crafting stations filling up tools stockpiles
+
+Early Access 1.1.8 - 13th April 2023
+
+- Updated German translation, provided by Antafes, thank you!
+- Fix for when the application hangs while saving/exiting the game
+- Fix for a crash when saving the game while a notification is pending
+
+Early Access 1.1.7 - 12th April 2023
+
+- Added logo
+- Updated Twitch integration to use the new/correct Twitch API
+- Fix for crashes due to overallocation of items
+- Corrected interruption of crafting jobs so that they are not left in a bad state
+
+Early Access 1.1.6 - 11th April 2023
+
+- Removed stockpile group from bread and dough so they won't be moved out of the bakery/feasting hall
+- Stopped items that are brought to furniture (such as kitchen worktop) from being hauled away again
+- Increased the length of time traders can spend in each stage of their visit so they won't arrive, sleep and then leave
+- Dismissing the tutorial now also disables the tutorial in future games
+- Corrected fir tree description (was showing as "ironwood")
+- Corrected military training to use ranged weapons correctly
+- Fixed an issue where furniture could be constructed of the wrong material type when resources were no longer present
+- Fixed cleanup for issues when crafting jobs get stuck after being interrupted
+- Added missing description for ongoing effects (e.g. a fire)
+- Fix for save files which became unusable due to circular references in planned trades
+- Fix for a crash when a hauling job has lost track of what it is hauling
+- Fix for a crash when describing what is being hauled when the item has been removed from the map
+- Fix for a crash when rendering a room tile that is no longer part of a room
+- Fix for a crash when allocating food from a container which can also contain liquid
+- Reverted a change which may have been cleaning up item allocations too aggressively, may have been causing further issues
+
+Early Access 1.1.5 - 6th April 2023
+
+- Steam Deck support: Tutorial shows official Steam Deck controls, text fields open onscreen keyboard, and cloud saves are compatible with desktop
+- Fix for a crash when changing between screens with different resolutions
+
+Early Access 1.1.4 - 5th April 2023
+
+- Improvement to hauling and item allocations so items should not be left stuck when the hauling job is cancelled elsewhere
+- You can now purchase part of a stack of an item from the merchants (in case you can't afford the whole stack)
+- Fix for a crash that can happen as the merchants are exiting the map
+- Fix for a crash when creatures without happiness (i.e. merchants) get very hungry or thirsty
+
+Early Access 1.1.3 - 5th April 2023
+
+- Moved close icons from upper left to upper right
+- Fixed wall constructions from being removed instantly
+- Clicking on a military settler now selects that settler rather than their military squad (This can be accessed by clicking the squad icon)
+- Fix for a crash in combat when hitting a body which has been entirely destroyed
+- Fix for a crash when showing a tooltip on an actor which is not currently attached to the stage
+
+Early Access 1.1.2 - 4th April 2023
+
+- Stopped UI hover sounds from playing multiple times in an inventory view
+- Fix for some UI text showing as a black mess for some players
+- Fixed a crash for trading depot imports without a material set
+- Fix for a crash when updating the stockpile overview in a weird state
+
+Early Access 1.1.1 - 3rd April 2023
+
+- Fix for a crash that could happen when the tutorial auto-starts the game near the edge of the map
+- Removed legacy text written to the upper-left corner of the screen
+- Corrected material selection when constructing a leatherworking station
+- Fix for a crash related to import/export pallets and item types described only by their material (i.e. wheat sack to kitchen)
+
+Early Access 1.1.0 - 3rd April 2023
+
+- Initial Early Access release! This changelog will keep track of any future changes or bugfixes.

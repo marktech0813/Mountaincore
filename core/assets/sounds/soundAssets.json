@@ -1,0 +1,521 @@
+[ {
+  "name" : "Daytime",
+  "soundAssetId" : 1,
+  "filenames" : [ "Daytime Ambiance (Loop).wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.5,
+  "looping" : true
+}, {
+  "name" : "Nighttime",
+  "soundAssetId" : 2,
+  "filenames" : [ "Nighttime Ambiance (Loop).wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.5,
+  "looping" : true
+}, {
+  "name" : "Rain",
+  "soundAssetId" : 3,
+  "filenames" : [ "Ambience_Rain.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.4,
+  "looping" : true
+}, {
+  "name" : "Thunderstorm with rain",
+  "soundAssetId" : 4,
+  "filenames" : [ "Ambience_Thunder.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.4,
+  "looping" : true
+}, {
+  "name" : "Isolated thunder",
+  "soundAssetId" : 5,
+  "filenames" : [ "isolated_thunder.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : true
+}, {
+  "name" : "Wind",
+  "soundAssetId" : 6,
+  "filenames" : [ "Ambience_Winter.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.4,
+  "looping" : true
+}, {
+  "name" : "River",
+  "soundAssetId" : 7,
+  "filenames" : [ "River Flowing (Loop).wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.3,
+  "looping" : true
+}, {
+  "name" : "Flies",
+  "soundAssetId" : 8,
+  "filenames" : [ "Flies (Loop).wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.5,
+  "looping" : true
+}, {
+  "name" : "Burning",
+  "soundAssetId" : 9,
+  "filenames" : [ "FireBarnInt_Short.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.4,
+  "looping" : true
+}, {
+  "name" : "SFX_Hunting_Attack_Bow",
+  "soundAssetId" : 10,
+  "filenames" : [ "SFX_Hunting_Attack_Bow.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "SFX_Hunting_Impact_Crushing",
+  "soundAssetId" : 11,
+  "filenames" : [ "SFX_Hunting_Impact_Crushing.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "SFX_Hunting_Impact_Slicing",
+  "soundAssetId" : 12,
+  "filenames" : [ "SFX_Hunting_Impact_Slicing.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "SFX_Hunting_Impact_Stabbing_Bow",
+  "soundAssetId" : 13,
+  "filenames" : [ "SFX_Hunting_Impact_Stabbing_Bow.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "SFX_Hunting_Miss_Bow",
+  "soundAssetId" : 14,
+  "filenames" : [ "SFX_Hunting_Miss_Bow.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "SFX_Punch_Impact",
+  "soundAssetId" : 15,
+  "filenames" : [ "SFX_Punch.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "SFX_Melee_Miss",
+  "soundAssetId" : 16,
+  "filenames" : [ "SFW_Swing_Miss_1.wav", "SFW_Swing_Miss_2.wav", "SFW_Swing_Miss_3.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "SFX_Stab_Splat",
+  "soundAssetId" : 17,
+  "filenames" : [ "SFW_Stab_Splat_1.wav", "SFW_Stab_Splat_2.wav", "SFW_Stab_Splat_3.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "Body Drop",
+  "soundAssetId" : 18,
+  "filenames" : [ "Body Drop 1.wav", "Body Drop 2.wav", "Body Drop 3.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "Mining Drop",
+  "soundAssetId" : 19,
+  "filenames" : [ "Body Drop 1.wav", "Body Drop 2.wav", "Body Drop 3.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.18,
+  "looping" : false
+}, {
+  "name" : "DoorClose",
+  "soundAssetId" : 20,
+  "filenames" : [ "DoorClose1.wav", "DoorClose2.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.15,
+  "looping" : false
+}, {
+  "name" : "DoorOpen",
+  "soundAssetId" : 21,
+  "filenames" : [ "DoorOpen1.wav", "DoorOpen2.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.2,
+  "looping" : false
+}, {
+  "name" : "EatFood",
+  "soundAssetId" : 22,
+  "filenames" : [ "EatingPlate.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "DrinkSoup",
+  "soundAssetId" : 23,
+  "filenames" : [ "DrinkSoup (Polite).wav", "DrinkSoup (Uncouth).wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "BeerTap",
+  "soundAssetId" : 24,
+  "filenames" : [ "BeerTap.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.4,
+  "looping" : false
+}, {
+  "name" : "HeavyStoneItem",
+  "soundAssetId" : 25,
+  "filenames" : [ "HeavyStoneItem.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.4,
+  "looping" : false
+}, {
+  "name" : "HeavyWoodItem",
+  "soundAssetId" : 26,
+  "filenames" : [ "HeavyWoodItem.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.4,
+  "looping" : false
+}, {
+  "name" : "ImpactPlank",
+  "soundAssetId" : 27,
+  "filenames" : [ "impactPlank_medium_003.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.8,
+  "looping" : false
+}, {
+  "name" : "PaletteConstruct",
+  "soundAssetId" : 28,
+  "filenames" : [ "SFX_UI_Object_Palette_Construct.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "CoinsAllSizes",
+  "soundAssetId" : 29,
+  "filenames" : [ "SFX_UI_Global_Coins_Large.wav", "SFX_UI_Global_Coins_Medium.wav", "SFX_UI_Global_Coins_Small.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "Sawing",
+  "soundAssetId" : 30,
+  "filenames" : [ "Woodcutter Sawing (A-FO).wav", "Woodcutter Sawing (B-FO).wav", "Woodcutter Sawing (C-FO).wav" ],
+  "minPitch" : 0.9,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.15,
+  "looping" : false
+}, {
+  "name" : "Fishing_Cast",
+  "soundAssetId" : 31,
+  "filenames" : [ "Fishing_Cast.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.8,
+  "looping" : false
+}, {
+  "name" : "Metallic Hammering",
+  "soundAssetId" : 32,
+  "filenames" : [ "Metallic Hammering (A-FO).wav", "Metallic Hammering (B).wav", "Metallic Hammering (C).wav", "Metallic Hammering (D-FO).wav" ],
+  "minPitch" : 0.95,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "HarvestingCrops",
+  "soundAssetId" : 33,
+  "filenames" : [ "HarvestingCrops.wav" ],
+  "minPitch" : 0.7,
+  "maxPitch" : 1.3,
+  "volumeModifier" : 0.5,
+  "looping" : false
+}, {
+  "name" : "ChoppingTree",
+  "soundAssetId" : 34,
+  "filenames" : [ "Chopping Tree (A).wav", "Chopping Tree (B-FO).wav", "Chopping Tree (C-FO).wav", "Chopping Tree (D).wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.4,
+  "looping" : false
+}, {
+  "name" : "TreeFall",
+  "soundAssetId" : 35,
+  "filenames" : [ "Tree Fall.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.35,
+  "looping" : false
+}, {
+  "name" : "Mining",
+  "soundAssetId" : 36,
+  "filenames" : [ "Mining (A-FO).wav", "Mining (B-FO).wav", "Mining (C-FO).wav", "Mining (D).wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.2,
+  "looping" : false
+}, {
+  "name" : "StonemasonChipping",
+  "soundAssetId" : 37,
+  "filenames" : [ "StonemasonChipping.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.3,
+  "looping" : false
+}, {
+  "name" : "Tilling",
+  "soundAssetId" : 38,
+  "filenames" : [ "Tilling (A).wav", "Tilling (B).wav", "Tilling (C).wav", "Tilling (D).wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.25,
+  "looping" : false
+}, {
+  "name" : "WaterCollect",
+  "soundAssetId" : 39,
+  "filenames" : [ "WaterCollect.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.4,
+  "looping" : false
+}, {
+  "name" : "WaterDump",
+  "soundAssetId" : 40,
+  "filenames" : [ "WaterDump.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.4,
+  "looping" : false
+}, {
+  "name" : "DropItemInWater",
+  "soundAssetId" : 41,
+  "filenames" : [ "DropItemInWater.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.4,
+  "looping" : false
+}, {
+  "name" : "MiningCollapse",
+  "soundAssetId" : 42,
+  "filenames" : [ "MiningCollapse.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "Poof",
+  "soundAssetId" : 43,
+  "filenames" : [ "SFX_UI_Object_General_Poof_Air.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "Thundercrack",
+  "soundAssetId" : 44,
+  "filenames" : [ "thunder_01.wav", "thunder_02.wav", "thunder_03.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.9,
+  "looping" : false
+}, {
+  "name" : "WaterSizzle",
+  "soundAssetId" : 45,
+  "filenames" : [ "zapsplat_nature_water_hit_hot_metal_sizzle_bubble_003_27270.wav" ],
+  "minPitch" : 0.8,
+  "maxPitch" : 1.2,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "ConfirmMedium",
+  "soundAssetId" : 46,
+  "filenames" : [ "SFX_UI_Global_Confirm_Medium.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "ConfirmLight",
+  "soundAssetId" : 47,
+  "filenames" : [ "SFX_UI_Global_Confirm_Light.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "ConfirmVeryLight",
+  "soundAssetId" : 48,
+  "filenames" : [ "SFX_UI_Global_Confirm_VeryLight.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "ConfirmConscript",
+  "soundAssetId" : 49,
+  "filenames" : [ "SFX_UI_Global_Conscript.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.6,
+  "looping" : false
+}, {
+  "name" : "DragArea",
+  "soundAssetId" : 50,
+  "filenames" : [ "UI_DragArea.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "EquipArmor",
+  "soundAssetId" : 51,
+  "filenames" : [ "SFX_UI_Global_Equip_Armor.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "EquipShield",
+  "soundAssetId" : 52,
+  "filenames" : [ "SFX_UI_Global_Equip_Shield.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "EquipWeapon",
+  "soundAssetId" : 53,
+  "filenames" : [ "SFX_UI_Global_Equip_Weapon.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "GameStart",
+  "soundAssetId" : 54,
+  "filenames" : [ "UI_GameStart.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.8,
+  "looping" : false
+}, {
+  "name" : "HeavyHover",
+  "soundAssetId" : 55,
+  "filenames" : [ "SFX_UI_Global_Hover_Heavy_1.wav", "SFX_UI_Global_Hover_Heavy_2.wav", "SFX_UI_Global_Hover_Heavy_3.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "MediumHover",
+  "soundAssetId" : 56,
+  "filenames" : [ "SFX_UI_Global_Hover_Medium_1.wav", "SFX_UI_Global_Hover_Medium_2.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "LightHover",
+  "soundAssetId" : 57,
+  "filenames" : [ "SFX_UI_Global_Hover_Light_1.wav", "SFX_UI_Global_Hover_Light_2.wav", "SFX_UI_Global_Hover_Light_3.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "VeryLightHover",
+  "soundAssetId" : 58,
+  "filenames" : [ "SFX_UI_Global_Hover_VeryLight.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 1.0,
+  "looping" : false
+}, {
+  "name" : "MenuClick",
+  "soundAssetId" : 59,
+  "filenames" : [ "UI_MenuClick.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "MenuHover",
+  "soundAssetId" : 60,
+  "filenames" : [ "UI_MenuHover.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "NewNotification",
+  "soundAssetId" : 61,
+  "filenames" : [ "UI_NewNotification.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "NextNotification",
+  "soundAssetId" : 62,
+  "filenames" : [ "UI_NextNotification.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "NotificationClose",
+  "soundAssetId" : 63,
+  "filenames" : [ "UI_NotificationClose.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "NotificationOpen",
+  "soundAssetId" : 64,
+  "filenames" : [ "UI_NotificationOpen.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+}, {
+  "name" : "Slider",
+  "soundAssetId" : 65,
+  "filenames" : [ "UI_Slider.wav" ],
+  "minPitch" : 1.0,
+  "maxPitch" : 1.0,
+  "volumeModifier" : 0.7,
+  "looping" : false
+} ]

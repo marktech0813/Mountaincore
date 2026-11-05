@@ -1,0 +1,103 @@
+[ {
+  "uniqueName" : "Product-Anvil-Carried",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Product-Anvil",
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Anvil.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 26.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -20.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Anvil.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -20.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Anvil.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 20.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP" : {
+      "filename" : "Anvil.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 22.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -22.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP_LEFT" : {
+      "filename" : "Anvil.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -12.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP_RIGHT" : {
+      "filename" : "Anvil.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 12.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    }
+  }
+}, {
+  "uniqueName" : "Product-Anvil-On-Ground",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Product-Anvil",
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Anvil.png",
+      "coloringLayer" : "METAL_COLOR"
+    }
+  }
+} ]

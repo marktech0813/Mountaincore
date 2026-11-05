@@ -1,0 +1,75 @@
+{
+  "name": "Work on job goal",
+  "i18nDescription": "ACTION.SELECT_JOB.DESCRIPTION",
+  "interruptedByLowNeeds": true,
+  "creatureCategories": ["CIVILIAN"],
+  "selectors": [
+    {
+      "conditions": [
+        {
+          "type": "NEED",
+          "need": "FOOD",
+          "operator": "GREATER_THAN_OR_EQUAL_TO",
+          "value": 15
+        },
+        {
+          "type": "NEED",
+          "need": "DRINK",
+          "operator": "GREATER_THAN_OR_EQUAL_TO",
+          "value": 15
+        },
+        {
+          "type": "NEED",
+          "need": "SLEEP",
+          "operator": "GREATER_THAN_OR_EQUAL_TO",
+          "value": 15
+        },
+        {
+          "type": "BODY_PART_FUNCTION",
+          "need": "MAIN_HAND"
+        }
+      ],
+      "priority": "LOWEST",
+      "scheduleCategory": "ANY"
+    }
+  ],
+  "initialActions": ["SelectJob"],
+  "actionRelationships": {
+    "SelectJob": {
+      "pass": ["CheckToCollectJobItem"]
+    },
+    "CheckToCollectJobItem": {
+      "pass": ["AssignItemCollectionForJob"],
+      "fail": ["EquipItemForJobFromInventory", "GoToLocation"]
+    },
+    "AssignItemCollectionForJob": {
+      "pass": ["GoToHaulingSourceLocation"],
+      "fail": ["UnassignJob"]
+    },
+    "GoToHaulingSourceLocation": {
+      "pass": ["PickUpEntity"],
+      "fail": ["CancelHaulingAllocation"]
+    },
+    "PickUpEntity": {
+      "pass": ["CancelHaulingAllocation", "EquipItemForJobFromInventory", "GoToLocation"],
+      "fail": ["CancelHaulingAllocation","UnassignJob"]
+    },
+    "EquipItemForJobFromInventory": {
+      "fail": ["UnassignJob"]
+    },
+    "GoToLocation": {
+      "pass": ["FaceTowardsLocation", "EquipItemForJobFromFurniture", "WorkOnJob"],
+      "fail": ["UnequipItemForJob", "UnassignJob"]
+    },
+    "WorkOnJob": {
+      "pass": ["UnequipItemForJob", "RequeueThisGoal"],
+      "fail": ["UnequipItemForJob", "UnassignJob"]
+    },
+    "UnequipItemForJob": {},
+    "FaceTowardsLocation": {},
+    "EquipItemForJobFromFurniture": {},
+    "UnassignJob": {},
+    "CancelHaulingAllocation": {},
+    "RequeueThisGoal": {}
+  }
+}

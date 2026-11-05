@@ -1,0 +1,21 @@
+{
+	"platform": "windows64",
+	"jdk": "jdks/OpenJDK17U-jdk_x64_windows_hotspot_17.0.4_8",
+	"executable": "Mountaincore",
+	"classpath": [
+		"../desktop/build/libs/mountaincore.jar"
+	],
+	"mainclass": "technology.rocketjump.mountaincore.launcher.DesktopLauncher",
+	"vmargs": ["Xms2048m", "-Dfile.encoding=UTF-8", "-Dsun.java2d.dpiaware=true", "-XX:-OmitStackTraceInFastThrow"],
+	"resources": [
+		"../core/changelog.txt",
+		"../core/assets",
+		"../core/mods",
+		"../core/mod_tools",
+		"log.txt",
+		"troubleshooting.txt",
+		"launch-from-command-prompt.bat"
+	],
+	"useZgcIfSupportedOs": true,
+	"output": "win64_release"
+}

@@ -1,0 +1,134 @@
+[ {
+  "uniqueName" : "Butchery_Worktop-Blood-Wood",
+  "type" : "FURNITURE_ABOVE_LAYER_1",
+  "furnitureTypeName" : "BUTCHERY_WORKTOP",
+  "furnitureLayoutName" : "2x1 with workspaces",
+  "validMaterialTypes" : [ "WOOD" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Butchery_Worktop-Blood-Wood_Down.png",
+      "offsetPixels" : {
+        "x" : -29.0,
+        "y" : 2.0
+      }
+    }
+  }
+}, {
+  "uniqueName" : "Butchery_Worktop-Blood-Wood-1x2",
+  "type" : "FURNITURE_ABOVE_LAYER_1",
+  "furnitureTypeName" : "BUTCHERY_WORKTOP",
+  "furnitureLayoutName" : "1x2 with workspaces",
+  "validMaterialTypes" : [ "WOOD" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Butchery_Worktop-Blood-Wood-1x2_Down.png",
+      "offsetPixels" : {
+        "x" : -3.0,
+        "y" : 12.0
+      }
+    }
+  }
+}, {
+  "uniqueName" : "Butchery_Worktop-Meat-Wood",
+  "type" : "FURNITURE_ABOVE_LAYER_2",
+  "furnitureTypeName" : "BUTCHERY_WORKTOP",
+  "furnitureLayoutName" : "2x1 with workspaces",
+  "validMaterialTypes" : [ "WOOD" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Butchery_Worktop-Meat-Wood_Down.png",
+      "offsetPixels" : {
+        "x" : 42.0,
+        "y" : -11.0
+      }
+    }
+  }
+}, {
+  "uniqueName" : "Butchery_Worktop-Meat-Wood-1x2",
+  "type" : "FURNITURE_ABOVE_LAYER_2",
+  "furnitureTypeName" : "BUTCHERY_WORKTOP",
+  "furnitureLayoutName" : "1x2 with workspaces",
+  "validMaterialTypes" : [ "WOOD" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Butchery_Worktop-Meat-Wood-1x2_Down.png",
+      "offsetPixels" : {
+        "x" : -1.0,
+        "y" : 60.0
+      }
+    }
+  }
+}, {
+  "uniqueName" : "butchery-table-1x2-wood",
+  "type" : "BASE_LAYER",
+  "furnitureTypeName" : "BUTCHERY_WORKTOP",
+  "furnitureLayoutName" : "1x2 with workspaces",
+  "validMaterialTypes" : [ "WOOD" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Butchery-Table-1x2-Wood_Down.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "offsetPixels" : {
+        "y" : 32.0
+      },
+      "childAssets" : [ {
+        "type" : "FURNITURE_ABOVE_LAYER_1"
+      }, {
+        "type" : "FURNITURE_ABOVE_LAYER_2"
+      } ],
+      "attachmentPoints" : [ {
+        "type" : "ATTACHMENT_WORKSPACE_1",
+        "offsetPixels" : {
+          "y" : -21.0
+        }
+      }, {
+        "type" : "ATTACHMENT_DECO_1",
+        "offsetPixels" : {
+          "y" : 32.0
+        }
+      } ]
+    }
+  }
+}, {
+  "uniqueName" : "butchery-table-2x1-wood",
+  "type" : "BASE_LAYER",
+  "furnitureTypeName" : "BUTCHERY_WORKTOP",
+  "furnitureLayoutName" : "2x1 with workspaces",
+  "validMaterialTypes" : [ "WOOD" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Butchery-Table-2x1-Wood_Down.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "offsetPixels" : {
+        "x" : 41.0,
+        "y" : 5.0
+      },
+      "childAssets" : [ {
+        "type" : "FURNITURE_ABOVE_LAYER_1",
+        "offsetPixels" : {
+          "x" : 20.0,
+          "y" : 4.0
+        }
+      }, {
+        "type" : "FURNITURE_ABOVE_LAYER_2",
+        "offsetPixels" : {
+          "x" : 20.0,
+          "y" : 4.0
+        }
+      } ],
+      "attachmentPoints" : [ {
+        "type" : "ATTACHMENT_WORKSPACE_1",
+        "offsetPixels" : {
+          "x" : -39.0,
+          "y" : 10.0
+        }
+      }, {
+        "type" : "ATTACHMENT_DECO_1",
+        "offsetPixels" : {
+          "x" : 31.0,
+          "y" : 14.0
+        }
+      } ]
+    }
+  }
+} ]

@@ -1,0 +1,91 @@
+[ {
+  "name" : "Brain",
+  "function" : "Consciousness",
+  "damage" : {
+    "finalInstance" : {
+      "LIGHT" : "DEAD",
+      "HEAVY" : "DEAD",
+      "DESTROYED" : "DEAD"
+    },
+    "other" : {
+      "LIGHT" : "STUNNED"
+    }
+  },
+  "i18nKey" : "BODY_STRUCTURE.ORGAN.BRAIN"
+}, {
+  "name" : "Eye",
+  "function" : "Sight",
+  "damage" : {
+    "finalInstance" : {
+      "LIGHT" : "STUNNED",
+      "HEAVY" : "BLEEDING",
+      "DESTROYED" : "BLINDED"
+    },
+    "other" : {
+      "LIGHT" : "STUNNED",
+      "HEAVY" : "BLEEDING",
+      "DESTROYED" : "VISION_IMPAIRED"
+    }
+  },
+  "i18nKey" : "BODY_STRUCTURE.ORGAN.EYE"
+}, {
+  "name" : "Heart",
+  "function" : "BloodCirculation",
+  "damage" : {
+    "finalInstance" : {
+      "LIGHT" : "INTERNAL_BLEEDING",
+      "HEAVY" : "DEAD",
+      "DESTROYED" : "DEAD"
+    },
+    "other" : {
+      "LIGHT" : "BLEEDING",
+      "HEAVY" : "INTERNAL_BLEEDING",
+      "DESTROYED" : "INTERNAL_BLEEDING"
+    }
+  },
+  "i18nKey" : "BODY_STRUCTURE.ORGAN.HEART"
+}, {
+  "name" : "Lung",
+  "function" : "Breathing",
+  "damage" : {
+    "finalInstance" : {
+      "LIGHT" : "BLEEDING",
+      "HEAVY" : "INTERNAL_BLEEDING",
+      "DESTROYED" : "SUFFOCATION"
+    },
+    "other" : {
+      "LIGHT" : "BLEEDING",
+      "HEAVY" : "INTERNAL_BLEEDING",
+      "DESTROYED" : "INTERNAL_BLEEDING"
+    }
+  },
+  "i18nKey" : "BODY_STRUCTURE.ORGAN.LUNG"
+}, {
+  "name" : "Kidney",
+  "function" : "BloodCirculation",
+  "damage" : {
+    "finalInstance" : {
+      "LIGHT" : "BLEEDING",
+      "HEAVY" : "INTERNAL_BLEEDING",
+      "DESTROYED" : "DEAD"
+    },
+    "other" : {
+      "LIGHT" : "BLEEDING",
+      "HEAVY" : "BLEEDING",
+      "DESTROYED" : "INTERNAL_BLEEDING"
+    }
+  },
+  "i18nKey" : "BODY_STRUCTURE.ORGAN.KIDNEY"
+}, {
+  "name" : "Intestines",
+  "function" : "BloodCirculation",
+  "damage" : {
+    "finalInstance" : {
+      "LIGHT" : "BLEEDING",
+      "HEAVY" : "INTERNAL_BLEEDING",
+      "DESTROYED" : "DEAD"
+    },
+    "other" : { }
+  },
+  "i18nKey" : "BODY_STRUCTURE.ORGAN.INTESTINES"
+} ]

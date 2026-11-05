@@ -1,0 +1,9 @@
+{
+  "itemTypeName" : "Product-Millstone",
+  "materialTypes" : [ "STONE" ],
+  "primaryMaterialType" : "STONE",
+  "baseValuePerItem": 10,
+  "hoursInInventoryUntilUnused" : 1.0,
+  "stockpileGroupName" : "PRODUCTS",
+  "i18nKey" : "PRODUCT.MILLSTONE"
+}

@@ -1,0 +1,36 @@
+[ {
+  "uniqueName" : "Weapon-Bow-On-Ground",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Weapon-Bow",
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Bow.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "offsetPixels" : {
+        "x" : 2.0,
+        "y" : -0.5
+      },
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1",
+        "offsetPixels" : {
+          "x" : -2.0,
+          "y" : 0.5
+        }
+      } ]
+    }
+  }
+}, {
+  "uniqueName" : "Weapon-Bow-String-On-Ground",
+  "type" : "BELOW_LAYER_1",
+  "itemTypeName" : "Weapon-Bow",
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "String-TrueColor.png",
+      "offsetPixels" : {
+        "x" : 2.5
+      }
+    }
+  }
+} ]

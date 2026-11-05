@@ -1,0 +1,354 @@
+[ {
+  "uniqueName" : "Tool-Pickaxe-Extras-Being-Carried",
+  "type" : "BELOW_LAYER_1",
+  "itemTypeName" : "Tool-Pickaxe",
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Tool-Pickaxe-Extras-Being-Carried-F.png"
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Tool-Pickaxe-Extras-Being-Carried-F34.png"
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Tool-Pickaxe-Extras-Being-Carried-F34.png",
+      "flipX" : true
+    },
+    "UP" : {
+      "filename" : "Tool-Pickaxe-Extras-Being-Carried-B.png",
+      "offsetPixels" : {
+        "y" : 9.0
+      }
+    },
+    "UP_RIGHT" : {
+      "filename" : "Tool-Pickaxe-Extras-Being-Carried-B34.png",
+      "offsetPixels" : {
+        "y" : 12.0
+      }
+    },
+    "UP_LEFT" : {
+      "filename" : "Tool-Pickaxe-Extras-Being-Carried-B34.png",
+      "offsetPixels" : {
+        "x" : -6.0,
+        "y" : 13.0
+      },
+      "flipX" : true
+    }
+  }
+}, {
+  "uniqueName" : "Tool-Pickaxe-Handle-Being-Carried",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Tool-Pickaxe",
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Tool-Pickaxe-Handle-Being-Carried-F.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "templatedAnimationScripts" : {
+        "work_on_job_mining" : {
+          "use" : "handle-swing-down",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Mining",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Chipping rock"
+          }
+        },
+        "work_on_job_digging" : {
+          "use" : "handle-swing-down",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        },
+        "work_on_job_digging_channel" : {
+          "use" : "handle-swing-down",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        }
+      },
+      "offsetPixels" : {
+        "x" : -4.0,
+        "y" : 10.0
+      },
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      }, {
+        "type" : "ABOVE_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : 4.0,
+          "y" : -12.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Tool-Pickaxe-Handle-Being-Carried-F34.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "templatedAnimationScripts" : {
+        "work_on_job_mining" : {
+          "use" : "handle-swing-down-right",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Mining",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Chipping rock"
+          }
+        },
+        "work_on_job_digging" : {
+          "use" : "handle-swing-down-right",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        },
+        "work_on_job_digging_channel" : {
+          "use" : "handle-swing-down-right",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        }
+      },
+      "offsetPixels" : {
+        "x" : 10.0,
+        "y" : 10.0
+      },
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      }, {
+        "type" : "ABOVE_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -10.0,
+          "y" : -12.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Tool-Pickaxe-Handle-Being-Carried-F34.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "templatedAnimationScripts" : {
+        "work_on_job_mining" : {
+          "use" : "handle-swing-down-left",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Mining",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Chipping rock"
+          }
+        },
+        "work_on_job_digging" : {
+          "use" : "handle-swing-down-left",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        },
+        "work_on_job_digging_channel" : {
+          "use" : "handle-swing-down-left",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        }
+      },
+      "offsetPixels" : {
+        "x" : -10.0,
+        "y" : 10.0
+      },
+      "flipX" : true,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      }, {
+        "type" : "ABOVE_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : 10.0,
+          "y" : -12.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP" : {
+      "filename" : "Tool-Pickaxe-Handle-Being-Carried-B.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "templatedAnimationScripts" : {
+        "work_on_job_mining" : {
+          "use" : "handle-swing-up",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Mining",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Chipping rock"
+          }
+        },
+        "work_on_job_digging" : {
+          "use" : "handle-swing-up",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        },
+        "work_on_job_digging_channel" : {
+          "use" : "handle-swing-up",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        }
+      },
+      "offsetPixels" : {
+        "x" : 5.0,
+        "y" : 10.0
+      },
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      }, {
+        "type" : "ABOVE_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      } ]
+    },
+    "UP_RIGHT" : {
+      "filename" : "Tool-Pickaxe-Handle-Being-Carried-B34.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "templatedAnimationScripts" : {
+        "work_on_job_mining" : {
+          "use" : "handle-swing-up-right",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Mining",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Chipping rock"
+          }
+        },
+        "work_on_job_digging" : {
+          "use" : "handle-swing-up-right",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        },
+        "work_on_job_digging_channel" : {
+          "use" : "handle-swing-up-right",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        }
+      },
+      "offsetPixels" : {
+        "x" : 2.0,
+        "y" : 5.0
+      },
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1",
+        "offsetPixels" : {
+          "y" : -1.0,
+          "unit" : true
+        },
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      }, {
+        "type" : "ABOVE_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "y" : -6.0
+        }
+      } ]
+    },
+    "UP_LEFT" : {
+      "filename" : "Tool-Pickaxe-Handle-Being-Carried-B34.png",
+      "coloringLayer" : "WOOD_COLOR",
+      "templatedAnimationScripts" : {
+        "work_on_job_mining" : {
+          "use" : "handle-swing-up-left",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Mining",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Chipping rock"
+          }
+        },
+        "work_on_job_digging" : {
+          "use" : "handle-swing-up-left",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        },
+        "work_on_job_digging_channel" : {
+          "use" : "handle-swing-up-left",
+          "variables" : {
+            "__SOUND_NOTIFY_1__" : "Tilling",
+            "__PARTICLE_EFFECT_NOTIFY_1__" : "Digging ground offset tile"
+          }
+        }
+      },
+      "offsetPixels" : {
+        "x" : 29.0,
+        "y" : 8.0
+      },
+      "flipX" : true,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      }, {
+        "type" : "ABOVE_LAYER_1",
+        "inheritAnimations" : [ "work_on_job_mining", "work_on_job_digging", "work_on_job_digging_channel" ]
+      } ]
+    }
+  }
+}, {
+  "uniqueName" : "Tool-Pickaxe-Head-Being-Carried",
+  "type" : "ABOVE_LAYER_1",
+  "itemTypeName" : "Tool-Pickaxe",
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Tool-Pickaxe-Head-Being-Carried-F.png",
+      "coloringLayer" : "METAL_COLOR"
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Tool-Pickaxe-Head-Being-Carried-F34.png",
+      "coloringLayer" : "METAL_COLOR"
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Tool-Pickaxe-Head-Being-Carried-F34.png",
+      "coloringLayer" : "METAL_COLOR",
+      "flipX" : true
+    },
+    "UP" : {
+      "filename" : "Tool-Pickaxe-Head-Being-Carried-B.png",
+      "coloringLayer" : "METAL_COLOR",
+      "offsetPixels" : {
+        "x" : -1.0,
+        "y" : 10.0
+      }
+    },
+    "UP_RIGHT" : {
+      "filename" : "Tool-Pickaxe-Head-Being-Carried-B34.png",
+      "coloringLayer" : "METAL_COLOR",
+      "offsetPixels" : {
+        "x" : -2.0,
+        "y" : 13.0
+      }
+    },
+    "UP_LEFT" : {
+      "filename" : "Tool-Pickaxe-Head-Being-Carried-B34.png",
+      "coloringLayer" : "METAL_COLOR",
+      "offsetPixels" : {
+        "x" : 1.0,
+        "y" : 12.0
+      },
+      "flipX" : true
+    }
+  }
+} ]

@@ -1,0 +1,301 @@
+{
+com.badlogic.gdx.graphics.Color: {
+	black_20pc: {
+		r: 0
+		g: 0
+		b: 0
+		a: 0.19607843
+	}
+	invisible: {
+		r: 1
+		g: 1
+		b: 1
+		a: 0
+	}
+	primary_font_colour_red: {
+		r: 0.5686275
+		g: 0.21176471
+		b: 0.078431375
+		a: 1
+	}
+	progress_bar_green: {
+		r: 0.62352943
+		g: 0.75686276
+		b: 0
+		a: 1
+	}
+	progress_bar_red: {
+		r: 0.75686276
+		g: 0
+		b: 0.20784314
+		a: 1
+	}
+	progress_bar_yellow: {
+		r: 0.92941177
+		g: 0.6901961
+		b: 0
+		a: 1
+	}
+	search_bar_selection_colour: {
+		r: 0.6431373
+		g: 0.28627452
+		b: 0.16078432
+		a: 1
+	}
+	semi_transparent_accent_colour: {
+		r: 0.84313726
+		g: 0.69411767
+		b: 0.47843137
+		a: 0.24719101
+	}
+	white: {
+		r: 1
+		g: 1
+		b: 1
+		a: 1
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable: {
+	accent_bg: {
+		name: white-pixel
+		color: semi_transparent_accent_colour
+	}
+	search_bar_cursor: {
+		name: white-pixel
+		color: white
+	}
+	search_bar_selection: {
+		name: white-pixel
+		color: search_bar_selection_colour
+	}
+	invisible_pixel: {
+		name: white-pixel
+		color: invisible
+	}
+	drag_over_tint: {
+		name: white-pixel
+		color: black_20pc
+	}
+}
+com.ray3k.tenpatch.TenPatchDrawable: {
+	asset_more_info_bg_10patch: {
+		region: asset_more_info_bg
+		horizontalStretchAreas: [ 0, 687 ]
+		verticalStretchAreas: [ 0, 399 ]
+		tiling: true
+		minWidth: 688
+		minHeight: 400
+		rightWidth: 0
+		leftWidth: 0
+		bottomHeight: 0
+		topHeight: 0
+		offsetX: 0
+		offsetY: 0
+		offsetXspeed: 0
+		offsetYspeed: 0
+		frameDuration: 0.03
+		regions: []
+		playMode: 2
+		crushMode: 1
+	}
+	btn_oblong_small_10patch: {
+		region: btn_oblong_small
+		horizontalStretchAreas: [ 30, 101 ]
+		verticalStretchAreas: [ 30, 30 ]
+		tiling: false
+		minWidth: 132
+		minHeight: 61
+		rightWidth: 29
+		leftWidth: 30
+		bottomHeight: 6
+		topHeight: 6
+		offsetX: 0
+		offsetY: 0
+		offsetXspeed: 0
+		offsetYspeed: 0
+		frameDuration: 0.03
+		regions: []
+		playMode: 2
+		crushMode: 0
+	}
+	asset_bg_miliatry_skill_10patch: {
+		region: asset_bg_miliatry_skill
+		horizontalStretchAreas: [ 29, 539 ]
+		verticalStretchAreas: [ 0, 54 ]
+		tiling: false
+		minWidth: 569
+		minHeight: 55
+		rightWidth: 34
+		leftWidth: 34
+		bottomHeight: 0
+		topHeight: 0
+		offsetX: 0
+		offsetY: 0
+		offsetXspeed: 0
+		offsetYspeed: 0
+		frameDuration: 0.03
+		regions: []
+		playMode: 2
+		crushMode: 0
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	info_button: {
+		up: btn_info
+		over: btn_info_hover_state
+	}
+	toggle: {
+		up: btn_toggle_off
+		checked: btn_toggle_on
+	}
+	squad_card: {
+		up: asset_squad_menu_bg
+		checked: asset_squad_menu_bg_selected
+	}
+	remove_button: {
+		up: icon_remove_military
+	}
+	add_squad_button: {
+		up: btn_add_squad
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+	sort_by_button: {
+		imageUp: btn_sort_by_toggle_off
+		imageChecked: btn_sort_by_toggle_on
+	}
+	military_equipment_assignment: {
+		up: btn_military_slot_bg
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle: {
+	sort_by_button: {
+		imageUp: asset_trangle_red
+		imageChecked: btn_sort_by_toggle_on
+		font: default-font-23
+		fontColor: primary_font_colour_red
+	}
+	text_toggle: {
+		imageUp: btn_toggle_off
+		imageChecked: btn_toggle_on
+		font: default-font-23
+		fontColor: primary_font_colour_red
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: {
+		font: default-font-16
+	}
+	stockpile_group_filter_label: {
+		font: header-font-36
+		fontColor: primary_font_colour_red
+	}
+	sort_by_label: {
+		font: default-font-23
+		fontColor: primary_font_colour_red
+	}
+	item_type_name_label: {
+		font: default-font-16
+		fontColor: primary_font_colour_red
+	}
+	table_value_label: {
+		font: default-font-23
+		fontColor: primary_font_colour_red
+	}
+	entity_drawable_quantity_label: {
+		font: default-font-16
+		fontColor: white
+		background: icon_number_bg
+	}
+	progress_bar_label: {
+		font: default-font-16
+		fontColor: primary_font_colour_red
+	}
+	progress_bar_white_label: {
+		font: default-font-16
+		fontColor: white
+	}
+	military_highest_proficiency_label: {
+		font: default-font-18
+		fontColor: primary_font_colour_red
+		background: asset_bg_miliatry_skill_10patch
+	}
+	default-font-18-label: {
+		font: default-font-18
+		fontColor: primary_font_colour_red
+	}
+	default-font-16-label: {
+		font: default-font-16
+		fontColor: primary_font_colour_red
+	}
+	military_title_ribbon: {
+		font: header-font-36
+		fontColor: primary_font_colour_red
+		background: asset_title_ribbon
+	}
+	military_subtitle_ribbon: {
+		font: header-font-36
+		fontColor: primary_font_colour_red
+		background: Secondary_Ribbon_Military
+	}
+	default-font-16-label-white: {
+		parent: default-font-16-label
+		fontColor: white
+	}
+	default-font-18-label-white: {
+		parent: default-font-18-label
+		fontColor: white
+	}
+	military_squad_name_ribbon: {
+		font: default-font-24
+		fontColor: primary_font_colour_red
+		background: asset_bg_military_squad
+	}
+	default-font-23-label: {
+		font: default-font-23
+		fontColor: primary_font_colour_red
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ProgressBar$ProgressBarStyle: {
+	default-horizontal: {
+		background: bar_bg
+		knobBefore: progress_bar_knob
+	}
+	progress_bar_darker_bg-horizontal: {
+		background: bar_bg_dark
+		knobBefore: progress_bar_knob
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	goto_dwarf_button: {
+		font: default-font-24
+		fontColor: white
+		up: btn_go_to_dwarf_info
+	}
+	military_text_button: {
+		font: default-font-16
+		fontColor: white
+		up: btn_oblong_small_10patch
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+	search_bar_input: {
+		font: default-font-18
+		fontColor: white
+		background: search_bar_v3.9
+		cursor: search_bar_cursor
+		selection: search_bar_selection
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Tree$TreeStyle: {
+	default: {
+		plus: invisible_pixel
+		minus: invisible_pixel
+	}
+}
+}

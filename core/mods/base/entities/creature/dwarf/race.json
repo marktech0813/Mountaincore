@@ -1,0 +1,89 @@
+{
+  "name" : "Dwarf",
+  "i18nKey" : "RACE.DWARF",
+  "nameGeneration" : "Dwarven",
+  "minStrength" : 7.0,
+  "maxStrength" : 19.0,
+  "bodyStructureName" : "Humanoid",
+  "bodyShapes" : [ {
+    "value" : "FAT",
+    "maxStrength" : 10.0
+  }, {
+    "value" : "STRONG",
+    "minStrength" : 14.5
+  }, {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "HAIR_COLOR" : {
+      "colorChart" : "dwarf-hair-swatch.png"
+    },
+    "SKIN_COLOR" : {
+      "colorChart" : "dwarf-skin-swatch.png"
+    },
+    "EYE_COLOR" : {
+      "colorCode" : "#000000"
+    },
+    "CLOTHING_COLOR" : {
+      "colorChart" : "dwarf-accessory-swatch.png"
+    },
+    "ACCESSORY_COLOR" : {
+      "colorChart" : "dwarf-accessory-swatch.png"
+    },
+    "BONE_COLOR" : {
+      "colorCode" : "#fbfbf9"
+    }
+  },
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Default Settler Schedule",
+    "needs" : [ "FOOD", "DRINK", "SLEEP" ],
+    "aggressionResponse" : "FLEE",
+    "isSapient" : true
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : {
+        "CREATURE_HAIR" : 0.4
+      }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : {
+        "CREATURE_EYEBROWS" : 1.0,
+        "CREATURE_BEARD" : 1.0
+      }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "maxDefensePoints" : 20,
+      "maxDefenseRegainedPerRound" : 3,
+      "damageReduction" : {
+        "STABBING" : 1,
+        "SLASHING" : 2,
+        "CRUSHING" : 2
+      }
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "CRUSHING",
+      "modifiedByStrength" : true,
+      "minDamage" : 1,
+      "maxDamage" : 4,
+      "weaponHitSoundAssetName" : "SFX_Punch_Impact",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Weapon slash"
+    },
+    "skin" : {
+      "itemTypeName" : "Carcass-Hide",
+      "quantity" : 1,
+      "materialName" : "Dwarf Flesh"
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : { }
+  }
+}

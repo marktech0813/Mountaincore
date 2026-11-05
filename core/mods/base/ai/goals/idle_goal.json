@@ -1,0 +1,10 @@
+{
+  "name": "Idle goal",
+  "i18nDescription": "GOAL.IDLE.DESCRIPTION",
+  "interruptedByLowNeeds": false,
+  "selectors": [],
+  "initialActions": ["Idle"],
+  "actionRelationships": {
+    "Idle": {}
+  }
+}

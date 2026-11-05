@@ -1,0 +1,18 @@
+{
+  "name" : "ARCHERY_TARGET",
+  "i18nKey" : "FURNITURE.ARCHERY_TARGET",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with S workspace offset 6",
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3
+    } ]
+  },
+  "tags" : {
+    "WORKSPACE_LOCATIONS_MUST_BE_INSIDE_ROOM" : [ ],
+    "TRAINING_EQUIPMENT": ["RANGED"],
+    "FLAT_DAMAGE_REDUCTION": ["10"],
+    "EXTRA_FURNITURE_HITPOINTS": ["300"]
+  }
+}

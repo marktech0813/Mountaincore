@@ -1,0 +1,27 @@
+{
+  "name": "WINDMILL",
+  "i18nKey": "FURNITURE.WINDMILL",
+  "blocksMovement": true,
+  "defaultLayoutName": "2x3 no rotation",
+  "showInGuiView": "POWER_WATER_MENU",
+  "requirements": {
+    "WOOD": [
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 8
+      },
+      {
+        "itemTypeName": "Resource-Stone-Block",
+        "quantity": 4
+      },
+      {
+        "itemTypeName": "Product-Linen",
+        "quantity": 4
+      }
+    ]
+  },
+  "tags": {
+    "FURNITURE_BEHAVIOUR": ["POWER_SOURCE"],
+    "POWERED_FURNITURE": [18, 0.9]
+  }
+}

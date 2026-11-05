@@ -1,0 +1,1176 @@
+[ {
+  "i18nDescription" : "GOAL.ABANDON_JOB.DESCRIPTION",
+  "name" : "Abandon job goal",
+  "actionRelationships" : {
+    "UnassignJob" : { }
+  },
+  "selectors" : [ ],
+  "interruptedByCombat" : false,
+  "initialActions" : [ "UnassignJob" ]
+}, {
+  "i18nDescription" : "GOAL.ADD_TO_INVENTORY.DESCRIPTION",
+  "expiryHours" : 12,
+  "creatureCategories" : [ "CIVILIAN", "MILITARY" ],
+  "name" : "Add to inventory goal",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : { },
+    "FindItem" : {
+      "pass" : [ "GoToLocation" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "RememberRequiredItem" : {
+      "pass" : [ "FindItem" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "ForgetRelevantMemory" ]
+    },
+    "ForgetRelevantMemory" : { }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "memoryType" : "LACKING_REQUIRED_ITEM",
+      "type" : "MEMORY"
+    } ],
+    "priority" : "JOB_NORMAL"
+  } ],
+  "initialActions" : [ "RememberRequiredItem" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.ADD_TO_INVENTORY.DESCRIPTION",
+  "expiryHours" : 12,
+  "creatureCategories" : [ "CIVILIAN", "MILITARY" ],
+  "name" : "Collect assigned item",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : { },
+    "GoToLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "SelectItemAssignment" : {
+      "pass" : [ "GoToLocation" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "type" : "ITEM_ASSIGNED"
+    } ],
+    "priority" : "JOB_URGENT"
+  } ],
+  "initialActions" : [ "SelectItemAssignment" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "ACTION.SELECT_JOB.DESCRIPTION",
+  "creatureCategories" : [ "CIVILIAN" ],
+  "name" : "Crafting job goal",
+  "actionRelationships" : {
+    "CheckReadyToCraft" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToLocation" ]
+    },
+    "WorkOnJob" : {
+      "fail" : [ "UnequipItemForJob", "UnassignJob" ],
+      "pass" : [ "CancelInterruptedFlag", "UnequipItemForJob", "CheckForPendingOutput" ]
+    },
+    "MoveInputToCraftingStation" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "CheckReadyToCraft" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "FaceTowardsLocation", "EquipItemForJobFromFurniture", "WorkOnJob" ]
+    },
+    "EquipItemForJobFromFurniture" : { },
+    "CheckForPendingOutput" : {
+      "fail" : [ "CancelProductionOutputAssignmentsOnCraftingStation", "MarkCraftingAssignmentComplete" ],
+      "pass" : [ "MoveOutputToExportSpot" ]
+    },
+    "CancelProductionOutputAssignmentsOnCraftingStation" : { },
+    "UnequipItemForJob" : { },
+    "CancelInterruptedFlag" : { },
+    "MoveOutputToExportSpot" : {
+      "fail" : [ "CancelProductionOutputAssignmentsOnCraftingStation", "MarkCraftingAssignmentComplete" ],
+      "pass" : [ "CheckForPendingOutput" ]
+    },
+    "MoveLiquidInputToCraftingStation" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "MoveInputToCraftingStation" ]
+    },
+    "MarkCraftingAssignmentComplete" : { },
+    "EquipItemForJobFromInventory" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "UnassignJob" : { },
+    "FaceTowardsLocation" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "MoveLiquidInputToCraftingStation" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.ON_FIRE.DESCRIPTION",
+  "name" : "Douse self goal",
+  "actionRelationships" : {
+    "CancelLiquidAllocation" : { },
+    "GoToDrinkLocation" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ ]
+    },
+    "DouseSelf" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ ]
+    }
+  },
+  "selectors" : [ ],
+  "interruptedByCombat" : false,
+  "initialActions" : [ "GoToDrinkLocation", "DouseSelf" ]
+}, {
+  "i18nDescription" : "GOAL.IDLE.DESCRIPTION",
+  "name" : "Do nothing goal",
+  "actionRelationships" : {
+    "Pause" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "Pause" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.DRINK.DESCRIPTION",
+  "creatureCategories" : [ "CIVILIAN", "MILITARY", "MERCHANT" ],
+  "name" : "Drink goal",
+  "actionRelationships" : {
+    "LocateDrink" : {
+      "fail" : [ ],
+      "pass" : [ "GoToDrinkLocation" ]
+    },
+    "CancelLiquidAllocation" : { },
+    "GoToDrinkLocation" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ "FaceTowardsLocation" ]
+    },
+    "PourDrinkIntoTankard" : {
+      "fail" : [ "ConsumeLiquidFromContainer" ],
+      "pass" : [ "FindPlaceToEat" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "ConsumeLiquidFromTankard" ],
+      "pass" : [ "PlaceFoodOrDrinkOnFurniture", "ConsumeLiquidFromTankard" ]
+    },
+    "GoToRandomLocation" : {
+      "fail" : [ "ConsumeLiquidFromTankard" ],
+      "pass" : [ "ConsumeLiquidFromTankard" ]
+    },
+    "UnassignFurniture" : { },
+    "FindPlaceToEat" : {
+      "fail" : [ "GoToRandomLocation" ],
+      "pass" : [ "GoToLocation" ]
+    },
+    "ConsumeLiquidFromTankard" : {
+      "fail" : [ "UnassignFurniture" ],
+      "pass" : [ "UnassignFurniture" ]
+    },
+    "PlaceFoodOrDrinkOnFurniture" : { },
+    "FaceTowardsLocation" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ "PourDrinkIntoTankard" ]
+    },
+    "ConsumeLiquidFromContainer" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "need" : "DRINK",
+      "type" : "NEED",
+      "value" : 25,
+      "operator" : "LESS_THAN_OR_EQUAL_TO"
+    } ],
+    "priority" : "NEED_URGENT"
+  }, {
+    "scheduleCategory" : "NOURISHMENT",
+    "conditions" : [ {
+      "need" : "DRINK",
+      "type" : "NEED",
+      "value" : 70,
+      "operator" : "LESS_THAN_OR_EQUAL_TO"
+    } ],
+    "priority" : "WANT_NORMAL"
+  } ],
+  "initialActions" : [ "LocateDrink" ]
+}, {
+  "i18nDescription" : "GOAL.HAULING.DESCRIPTION",
+  "name" : "Dump item goal",
+  "actionRelationships" : {
+    "PlaceEntity" : { },
+    "GoToRandomEmptyLocation" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToRandomEmptyLocation", "PlaceEntity" ]
+}, {
+  "i18nDescription" : "GOAL.DUMP_LIQUID.DESCRIPTION",
+  "name" : "Dump liquid goal",
+  "actionRelationships" : {
+    "WorkOnJob" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "PlaceEntity" ]
+    },
+    "CancelHaulingAllocation" : { },
+    "PlaceEntity" : { },
+    "GoToLocation" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "WorkOnJob" ]
+    },
+    "JobCompleted" : { },
+    "UnassignJob" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "CancelHaulingAllocation" ]
+    }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToLocation", "PickUpEntity" ]
+}, {
+  "i18nDescription" : "GOAL.EAT.DESCRIPTION",
+  "name" : "Eat food goal",
+  "actionRelationships" : {
+    "GoToFoodLocation" : {
+      "fail" : [ "CancelFoodAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "ConsumeFood" : {
+      "fail" : [ "UnassignFurniture" ],
+      "pass" : [ "UnassignFurniture" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "ConsumeFood" ],
+      "pass" : [ "PlaceFoodOrDrinkOnFurniture", "ConsumeFood" ]
+    },
+    "CancelFoodAllocation" : { },
+    "GoToRandomLocation" : {
+      "fail" : [ "ConsumeFood" ],
+      "pass" : [ "ConsumeFood" ]
+    },
+    "UnassignFurniture" : { },
+    "FindPlaceToEat" : {
+      "fail" : [ "GoToRandomLocation" ],
+      "pass" : [ "GoToLocation" ]
+    },
+    "EquipItemFromFoodAllocation" : {
+      "fail" : [ "CancelFoodAllocation" ],
+      "pass" : [ "FindPlaceToEat" ]
+    },
+    "PlaceFoodOrDrinkOnFurniture" : { },
+    "LocateFood" : {
+      "fail" : [ ],
+      "pass" : [ "GoToFoodLocation" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelFoodAllocation" ],
+      "pass" : [ "EquipItemFromFoodAllocation" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "need" : "FOOD",
+      "type" : "NEED",
+      "value" : 25,
+      "operator" : "LESS_THAN_OR_EQUAL_TO"
+    } ],
+    "priority" : "NEED_URGENT"
+  }, {
+    "scheduleCategory" : "NOURISHMENT",
+    "conditions" : [ {
+      "need" : "FOOD",
+      "type" : "NEED",
+      "value" : 70,
+      "operator" : "LESS_THAN_OR_EQUAL_TO"
+    } ],
+    "priority" : "WANT_NORMAL"
+  } ],
+  "initialActions" : [ "LocateFood" ]
+}, {
+  "i18nDescription" : "GOAL.EXTINGUISH_FIRE.DESCRIPTION",
+  "name" : "Extinguish fire goal",
+  "actionRelationships" : {
+    "WorkOnJob" : {
+      "fail" : [ "RequeueSameJobType" ]
+    },
+    "CancelLiquidAllocation" : { },
+    "GoToLocation" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "FillContainer" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToJobLocation" ]
+    },
+    "RequeueSameJobType" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToJobLocation" ]
+    },
+    "LocateLiquidAllocation" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToLocation", "FillContainer" ]
+    },
+    "LocateEmptyLiquidContainer" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToLocation", "PickUpEntity" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "LocateLiquidAllocation" ]
+    },
+    "CancelHaulingAllocation" : { },
+    "GoToJobLocation" : {
+      "fail" : [ "RequeueSameJobType" ],
+      "pass" : [ "FaceTowardsLocation", "WorkOnJob" ]
+    },
+    "LocateLiquidContainerWithContents" : {
+      "fail" : [ "LocateEmptyLiquidContainer" ],
+      "pass" : [ "GoToLocation", "PickUpEntity" ]
+    },
+    "UnassignJob" : {
+      "fail" : [ "CancelLiquidAllocation", "CancelHaulingAllocation" ],
+      "pass" : [ "CancelLiquidAllocation", "CancelHaulingAllocation" ]
+    },
+    "FaceTowardsLocation" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "LocateLiquidContainerWithContents" ]
+}, {
+  "i18nDescription" : "GOAL.IDLE.DESCRIPTION",
+  "name" : "Go to settlement goal",
+  "actionRelationships" : {
+    "GoToSettlement" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToSettlement" ],
+  "interruptedByLowNeeds" : false
+}, {
+  "i18nDescription" : "GOAL.HAULING.DESCRIPTION",
+  "name" : "Haul item goal",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "UnassignJob" ]
+    },
+    "PlaceEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "JobCompleted" ]
+    },
+    "GoToHaulingSourceLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "GoToHaulingTargetLocation" ]
+    },
+    "GoToHaulingTargetLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PlaceEntity" ]
+    },
+    "JobCompleted" : { },
+    "UnassignJob" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToHaulingSourceLocation" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.IDLE.DESCRIPTION",
+  "name" : "Idle goal",
+  "actionRelationships" : {
+    "Idle" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "Idle" ],
+  "interruptedByLowNeeds" : false
+}, {
+  "i18nDescription" : "GOAL.INVADER.CREATE_CAMP.DESCRIPTION",
+  "creatureCategories" : [ "INVADER" ],
+  "name" : "Create camp fire",
+  "actionRelationships" : {
+    "MoveGroupHomeTowardSettlers" : {
+      "pass" : [ "GoToGoalTargetLocation" ]
+    },
+    "GoToGoalTargetLocation" : {
+      "pass" : [ "CreateCampfire" ]
+    },
+    "CreateCampfire" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "MoveGroupHomeTowardSettlers" ]
+}, {
+  "i18nDescription" : "GOAL.INVADER.RETREAT.DESCRIPTION",
+  "creatureCategories" : [ "INVADER", "MERCHANT" ],
+  "name" : "Invasion retreat",
+  "actionRelationships" : {
+    "SelectRetreatLocation" : {
+      "pass" : [ "GoToGoalTargetLocation" ]
+    },
+    "GoToGoalTargetLocation" : {
+      "pass" : [ "RemoveFromMap" ]
+    },
+    "RemoveFromMap" : { }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "invasionStage" : "RETREATING",
+      "type" : "INVASION_IN_STAGE"
+    } ],
+    "priority" : "HIGHEST"
+  }, {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "stage" : "LEAVING",
+      "type" : "TRADERS_IN_STAGE"
+    } ],
+    "priority" : "HIGHEST"
+  } ],
+  "initialActions" : [ "SelectRetreatLocation" ]
+}, {
+  "i18nDescription" : "GOAL.INVADER.STEAL_RESOURCES.DESCRIPTION",
+  "creatureCategories" : [ "INVADER" ],
+  "name" : "Steal resources",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : { },
+    "SelectItemToSteal" : {
+      "pass" : [ "GoToLocation" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "ShortPause" ]
+    },
+    "ShortPause" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "VictoryPointsForStealing" : { },
+    "PickUpEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "VictoryPointsForStealing" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "MILITARY_DUTY",
+    "conditions" : [ {
+      "invasionStage" : "RAIDING",
+      "type" : "INVASION_IN_STAGE"
+    } ],
+    "priority" : "JOB_NORMAL"
+  } ],
+  "initialActions" : [ "SelectItemToSteal" ]
+}, {
+  "creatureCategories" : [ "MERCHANT" ],
+  "name" : "Board vehicle",
+  "actionRelationships" : {
+    "CheckAllVehiclesBoarded" : {
+      "fail" : [ ],
+      "pass" : [ "ProgressTraderStage" ]
+    },
+    "BoardVehicle" : {
+      "fail" : [ ],
+      "pass" : [ "CheckAllVehiclesBoarded" ]
+    },
+    "ProgressTraderStage" : { },
+    "GoToGoalTargetLocation" : {
+      "fail" : [ ],
+      "pass" : [ "BoardVehicle" ]
+    },
+    "LocateVehicle" : {
+      "fail" : [ ],
+      "pass" : [ "GoToGoalTargetLocation" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "stage" : "PREPARING_TO_LEAVE",
+      "type" : "TRADERS_IN_STAGE"
+    }, {
+      "skillName" : "MERCHANT",
+      "type" : "SKILL",
+      "value" : 0,
+      "operator" : "GREATER_THAN"
+    }, {
+      "type" : "IS_DRIVING_VEHICLE",
+      "value" : false
+    } ],
+    "priority" : "HIGHEST"
+  } ],
+  "initialActions" : [ "LocateVehicle" ]
+}, {
+  "creatureCategories" : [ "MERCHANT" ],
+  "name" : "Dock trade wagon",
+  "actionRelationships" : {
+    "CheckAllGroupVehiclesEmpty" : {
+      "fail" : [ ],
+      "pass" : [ "ProgressTraderStageToTrading" ]
+    },
+    "LocateHitchingPostSpace" : {
+      "fail" : [ "ExitVehicle" ],
+      "pass" : [ "GoToGoalTargetLocation" ]
+    },
+    "GoToRandomLocation" : { },
+    "ProgressTraderStageToTrading" : { },
+    "ExitVehicle" : {
+      "fail" : [ "CheckAllGroupVehiclesEmpty" ],
+      "pass" : [ "CheckAllGroupVehiclesEmpty", "GoToRandomLocation" ]
+    },
+    "GoToGoalTargetLocation" : {
+      "fail" : [ "ExitVehicle" ],
+      "pass" : [ "FaceTowardsLocation", "ExitVehicle" ]
+    },
+    "FaceTowardsLocation" : { }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "stage" : "ARRIVED_AT_TRADE_DEPOT",
+      "type" : "TRADERS_IN_STAGE"
+    }, {
+      "type" : "IS_DRIVING_VEHICLE",
+      "value" : true
+    } ],
+    "priority" : "HIGHEST"
+  } ],
+  "initialActions" : [ "LocateHitchingPostSpace" ]
+}, {
+  "creatureCategories" : [ "MERCHANT" ],
+  "name" : "Move group towards settlement",
+  "actionRelationships" : {
+    "ProgressTraderStage" : { },
+    "MerchantNotificationToPlayer" : {
+      "fail" : [ ],
+      "pass" : [ "ProgressTraderStage" ]
+    },
+    "MoveGroupHomeTowardSettlers" : {
+      "fail" : [ "MerchantNotificationToPlayer" ],
+      "pass" : [ "GoToGoalTargetLocation" ]
+    },
+    "GoToGoalTargetLocation" : {
+      "fail" : [ "MerchantNotificationToPlayer" ],
+      "pass" : [ "MerchantNotificationToPlayer" ]
+    }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "MoveGroupHomeTowardSettlers" ]
+}, {
+  "creatureCategories" : [ "MERCHANT" ],
+  "name" : "Move to trade depot",
+  "actionRelationships" : {
+    "GoToRoomWithGroupHome" : {
+      "fail" : [ ],
+      "pass" : [ "ProgressTraderStageToArrived" ]
+    },
+    "MoveGroupHomeToTradeDepot" : { },
+    "ProgressTraderStageToArrived" : { }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "stage" : "MOVING_TO_TRADE_DEPOT",
+      "type" : "TRADERS_IN_STAGE"
+    } ],
+    "priority" : "HIGHEST"
+  } ],
+  "initialActions" : [ "MoveGroupHomeToTradeDepot", "GoToRoomWithGroupHome" ]
+}, {
+  "creatureCategories" : [ "MERCHANT" ],
+  "name" : "Purchase item as merchant",
+  "actionRelationships" : {
+    "GoToWagonWithItem" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "PlaceEntity" ]
+    },
+    "CancelHaulingAllocation" : { },
+    "PlaceEntity" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "GoToPaymentLocation" ]
+    },
+    "GoToRandomEmptyLocation" : {
+      "fail" : [ "PlacePayment" ],
+      "pass" : [ "PlacePayment" ]
+    },
+    "TradeCompleted" : { },
+    "GoToPaymentLocation" : {
+      "fail" : [ "CancelHaulingAllocation", "GoToRandomEmptyLocation" ],
+      "pass" : [ "PlacePayment" ]
+    },
+    "RequeueThisGoal" : { },
+    "PlacePayment" : {
+      "fail" : [ "CancelHaulingAllocation", "GoToRandomEmptyLocation" ],
+      "pass" : [ "TradeCompleted", "RequeueThisGoal" ]
+    },
+    "CancelTrade" : { },
+    "PlanMerchantPurchase" : {
+      "fail" : [ ],
+      "pass" : [ "GoToTradeFurnitureLocation" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "GoToWagonWithItem" ]
+    },
+    "GoToTradeFurnitureLocation" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "PickUpEntity" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "stage" : "TRADING",
+      "type" : "TRADERS_IN_STAGE"
+    } ],
+    "priority" : "JOB_NORMAL"
+  } ],
+  "initialActions" : [ "PlanMerchantPurchase" ]
+}, {
+  "creatureCategories" : [ "MERCHANT" ],
+  "name" : "Sell item as merchant",
+  "actionRelationships" : {
+    "GoToWagonWithItem" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "PlaceEntity" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "GoToPaymentLocation" ]
+    },
+    "TradeCompleted" : { },
+    "GoToPaymentLocation" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "PickUpPayment" ]
+    },
+    "RequeueThisGoal" : { },
+    "PickUpPayment" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "TradeCompleted", "RequeueThisGoal" ]
+    },
+    "CancelTrade" : { },
+    "PickUpEntity" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "GoToTradeFurnitureLocation" ]
+    },
+    "PlanMerchantSale" : {
+      "fail" : [ ],
+      "pass" : [ "GoToWagonWithItem" ]
+    },
+    "GoToTradeFurnitureLocation" : {
+      "fail" : [ "CancelTrade" ],
+      "pass" : [ "PlaceEntity" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "stage" : "TRADING",
+      "type" : "TRADERS_IN_STAGE"
+    } ],
+    "priority" : "JOB_NORMAL"
+  } ],
+  "initialActions" : [ "PlanMerchantSale" ]
+}, {
+  "i18nDescription" : "GOAL.MILITARY.ATTACK_TARGET.DESCRIPTION",
+  "creatureCategories" : [ "MILITARY" ],
+  "name" : "Attack squad target",
+  "actionRelationships" : {
+    "RequeueThisGoal" : { },
+    "AttackOpponent" : { },
+    "SelectOpponent" : {
+      "fail" : [ ],
+      "pass" : [ "MoveTowardsOpponent" ]
+    },
+    "MoveTowardsOpponent" : {
+      "fail" : [ "RequeueThisGoal" ],
+      "pass" : [ "AttackOpponent" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "MILITARY_DUTY",
+    "conditions" : [ {
+      "orderType" : "COMBAT",
+      "type" : "SQUAD_HAS_ORDERS"
+    } ],
+    "priority" : "JOB_NORMAL"
+  } ],
+  "initialActions" : [ "SelectOpponent" ]
+}, {
+  "i18nDescription" : "GOAL.MILITARY.TRAINING.DESCRIPTION",
+  "creatureCategories" : [ "MILITARY" ],
+  "name" : "Military training",
+  "actionRelationships" : {
+    "AttackTrainingFurniture" : {
+      "fail" : [ "UnassignFurniture" ],
+      "pass" : [ "UnassignFurniture", "RequeueThisGoal" ]
+    },
+    "EquipWeapon" : {
+      "fail" : [ ],
+      "pass" : [ "CheckAmmoAvailable" ]
+    },
+    "LocateTrainingFurniture" : {
+      "fail" : [ "UnassignFurniture" ],
+      "pass" : [ "GoToLocation" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "UnassignFurniture" ],
+      "pass" : [ "FaceTowardsLocation", "AttackTrainingFurniture" ]
+    },
+    "UnassignFurniture" : {
+      "fail" : [ "UnequipWeapon" ],
+      "pass" : [ "UnequipWeapon" ]
+    },
+    "RequeueThisGoal" : { },
+    "UnequipWeapon" : { },
+    "CheckAmmoAvailable" : {
+      "fail" : [ "UnequipWeapon" ],
+      "pass" : [ "LocateTrainingFurniture" ]
+    },
+    "FaceTowardsLocation" : { }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "MILITARY_DUTY",
+    "conditions" : [ {
+      "orderType" : "TRAINING",
+      "type" : "SQUAD_HAS_ORDERS"
+    }, {
+      "type" : "COMBAT_SKILL_LEVEL",
+      "value" : 50,
+      "operator" : "LESS_THAN_OR_EQUAL_TO"
+    } ],
+    "priority" : "JOB_NORMAL"
+  } ],
+  "initialActions" : [ "EquipWeapon" ]
+}, {
+  "i18nDescription" : "GOAL.MILITARY.STAND_IN_FORMATION.DESCRIPTION",
+  "creatureCategories" : [ "MILITARY" ],
+  "name" : "Stand in formation",
+  "actionRelationships" : {
+    "StandToAttention" : {
+      "pass" : [ "RequeueThisGoal" ]
+    },
+    "GoToSquadFormationPosition" : {
+      "pass" : [ "StandToAttention" ]
+    },
+    "RequeueThisGoal" : { }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "MILITARY_DUTY",
+    "conditions" : [ {
+      "orderType" : "GUARDING",
+      "type" : "SQUAD_HAS_ORDERS"
+    } ],
+    "priority" : "JOB_NORMAL"
+  } ],
+  "initialActions" : [ "GoToSquadFormationPosition" ]
+}, {
+  "i18nDescription" : "GOAL.ADD_TO_INVENTORY.DESCRIPTION",
+  "expiryHours" : 12,
+  "creatureCategories" : [ "MILITARY" ],
+  "name" : "Stock ammunition (military)",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : { },
+    "GoToLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "FindAmmoForAssignedWeapon" : {
+      "pass" : [ "GoToLocation" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "type" : "ASSIGNED_WEAPON_REQUIRES_AMMO",
+      "value" : 11,
+      "operator" : "LESS_THAN",
+      "targetQuantity" : 20
+    } ],
+    "priority" : "JOB_URGENT"
+  } ],
+  "interruptedByCombat" : true,
+  "initialActions" : [ "FindAmmoForAssignedWeapon" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.ADD_TO_INVENTORY.DESCRIPTION",
+  "expiryHours" : 12,
+  "creatureCategories" : [ "MILITARY" ],
+  "name" : "Stock ration (military)",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : { },
+    "GoToLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "FindItemFromInventorySelectors" : {
+      "pass" : [ "GoToLocation" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "NOURISHMENT",
+    "conditions" : [ {
+      "need" : "FOOD",
+      "type" : "NEED",
+      "value" : -10,
+      "operator" : "GREATER_THAN"
+    }, {
+      "itemType" : "Product-Ration",
+      "type" : "INVENTORY",
+      "value" : 7,
+      "operator" : "LESS_THAN",
+      "targetQuantity" : 10
+    } ],
+    "priority" : "JOB_NORMAL"
+  } ],
+  "interruptedByCombat" : true,
+  "initialActions" : [ "FindItemFromInventorySelectors" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.TRANSFER_LIQUID.DESCRIPTION",
+  "name" : "Move liquid in item goal",
+  "actionRelationships" : {
+    "WorkOnJob" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "CancelHaulingAllocation" : { },
+    "CancelLiquidAllocation" : { },
+    "GoToLocation" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "GoToJobLocation" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "FaceTowardsLocation", "WorkOnJob" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToJobLocation" ]
+    },
+    "UnassignJob" : {
+      "fail" : [ "CancelLiquidAllocation", "CancelHaulingAllocation" ],
+      "pass" : [ "CancelLiquidAllocation", "CancelHaulingAllocation" ]
+    },
+    "FaceTowardsLocation" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToLocation", "PickUpEntity" ]
+}, {
+  "i18nDescription" : "GOAL.HAULING.DESCRIPTION",
+  "name" : "Place item goal",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : {
+      "fail" : [ "RememberFailedGoal" ],
+      "pass" : [ "RememberFailedGoal" ]
+    },
+    "RememberFailedGoal" : { },
+    "PlaceEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PlaceEntity" ]
+    }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToLocation" ]
+}, {
+  "i18nDescription" : "GOAL.REFILL_WATERSKIN.DESCRIPTION",
+  "creatureCategories" : [ "CIVILIAN", "MILITARY" ],
+  "name" : "Refill inventory liquid containers",
+  "actionRelationships" : {
+    "RefillInventoryLiquidContainers" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ "UnassignFurniture" ]
+    },
+    "CancelLiquidAllocation" : { },
+    "GoToDrinkLocation" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ "FaceTowardsLocation" ]
+    },
+    "UnassignFurniture" : { },
+    "InspectInventoryLiquidContainers" : {
+      "fail" : [ ],
+      "pass" : [ "GoToDrinkLocation" ]
+    },
+    "FaceTowardsLocation" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ "RefillInventoryLiquidContainers" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "NOURISHMENT",
+    "conditions" : [ {
+      "type" : "HAS_LIQUID_CONTAINER_NEEDING_FILLING"
+    } ],
+    "priority" : "WANT_NORMAL"
+  } ],
+  "initialActions" : [ "InspectInventoryLiquidContainers" ]
+}, {
+  "i18nDescription" : "GOAL.TRANSFER_LIQUID.DESCRIPTION",
+  "name" : "Remove liquid goal",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : { },
+    "CancelLiquidAllocation" : { },
+    "GoToLocation" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "FillContainer" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "JobCompleted" ]
+    },
+    "GoToJobLocation" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToJobLocation", "FillContainer" ]
+    },
+    "JobCompleted" : { },
+    "UnassignJob" : {
+      "fail" : [ "CancelLiquidAllocation", "CancelHaulingAllocation" ],
+      "pass" : [ "CancelLiquidAllocation", "CancelHaulingAllocation" ]
+    }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToLocation", "PickUpEntity" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.ON_FIRE.DESCRIPTION",
+  "name" : "Roll on floor goal",
+  "actionRelationships" : {
+    "RollAround" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "RollAround" ]
+}, {
+  "i18nDescription" : "GOAL.SLEEP.DESCRIPTION",
+  "name" : "Sleep in bed goal",
+  "actionRelationships" : {
+    "SleepInBed" : {
+      "fail" : [ "GoToLocation" ],
+      "pass" : [ "UnassignFurniture" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "UnassignFurniture", "SleepOnFloor" ],
+      "pass" : [ "SleepInBed" ]
+    },
+    "GoToRandomLocation" : { },
+    "UnassignFurniture" : { },
+    "SleepOnFloor" : { },
+    "LocateBed" : {
+      "fail" : [ "GoToRandomLocation", "SleepOnFloor" ],
+      "pass" : [ "GoToLocation" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "need" : "SLEEP",
+      "type" : "NEED",
+      "value" : 10,
+      "operator" : "LESS_THAN_OR_EQUAL_TO"
+    } ],
+    "priority" : "NEED_URGENT"
+  }, {
+    "scheduleCategory" : "SLEEP",
+    "conditions" : [ {
+      "need" : "SLEEP",
+      "type" : "NEED",
+      "value" : 70,
+      "operator" : "LESS_THAN_OR_EQUAL_TO"
+    } ],
+    "priority" : "WANT_NORMAL"
+  } ],
+  "initialActions" : [ "LocateBed" ]
+}, {
+  "i18nDescription" : "GOAL.ADD_TO_INVENTORY.DESCRIPTION",
+  "expiryHours" : 12,
+  "creatureCategories" : [ "CIVILIAN" ],
+  "name" : "Stock ration (civilian)",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : { },
+    "GoToLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "FindItemFromInventorySelectors" : {
+      "pass" : [ "GoToLocation" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelHaulingAllocation" ]
+    }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "FREE_TIME",
+    "conditions" : [ {
+      "need" : "FOOD",
+      "type" : "NEED",
+      "value" : -10,
+      "operator" : "GREATER_THAN"
+    }, {
+      "itemType" : "Product-Ration",
+      "type" : "INVENTORY",
+      "value" : 3,
+      "operator" : "LESS_THAN",
+      "targetQuantity" : 7
+    } ],
+    "priority" : "LOWEST"
+  } ],
+  "interruptedByCombat" : true,
+  "initialActions" : [ "FindItemFromInventorySelectors" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.TRANSFER_LIQUID.DESCRIPTION",
+  "name" : "Transfer liquid for crafting goal",
+  "actionRelationships" : {
+    "CancelHaulingAllocation" : { },
+    "PourIntoTarget" : {
+      "fail" : [ ],
+      "pass" : [ "DropHauledItem" ]
+    },
+    "CancelLiquidAllocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "CancelHaulingAllocation" ]
+    },
+    "DropHauledItem" : {
+      "fail" : [ "GoToRandomEmptyLocation" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "CancelLiquidAllocation" ]
+    },
+    "FillContainer" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ "GoToParentJobLocation", "FaceTowardsLocation", "PourIntoTarget" ]
+    },
+    "GoToRandomEmptyLocation" : {
+      "fail" : [ "DropHauledItem" ],
+      "pass" : [ "DropHauledItem" ]
+    },
+    "GoToParentJobLocation" : {
+      "fail" : [ "CancelLiquidAllocation" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelLiquidAllocation" ],
+      "pass" : [ "GoToLocation", "FillContainer" ]
+    },
+    "FaceTowardsLocation" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToLocation", "PickUpEntity" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "GOAL.TRANSFER_LIQUID.DESCRIPTION",
+  "name" : "Transfer liquid goal",
+  "actionRelationships" : {
+    "WorkOnJob" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "CancelHaulingAllocation" : { },
+    "CancelLiquidAllocation" : { },
+    "GoToLocation" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "FillContainer" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToJobLocation", "FaceTowardsLocation", "WorkOnJob" ]
+    },
+    "GoToJobLocation" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToLocation", "FillContainer" ]
+    },
+    "UnassignJob" : {
+      "fail" : [ "CancelLiquidAllocation", "CancelHaulingAllocation" ],
+      "pass" : [ "CancelLiquidAllocation", "CancelHaulingAllocation" ]
+    },
+    "FaceTowardsLocation" : { }
+  },
+  "selectors" : [ ],
+  "initialActions" : [ "GoToLocation", "PickUpEntity" ],
+  "interruptedByLowNeeds" : true
+}, {
+  "i18nDescription" : "ACTION.SELECT_JOB.DESCRIPTION",
+  "creatureCategories" : [ "CIVILIAN" ],
+  "name" : "Work on job goal",
+  "actionRelationships" : {
+    "WorkOnJob" : {
+      "fail" : [ "UnequipItemForJob", "UnassignJob" ],
+      "pass" : [ "UnequipItemForJob", "RequeueThisGoal" ]
+    },
+    "CheckToCollectJobItem" : {
+      "fail" : [ "EquipItemForJobFromInventory", "GoToLocation" ],
+      "pass" : [ "AssignItemCollectionForJob" ]
+    },
+    "GoToLocation" : {
+      "fail" : [ "UnequipItemForJob", "UnassignJob" ],
+      "pass" : [ "FaceTowardsLocation", "EquipItemForJobFromFurniture", "WorkOnJob" ]
+    },
+    "EquipItemForJobFromFurniture" : { },
+    "RequeueThisGoal" : { },
+    "SelectJob" : {
+      "pass" : [ "CheckToCollectJobItem" ]
+    },
+    "PickUpEntity" : {
+      "fail" : [ "CancelHaulingAllocation", "UnassignJob" ],
+      "pass" : [ "CancelHaulingAllocation", "EquipItemForJobFromInventory", "GoToLocation" ]
+    },
+    "CancelHaulingAllocation" : { },
+    "UnequipItemForJob" : { },
+    "GoToHaulingSourceLocation" : {
+      "fail" : [ "CancelHaulingAllocation" ],
+      "pass" : [ "PickUpEntity" ]
+    },
+    "EquipItemForJobFromInventory" : {
+      "fail" : [ "UnassignJob" ]
+    },
+    "UnassignJob" : { },
+    "AssignItemCollectionForJob" : {
+      "fail" : [ "UnassignJob" ],
+      "pass" : [ "GoToHaulingSourceLocation" ]
+    },
+    "FaceTowardsLocation" : { }
+  },
+  "selectors" : [ {
+    "scheduleCategory" : "ANY",
+    "conditions" : [ {
+      "need" : "FOOD",
+      "type" : "NEED",
+      "value" : 15,
+      "operator" : "GREATER_THAN_OR_EQUAL_TO"
+    }, {
+      "need" : "DRINK",
+      "type" : "NEED",
+      "value" : 15,
+      "operator" : "GREATER_THAN_OR_EQUAL_TO"
+    }, {
+      "need" : "SLEEP",
+      "type" : "NEED",
+      "value" : 15,
+      "operator" : "GREATER_THAN_OR_EQUAL_TO"
+    }, {
+      "need" : "MAIN_HAND",
+      "type" : "BODY_PART_FUNCTION"
+    } ],
+    "priority" : "LOWEST"
+  } ],
+  "initialActions" : [ "SelectJob" ],
+  "interruptedByLowNeeds" : true
+} ]

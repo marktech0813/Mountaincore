@@ -1,0 +1,12 @@
+{
+  "itemTypeName" : "Weapon-Metal-Bolts",
+  "maxStackSize" : 50,
+  "maxHauledAtOnce" : 50,
+  "materialTypes" : [ "METAL" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem": 1,
+  "relatedCraftingTypeNames" : [ "FLETCHING" ],
+  "stockpileGroupName" : "WEAPONS",
+  "isAmmoType" : "BOLTS",
+  "i18nKey" : "WEAPON.METAL.BOLTS"
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "recipeName": "Fletch metal arrows",
+    "craftingTypeName": "FLETCHING",
+    "verbOverrideI18nKey": "CRAFTING_TYPE.FLETCHING",
+    "input": [
+      {
+        "itemTypeName": "Weapon-Metal-Arrow-Heads",
+        "quantity": 10
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Metal-Arrows",
+      "quantity": 10
+    },
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 1.5,
+    "maximumTimeToCompleteCrafting": 8.5
+  },
+  {
+    "recipeName": "Fletch bone arrows",
+    "craftingTypeName": "FLETCHING",
+    "verbOverrideI18nKey": "CRAFTING_TYPE.FLETCHING",
+    "input": [
+      {
+        "itemTypeName": "Weapon-Bone-Arrow-Heads",
+        "quantity": 10
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Bone-Arrows",
+      "quantity": 10
+    },
+    "materialTypesToCopyOver": ["BONE", "WOOD"],
+    "minimumTimeToCompleteCrafting": 1.5,
+    "maximumTimeToCompleteCrafting": 8.5
+  },
+  {
+    "recipeName": "Fletch metal bolts",
+    "craftingTypeName": "FLETCHING",
+    "verbOverrideI18nKey": "CRAFTING_TYPE.FLETCHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Metal-Bolts",
+      "quantity": 15
+    },
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 1.5,
+    "maximumTimeToCompleteCrafting": 8.5
+  },
+  {
+    "recipeName": "Craft wooden bow",
+    "craftingTypeName": "FLETCHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Bow",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 11.5
+  },
+  {
+    "recipeName": "Forge Battle Axe",
+    "craftingTypeName": "WEAPONSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      },
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Battle-Axe",
+      "quantity": 1
+    },
+    "itemTypeRequiredName": "Tool-Large-Hammer",
+    "materialTypesToCopyOver": ["WOOD", "METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 11.5
+  },
+  {
+    "recipeName": "Forge Battle Hammer",
+    "craftingTypeName": "WEAPONSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 3
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Battle-Hammer",
+      "quantity": 1
+    },
+    "itemTypeRequiredName": "Tool-Large-Hammer",
+    "materialTypesToCopyOver": ["CLOTH", "METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 11.5
+  },
+  {
+    "recipeName": "Forge Sword",
+    "craftingTypeName": "WEAPONSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 3
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Sword",
+      "quantity": 1
+    },
+    "itemTypeRequiredName": "Tool-Large-Hammer",
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 11.5
+  },
+  {
+    "recipeName": "Craft Crossbow",
+    "craftingTypeName": "WEAPONSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 2
+      },
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Crossbow",
+      "quantity": 1
+    },
+    "itemTypeRequiredName": "Tool-Large-Hammer",
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 11.5
+  },
+
+  {
+    "recipeName": "Craft wooden shield",
+    "craftingTypeName": "CARPENTRY",
+    "input": [
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Wooden-Shield",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 11.5
+  },
+  {
+    "recipeName": "Craft metal shield",
+    "craftingTypeName": "WEAPONSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 4
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Metal-Shield",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 11.5
+  }
+]

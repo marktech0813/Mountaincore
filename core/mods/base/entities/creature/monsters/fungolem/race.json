@@ -1,0 +1,58 @@
+{
+  "name" : "Fungolem",
+  "i18nKey" : "RACE.FUNGOLEM",
+  "bodyStructureName" : "Humanoid",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "HAIR_COLOR" : {
+      "swatch" : "fungolem-hair-swatch.png"
+    },
+    "SKIN_COLOR" : {
+      "colorCode" : "#fcf2f0"
+    }
+  },
+  "mapPlacement" : "CAVE_MONSTER",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ "SLEEP" ],
+    "group" : {
+      "minSize" : 2,
+      "maxSize" : 12
+    },
+    "aggressionResponse" : "MIXED"
+  },
+  "genders" : {
+    "FEMALE" : {
+      "weighting" : 1.0
+    }
+  },
+  "features" : {
+    "defense" : {
+      "maxDefensePoints" : 3,
+      "maxDefenseRegainedPerRound" : 0,
+      "damageReduction" : {
+        "STABBING" : 0,
+        "SLASHING" : 0,
+        "CRUSHING" : 0
+      }
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "CRUSHING",
+      "minDamage" : 1,
+      "maxDamage" : 2,
+      "combatSkillName" : "UNARMED_COMBAT",
+      "weaponHitSoundAssetName" : "SFX_Punch_Impact",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Weapon slash"
+    },
+    "meat": {
+      "itemTypeName": "Ingredient-Vegetable-Crate",
+      "materialName": "Fungolem Mushroom",
+      "quantity": 4
+    }
+  }
+}

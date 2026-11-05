@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Bleeding",
+    "particleFile": "bleeding.p",
+    "scale": 1,
+    "isLooping": true,
+    "isAffectedByLighting": true,
+    "usesTargetMaterialAsTintColor": true,
+    "offsetFromParentEntity": {
+      "x": 0,
+      "y": 0.1
+    },
+    "attachedToParent": false
+  },
+  {
+    "name": "Weapon slash",
+    "animatedSpriteName": "slash",
+    "overrideDuration": 0.3,
+    "scale": 1,
+    "isLooping": false,
+    "isAffectedByLighting": false,
+    "usesTargetMaterialAsTintColor": true,
+    "offsetFromParentEntity": {
+      "x": 0,
+      "y": 0.1
+    },
+    "usingParentOrientation": "RIGHT",
+    "distanceFromParentEntityOrientation": 0.7,
+    "attachedToParent": true
+  },
+  {
+    "name": "Claw slash",
+    "animatedSpriteName": "claw",
+    "overrideDuration": 0.3,
+    "scale": 0.6,
+    "isLooping": false,
+    "isAffectedByLighting": false,
+    "usesTargetMaterialAsTintColor": true,
+    "offsetFromParentEntity": {
+      "x": 0,
+      "y": 0.2
+    },
+    "usingParentOrientation": "RIGHT",
+    "distanceFromParentEntityOrientation": 0.7,
+    "attachedToParent": true
+  }
+]

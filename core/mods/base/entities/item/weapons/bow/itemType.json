@@ -1,0 +1,23 @@
+{
+  "itemTypeName" : "Weapon-Bow",
+  "materialTypes" : [ "WOOD" ],
+  "primaryMaterialType" : "WOOD",
+  "baseValuePerItem": 3,
+  "holdPosition" : "LEFT_HAND",
+  "hoursInInventoryUntilUnused" : 3.0,
+  "stockpileGroupName" : "WEAPONS",
+  "weaponInfo" : {
+    "range" : 9,
+    "damageType" : "STABBING",
+    "minDamage" : 2,
+    "maxDamage" : 8,
+    "requiresAmmoType" : "ARROWS",
+    "twoHanded" : true,
+    "combatSkillName" : "ARCHERY",
+    "fireWeaponSoundAssetName" : "SFX_Hunting_Attack_Bow",
+    "weaponHitSoundAssetName" : "SFX_Hunting_Impact_Stabbing_Bow",
+    "weaponMissSoundAssetName" : "SFX_Hunting_Miss_Bow",
+    "ranged" : true
+  },
+  "i18nKey" : "WEAPON.BOW"
+}

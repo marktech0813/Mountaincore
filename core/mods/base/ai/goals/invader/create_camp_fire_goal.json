@@ -1,0 +1,16 @@
+{
+  "name": "Create camp fire",
+  "i18nDescription": "GOAL.INVADER.CREATE_CAMP.DESCRIPTION",
+  "creatureCategories": ["INVADER"],
+  "selectors": [],
+  "initialActions": ["MoveGroupHomeTowardSettlers"],
+  "actionRelationships": {
+    "MoveGroupHomeTowardSettlers": {
+      "pass": ["GoToGoalTargetLocation"]
+    },
+    "GoToGoalTargetLocation": {
+      "pass": ["CreateCampfire"]
+    },
+    "CreateCampfire": {}
+  }
+}

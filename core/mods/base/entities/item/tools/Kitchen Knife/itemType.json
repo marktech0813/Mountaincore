@@ -1,0 +1,19 @@
+{
+  "itemTypeName" : "Tool-Kitchen-Knife",
+  "materialTypes" : [ "METAL" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem" : 8,
+  "holdPosition" : "RIGHT_HAND",
+  "stockpileGroupName" : "TOOLS",
+  "weaponInfo" : {
+    "range" : 1,
+    "damageType" : "STABBING",
+    "modifiedByStrength" : true,
+    "minDamage" : 2,
+    "maxDamage" : 6,
+    "combatSkillName" : "SWORDSMANSHIP",
+    "weaponHitSoundAssetName" : "SFX_Hunting_Impact_Slicing",
+    "animatedSpriteEffectName" : "Weapon slash"
+  },
+  "i18nKey" : "TOOL.KITCHEN.KNIFE"
+}

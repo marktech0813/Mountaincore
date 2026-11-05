@@ -1,0 +1,12 @@
+{
+  "itemTypeName" : "Carcass-Carp-Prepared",
+  "maxStackSize" : 4,
+  "maxHauledAtOnce" : 4,
+  "materialTypes" : [ "MEAT" ],
+  "primaryMaterialType" : "MEAT",
+  "baseValuePerItem" : 5,
+  "stockpileGroupName" : "FOOD",
+  "describeAsMaterialOnly" : true,
+  "tradeExportable" : true,
+  "i18nKey" : "CARCASS.CARP.PREPARED"
+}

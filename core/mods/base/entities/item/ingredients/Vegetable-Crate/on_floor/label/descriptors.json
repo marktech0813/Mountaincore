@@ -1,0 +1,17 @@
+[ {
+  "uniqueName" : "Ingredient-Vegetable-Crate-Body",
+  "type" : "ABOVE_LAYER_1",
+  "itemTypeName" : "Ingredient-Vegetable-Crate",
+  "maxQuantity" : 30,
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Vegetable-Crate-Label-Floor.png",
+      "coloringLayer" : "VEGETABLE_COLOR",
+      "scale" : 0.5,
+      "offsetPixels" : {
+        "y" : 13.0
+      }
+    }
+  }
+} ]

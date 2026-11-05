@@ -1,0 +1,11 @@
+{
+  "itemTypeName" : "Resource-Bone-Small",
+  "maxStackSize" : 10,
+  "maxHauledAtOnce" : 3,
+  "materialTypes" : [ "BONE" ],
+  "baseValuePerItem": 1,
+  "primaryMaterialType" : "BONE",
+  "stockpileGroupName" : "RAW_MATERIALS",
+  "i18nKey" : "RESOURCE.BONE.SMALL",
+  "tradeExportable": true
+}

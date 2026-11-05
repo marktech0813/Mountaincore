@@ -1,0 +1,1650 @@
+[ {
+  "name" : "BARRACKS_BED",
+  "i18nKey" : "FURNITURE.SINGLE_BED",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x2N",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Linen",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BARRACKS_SLEEPING_SPOT",
+  "i18nKey" : "FURNITURE.SLEEPING_SPOT",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "autoConstructed" : true,
+  "requirements" : {
+    "EARTH" : [ ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "SINGLE_BED",
+  "i18nKey" : "FURNITURE.SINGLE_BED",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x2N",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Linen",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "SLEEPING_SPOT",
+  "i18nKey" : "FURNITURE.SLEEPING_SPOT",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "autoConstructed" : true,
+  "requirements" : {
+    "EARTH" : [ ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FEASTING_CHAIR",
+  "i18nKey" : "FURNITURE.CHAIR",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1E",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 2,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "FEASTING_LOCATION" : [ ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "ARTISAN_WORKSTATION",
+  "i18nKey" : "FURNITURE.ARTISAN_WORKSTATION",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x3L3R",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Small-Hammer",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Tongs",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "FINE_DETAIL_CRAFTING", "CRAFT_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Small-Hammer", "Tool-Tongs" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BAKERS_WORKTOP",
+  "i18nKey" : "FURNITURE.BAKERS_WORKTOP",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x3BL1R",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Rolling-Pin",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Kitchen-Knife",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Rolling-Pin",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Kitchen-Knife",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Ingot",
+      "quantity" : 8,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Rolling-Pin",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Kitchen-Knife",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "DOUGH_PREPARATION", "CRAFT_ITEM", "HAULING" ],
+    "CRAFTING_OVERRIDE" : [ "DO_NOT_HAUL_OUTPUT" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Rolling-Pin", "Tool-Kitchen-Knife" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BAKING_OVEN",
+  "i18nKey" : "FURNITURE.BAKING_OVEN",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x2 with lower workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 6,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "PARTICLE_EFFECTS_WHILE_IN_USE" : [ "White smoking" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BLOOMERY_FURNACE",
+  "i18nKey" : "FURNITURE.BLOOMERY_FURNACE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x2+SW with lower workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Unrefined",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 6,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 2,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Tongs",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "SMELTING", "CRAFT_ITEM", "HAULING" ],
+    "REQUIREMENT_TO_COLOR_MAPPINGS" : [ "Resource-Stone-Unrefined", "STONE_COLOR", "MISC_COLOR_1", "Resource-Stone-Block", "STONE_COLOR", "MISC_COLOR_2" ],
+    "EXTRA_MATERIAL_TYPES" : [ "CLOTH", "METAL" ],
+    "PARTICLE_EFFECTS_WHILE_PROCESSING" : [ "Smoking" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Tongs" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BONE_CRAFTING_BENCH",
+  "i18nKey" : "FURNITURE.BONE_CRAFTING_BENCH",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x3BL1R",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Chisel",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Small-Hammer",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "BONE_CRAFTING", "CRAFT_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Chisel", "Tool-Small-Hammer" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BREW_KETTLE",
+  "i18nKey" : "FURNITURE.BREW_KETTLE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "mashtun layout",
+  "autoConstructed" : false,
+  "requirements" : {
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Plate",
+      "quantity" : 6,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Liquid-Tank",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "WORT_BREWING", "PRODUCE_LIQUID", "HAULING", "Product-Barrel" ],
+    "CRAFTING_OVERRIDE" : [ "DO_NOT_HAUL_OUTPUT" ],
+    "LIQUID_CONTAINER" : [ "12", "Wort" ],
+    "REQUIREMENT_TO_COLOR_MAPPINGS" : [ "Resource-Metal-Plate", "METAL_COLOR", "METAL_COLOR", "Product-Liquid-Tank", "METAL_COLOR", "MISC_COLOR_1" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BUTCHERY_WORKTOP",
+  "i18nKey" : "FURNITURE.BUTCHERY_WORKTOP",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Kitchen-Knife",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "BUTCHERY_STATION_BEHAVIOUR" : [ ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Kitchen-Knife" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "Carpentry_Bench",
+  "i18nKey" : "FURNITURE.CARPENTRY_WORKBENCH",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "carpentry-north-facing",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Logs",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 2,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Plane",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Saw",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "CARPENTRY", "CRAFT_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Plane", "Tool-Saw" ],
+    "REQUIREMENT_TO_COLOR_MAPPINGS" : [ "Resource-Planks", "WOOD_COLOR", "WOOD_COLOR", "Resource-Logs", "BRANCHES_COLOR", "MISC_COLOR_1", "Resource-Logs", "WOOD_COLOR", "MISC_COLOR_2" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "CHARCOAL_CLAMP_COMPLETED",
+  "i18nKey" : "FURNITURE.CHARCOAL_CLAMP",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x2 with lower workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ ]
+  },
+  "tags" : {
+    "CHARCOAL_CLAMP_BEHAVIOUR" : [ ]
+  },
+  "hiddenFromPlacementMenu" : true
+}, {
+  "name" : "CHARCOAL_CLAMP_COVERED",
+  "i18nKey" : "FURNITURE.CHARCOAL_CLAMP",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x2 with lower workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Logs",
+      "quantity" : 32,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "FURNITURE_BEHAVIOUR" : [ "TRANSFORM_AFTER_SET_TIME", "FurnitureType_CHARCOAL_CLAMP_COMPLETED" ],
+    "PARTICLE_EFFECTS_WHILE_PROCESSING" : [ "Smoking (charcoal)" ]
+  },
+  "hiddenFromPlacementMenu" : true
+}, {
+  "name" : "CHARCOAL_CLAMP",
+  "i18nKey" : "FURNITURE.CHARCOAL_CLAMP",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x2 with lower workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Logs",
+      "quantity" : 32,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "FURNITURE_BEHAVIOUR" : [ "TRANSFORM_UPON_JOB_COMPLETION", "JobType_LIGHT_CHARCOAL_CLAMP", "FurnitureType_CHARCOAL_CLAMP_COVERED" ],
+    "EXTRA_MATERIAL_TYPES" : [ "EARTH" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "COKE_OVEN",
+  "i18nKey" : "FURNITURE.COKE_OVEN",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x2 with lower workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 6,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "COKE_OVEN_BAKING", "CRAFT_ITEM", "HAULING" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "CRUCIBLE_FURNACE",
+  "i18nKey" : "FURNITURE.CRUCIBLE_FURNACE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "crucible-furnace-layout",
+  "autoConstructed" : false,
+  "requirements" : {
+    "METAL" : [ ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "Dough_Proofing_Table",
+  "i18nKey" : "FURNITURE.DOUGH_PROOFING_TABLE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "PRODUCTION_EXPORT" : [ "1" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FERMENTATION_TANK",
+  "i18nKey" : "FURNITURE.FERMENTATION_TANK",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "METAL" : [ {
+      "itemTypeName" : "Product-Liquid-Tank",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 6,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "FERMENTING", "PRODUCE_LIQUID", "HAULING", "Product-Barrel" ],
+    "LIQUID_CONTAINER" : [ "12", "Hopped Wort", "ALWAYS_INACTIVE" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FLETCHERS_WORKBENCH",
+  "i18nKey" : "FURNITURE.FLETCHERS_WORKBENCH",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x3L3R",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Plane",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Kitchen-Knife",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Plane",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Kitchen-Knife",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "FLETCHING", "CRAFT_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Plane", "Tool-Kitchen-Knife" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FLOUR_MILL",
+  "i18nKey" : "FURNITURE.FLOUR_MILL",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "3x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 3,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Millstone",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Millstone",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "MILLING", "CRAFT_ITEM", "HAULING" ],
+    "PARTICLE_EFFECTS_WHILE_IN_USE" : [ "Milling" ],
+    "DECORATION_FROM_INPUT" : [ "Product-Millstone" ],
+    "EXTRA_MATERIAL_TYPES" : [ "ROPE" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FORGE",
+  "i18nKey" : "FURNITURE.FORGE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "inverted-U",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 15,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Fuel-Sack",
+      "quantity" : 2,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Anvil",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Large-Hammer",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Tongs",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "BLACKSMITHING", "FORGE_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Product-Anvil", "Tool-Large-Hammer", "Tool-Tongs" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "WEAPON_FORGE",
+  "i18nKey" : "FURNITURE.FORGE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "inverted-U",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 15,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Fuel-Sack",
+      "quantity" : 2,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Anvil",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Large-Hammer",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Tongs",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "WEAPONSMITHING", "FORGE_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Product-Anvil", "Tool-Large-Hammer", "Tool-Tongs" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "Leatherworking_Station",
+  "i18nKey" : "FURNITURE.LEATHERWORKING_STATION",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "leatherworking-south",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Barrel-Staves",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Chisel",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Kitchen-Knife",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Leather",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "LEATHERWORKING", "CRAFT_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Chisel", "Tool-Kitchen-Knife" ],
+    "REQUIREMENT_TO_COLOR_MAPPINGS" : [ "Product-Leather", "SKIN_COLOR", "MISC_COLOR_1", "Product-Barrel-Staves", "WOOD_COLOR", "MISC_COLOR_2", "Resource-Planks", "WOOD_COLOR", "WOOD_COLOR" ],
+    "EXTRA_MATERIAL_TYPES_TO_COLOR_MAPPINGS" : [ "WOOD", "MISC_COLOR_3" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "LOOM",
+  "i18nKey" : "FURNITURE.LOOM",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with S workspace",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 7,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "WEAVING", "CRAFT_ITEM", "HAULING" ],
+    "EXTRA_MATERIAL_TYPES" : [ "CLOTH", "METAL" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "MALTING_STATION",
+  "i18nKey" : "FURNITURE.MALTING_STATION",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "4x1 WE",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Liquid-Tank",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 8,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Liquid-Tank",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "MALTING", "CRAFT_ITEM", "HAULING" ],
+    "PARTICLE_EFFECTS_WHILE_IN_USE" : [ "Milling" ],
+    "DECORATION_FROM_INPUT" : [ "Product-Liquid-Tank" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "MASH_TUN",
+  "i18nKey" : "FURNITURE.MASH_TUN",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "mashtun layout",
+  "autoConstructed" : false,
+  "requirements" : {
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Plate",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 6,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Liquid-Tank",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "MALT_MASHING", "PRODUCE_LIQUID", "HAULING", "Product-Barrel" ],
+    "CRAFTING_OVERRIDE" : [ "DO_NOT_HAUL_OUTPUT" ],
+    "LIQUID_CONTAINER" : [ "12", "Water" ],
+    "REQUIREMENT_TO_COLOR_MAPPINGS" : [ "Resource-Metal-Plate", "METAL_COLOR", "METAL_COLOR", "Product-Liquid-Tank", "METAL_COLOR", "MISC_COLOR_1" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "ORE_CRUSHING_STATION",
+  "i18nKey" : "FURNITURE.ORE_CRUSHING_STATION",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x2 with lower workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Plate",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Barrel-Hoops",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "ORE_CRUSHING", "CRAFT_ITEM", "HAULING" ],
+    "PARTICLE_EFFECTS_WHILE_IN_USE" : [ "Ore chips" ],
+    "REQUIREMENT_TO_COLOR_MAPPINGS" : [ "Resource-Metal-Plate", "METAL_COLOR", "MISC_COLOR_1", "Product-Barrel-Hoops", "METAL_COLOR", "MISC_COLOR_2" ],
+    "EXTRA_MATERIAL_TYPES" : [ "CLOTH" ],
+    "POWERED_FURNITURE" : [ "-10", "8" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "Stonemason_Bench",
+  "i18nKey" : "FURNITURE.STONEMASON_WORKBENCH",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "stonemason-north",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Tool-Chisel",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Small-Hammer",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Stone-Unrefined",
+      "quantity" : 3,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "DECORATION_FROM_INPUT" : [ "Tool-Small-Hammer", "Tool-Chisel" ],
+    "CRAFTING_STATION_BEHAVIOUR" : [ "STONEMASONRY", "CRAFT_ITEM", "HAULING" ],
+    "EXTRA_MATERIAL_TYPES" : [ "METAL" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "Tanning_Frame",
+  "i18nKey" : "FURNITURE.TANNING_FRAME",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Logs",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "TANNING_HIDE", "CRAFT_ITEM", "HAULING" ],
+    "COPY_GAME_MATERIAL_FROM_INVENTORY" : [ "SKIN" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "WOODCUTTERS_BENCH",
+  "i18nKey" : "FURNITURE.WOODCUTTERS_BENCH",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x3BL1R",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Saw",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Axe",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Saw",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Axe",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Ingot",
+      "quantity" : 8,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Saw",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Tool-Axe",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "WOODCUTTING", "CRAFT_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Saw", "Tool-Axe" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "SINGLE_DOOR",
+  "i18nKey" : "FURNITURE.SINGLE_DOOR",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1EW",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    } ],
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Ingot",
+      "quantity" : 8,
+      "liquid" : false
+    } ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "SINGLE_DOOR_PLACEMENT",
+  "i18nKey" : "FURNITURE.SINGLE_DOOR",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1EW",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    } ],
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Ingot",
+      "quantity" : 8,
+      "liquid" : false
+    } ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "SINGLE_DOOR_FRAME",
+  "i18nKey" : "FURNITURE.SINGLE_DOOR_FRAME",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1EW",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 1,
+      "liquid" : false
+    } ],
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Ingot",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "DUG_GRAVE",
+  "i18nKey" : "FURNITURE.GRAVE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x2 with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "EARTH" : [ ]
+  },
+  "tags" : {
+    "CONSTRUCTION_OVERRIDE" : [ "DO_NOT_ALLOCATE" ],
+    "SPECIFIC_EXTRA_MATERIALS" : [ "Dirt" ],
+    "DECEASED_CONTAINER" : [ "FILLED_GRAVE" ]
+  },
+  "requiredFloorMaterialType" : "EARTH",
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FILLED_GRAVE",
+  "i18nKey" : "FURNITURE.GRAVE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x2 with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "EARTH" : [ ]
+  },
+  "tags" : {
+    "CONSTRUCTION_OVERRIDE" : [ "DO_NOT_ALLOCATE" ],
+    "SPECIFIC_EXTRA_MATERIALS" : [ "Dirt" ],
+    "DECEASED_CONTAINER" : [ ]
+  },
+  "requiredFloorMaterialType" : "EARTH",
+  "hiddenFromPlacementMenu" : true
+}, {
+  "name" : "SARCOPHAGUS",
+  "i18nKey" : "FURNITURE.SARCOPHAGUS",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x2N",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 8,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "DECEASED_CONTAINER" : [ ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "INVADER_CAMPFIRE",
+  "i18nKey" : "FURNITURE.INVADER_CAMPFIRE",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "showInGuiView" : "DEBUG",
+  "autoConstructed" : true,
+  "requirements" : {
+    "WOOD" : [ ]
+  },
+  "tags" : {
+    "FURNITURE_BEHAVIOUR" : [ "UPDATE_EVERY_FRAME" ],
+    "PERMANENT_PARTICLE_EFFECTS" : [ "Smoking (small offset)", "Fire" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BASIC_LANTERN",
+  "i18nKey" : "FURNITURE.LANTERN",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "showInGuiView" : "BUILD_MENU",
+  "autoConstructed" : false,
+  "requirements" : {
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Ingot",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "BEER_TAPPER",
+  "i18nKey" : "FURNITURE.BEER_TAPPER",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Barrel-Hoops",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "6", "Beer" ],
+    "FURNITURE_BEHAVIOUR" : [ "BEER_TAPPER", "Material_Beer", "ItemType_Product-Barrel", "JobType_HAULING" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "CHEFS_CAULDRON",
+  "i18nKey" : "FURNITURE.CAULDRON",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "METAL" : [ {
+      "itemTypeName" : "Product-Cauldron",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "12", "Water", "ALWAYS_INACTIVE" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FEASTING_CAULDRON",
+  "i18nKey" : "FURNITURE.CAULDRON",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "METAL" : [ {
+      "itemTypeName" : "Product-Cauldron",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "12", "Water", "ALWAYS_INACTIVE" ],
+    "CONSTRUCTION_OVERRIDE" : [ "DO_NOT_ALLOCATE", "REQUIRES_EDIBLE_LIQUID" ],
+    "FURNITURE_BEHAVIOUR" : [ "EDIBLE_LIQUID_SOURCE", "ItemType_Ingredient-Soup-Bowl" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "INDUSTRIAL_WATER_BARREL",
+  "i18nKey" : "FURNITURE.WATER_BARREL",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Product-Barrel",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "6", "Water", "ALWAYS_INACTIVE" ],
+    "FURNITURE_BEHAVIOUR" : [ "FILL_LIQUID_CONTAINER", "ItemType_Product-Bucket" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "MUSHROOM_SHOCK_TANK",
+  "i18nKey" : "FURNITURE.MUSHROOM_SHOCK_TANK",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "4", "Water", "ALWAYS_INACTIVE" ],
+    "FURNITURE_BEHAVIOUR" : [ "MUSHROOM_SHOCK_TANK", "ItemType_Product-Bucket", "ItemType_Resource-Mushroom-Log", "ItemType_Resource-Shocked-Mushroom-Log", "JobType_HAULING" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "RETTING_TANK",
+  "i18nKey" : "FURNITURE.RETTING_TANK",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "4", "Water", "ALWAYS_INACTIVE" ],
+    "FURNITURE_BEHAVIOUR" : [ "MUSHROOM_SHOCK_TANK", "ItemType_Product-Bucket", "ItemType_Resource-Hemp-Bundle", "ItemType_Resource-Hemp-Fibre-Bundle", "Material_Hemp_Fibre", "JobType_HAULING" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "WATER_BARREL",
+  "i18nKey" : "FURNITURE.WATER_BARREL",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Product-Barrel",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "6", "Water" ],
+    "LIQUID_CONTAINER_REFILL_THRESHOLD" : [ "4" ],
+    "FURNITURE_BEHAVIOUR" : [ "FILL_LIQUID_CONTAINER", "ItemType_Product-Bucket" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "WELL",
+  "i18nKey" : "FURNITURE.WELL",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x2 with lower workspaces",
+  "showInGuiView" : "POWER_WATER_MENU",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 8,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Bucket",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Rope",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "32", "Water" ],
+    "FURNITURE_BEHAVIOUR" : [ "WELL" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "WATERWHEEL",
+  "i18nKey" : "FURNITURE.WATERWHEEL",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "Waterwheel S side",
+  "showInGuiView" : "POWER_WATER_MENU",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 16,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "FURNITURE_BEHAVIOUR" : [ "POWER_SOURCE" ],
+    "POWERED_FURNITURE" : [ "31", "0.9" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "WATER_PUMP",
+  "i18nKey" : "FURNITURE.WATER_PUMP",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "Water Pump WE Layout",
+  "showInGuiView" : "POWER_WATER_MENU",
+  "autoConstructed" : false,
+  "requirements" : {
+    "METAL" : [ {
+      "itemTypeName" : "Resource-Metal-Plate",
+      "quantity" : 3,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Stone-Gear",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "FURNITURE_BEHAVIOUR" : [ "WATER_PUMP" ],
+    "POWERED_FURNITURE" : [ "-10", "0.8" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "WINDMILL",
+  "i18nKey" : "FURNITURE.WINDMILL",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x3 no rotation",
+  "showInGuiView" : "POWER_WATER_MENU",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 8,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Linen",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "FURNITURE_BEHAVIOUR" : [ "POWER_SOURCE" ],
+    "POWERED_FURNITURE" : [ "18", "0.9" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "ARCHERY_TARGET",
+  "i18nKey" : "FURNITURE.ARCHERY_TARGET",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with S workspace offset 6",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "WORKSPACE_LOCATIONS_MUST_BE_INSIDE_ROOM" : [ ],
+    "TRAINING_EQUIPMENT" : [ "RANGED" ],
+    "FLAT_DAMAGE_REDUCTION" : [ "10" ],
+    "EXTRA_FURNITURE_HITPOINTS" : [ "300" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "TRAINING_DUMMY",
+  "i18nKey" : "FURNITURE.TRAINING_DUMMY",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with S workspace",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "WORKSPACE_LOCATIONS_MUST_BE_INSIDE_ROOM" : [ ],
+    "TRAINING_EQUIPMENT" : [ "MELEE" ],
+    "FLAT_DAMAGE_REDUCTION" : [ "10" ],
+    "EXTRA_FURNITURE_HITPOINTS" : [ "300" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "INNOCULATED_LOG",
+  "i18nKey" : "FURNITURE.MUSHROOM_LOG",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1EW with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "SEED" : [ {
+      "itemTypeName" : "Resource-Mushroom-Log",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "REPLACEMENT_DESCONSTRUCTION_RESOURCES" : [ ]
+  },
+  "hiddenFromPlacementMenu" : true
+}, {
+  "name" : "INNOCULATION_LOG",
+  "i18nKey" : "FURNITURE.MUSHROOM_LOG",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1EW with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Logs",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "INNOCULATION_LOG_BEHAVIOUR" : [ "Ingredient-Mushroom-Spawn", "INNOCULATED_LOG" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "SHOCKED_LOG",
+  "i18nKey" : "FURNITURE.MUSHROOM_LOG",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1EW with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "SEED" : [ {
+      "itemTypeName" : "Resource-Shocked-Mushroom-Log",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "MUSHROOM_LOG_BEHAVIOUR" : [ "INNOCULATION_LOG" ],
+    "REPLACEMENT_DESCONSTRUCTION_RESOURCES" : [ "Ingredient-Mushroom-Spawn" ]
+  },
+  "hiddenFromPlacementMenu" : true
+}, {
+  "name" : "PILLAR",
+  "i18nKey" : "FURNITURE.PILLAR",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "showInGuiView" : "BUILD_MENU",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "SUPPORTS_ROOF" : [ ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "EXPORT_PALLET",
+  "i18nKey" : "FURNITURE.EXPORT_PALLET",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 2,
+      "liquid" : false
+    } ],
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "PRODUCTION_EXPORT" : [ "1" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "IMPORT_PALLET",
+  "i18nKey" : "FURNITURE.IMPORT_PALLET",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 2,
+      "liquid" : false
+    } ],
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "PRODUCTION_IMPORT" : [ "1", "HAULING" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "Armour_Stand",
+  "i18nKey" : "FURNITURE.ARMOUR_STAND",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Logs",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "STOCKPILE" : [ "1", "IS_ARMOUR" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FISH_BARREL",
+  "i18nKey" : "FURNITURE.FISH_BARREL",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Product-Barrel",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "DECEASED_CONTAINER" : [ "FISH_BARREL", "16", "RACE_Carp", "RACE_Perch", "RACE_Pike" ],
+    "INVENTORY_ITEMS_UNALLOCATED" : [ ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "Weapon_Rack",
+  "i18nKey" : "FURNITURE.WEAPON_RACK",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1NS",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "STOCKPILE" : [ "6", "IS_WEAPON", "IS_SHIELD", "ItemType_Weapon-Metal-Arrows", "ItemType_Weapon-Bone-Arrows", "ItemType_Weapon-Metal-Bolts" ],
+    "EXTRA_MATERIAL_TYPES" : [ "METAL" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "FEASTING_TABLE",
+  "i18nKey" : "FURNITURE.FEASTING_TABLE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "4x2",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 8,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 8,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "NO_MERGING_INVENTORY" : [ ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "KITCHEN_WORKTOP",
+  "i18nKey" : "FURNITURE.KITCHEN_WORKTOP",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "2x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 3,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "COLLECT_ITEMS_BEHAVIOUR" : [ "COOKING_INGREDIENTS", "2", "CHEF" ],
+    "INVENTORY_ITEMS_UNALLOCATED" : [ ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "SERVING_TABLE",
+  "i18nKey" : "FURNITURE.SERVING_TABLE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "4x1 with workspaces",
+  "autoConstructed" : false,
+  "requirements" : {
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 4,
+      "liquid" : false
+    } ],
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "COLLECT_ITEMS_BEHAVIOUR" : [ "PREPARED_FOOD", "4", "CHEF", "ALLOW_DUPLICATES" ],
+    "INVENTORY_ITEMS_UNALLOCATED" : [ ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "HITCHING_POST",
+  "i18nKey" : "FURNITURE.HITCHING_POST",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "hitched-east",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Logs",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "HITCHING_POST" : [ ],
+    "REQUIREMENT_TO_COLOR_MAPPINGS" : [ "Resource-Logs", "WOOD_COLOR", "WOOD_COLOR", "Resource-Logs", "BRANCHES_COLOR", "OTHER_COLOR" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "LEDGER_TABLE",
+  "i18nKey" : "FURNITURE.LEDGER_TABLE",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "trading-ledger-left",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Product-Barrel",
+      "quantity" : 1,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "EXTRA_MATERIAL_TYPES" : [ "METAL" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "TRADE_BANNER",
+  "i18nKey" : "FURNITURE.TRADE_BANNER",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : { },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "TRADE_CHEST",
+  "i18nKey" : "PRODUCT.CHEST",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "1x1 with workspaces",
+  "autoConstructed" : true,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Product-Chest",
+      "quantity" : 1,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "STOCKPILE" : [ "4", "ItemType_Treasure-Coin" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "TRADING_EXPORT",
+  "i18nKey" : "FURNITURE.SELLING_PALLET",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 2,
+      "liquid" : false
+    } ],
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "TRADING_EXPORT" : [ "1", "HAULING" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "TRADING_IMPORT",
+  "i18nKey" : "FURNITURE.BUYING_PALLET",
+  "blocksMovement" : false,
+  "defaultLayoutName" : "1x1",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 2,
+      "liquid" : false
+    } ],
+    "STONE" : [ {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 2,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "TRADING_IMPORT" : [ "1", "HAULING" ]
+  },
+  "hiddenFromPlacementMenu" : false
+}, {
+  "name" : "WAGON_PARKED",
+  "i18nKey" : "FURNITURE.WAGON_PARKED",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "wagon-left",
+  "showInGuiView" : "DEBUG",
+  "autoConstructed" : false,
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 8,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Barrel-Staves",
+      "quantity" : 4,
+      "liquid" : false
+    }, {
+      "itemTypeName" : "Product-Barrel-Hoops",
+      "quantity" : 4,
+      "liquid" : false
+    } ]
+  },
+  "tags" : {
+    "STARTING_RESOURCES_CONTAINER" : [ "16" ],
+    "INVENTORY_ITEMS_UNALLOCATED" : [ ]
+  },
+  "hiddenFromPlacementMenu" : true
+} ]

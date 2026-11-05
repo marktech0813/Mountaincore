@@ -1,0 +1,11 @@
+{
+  "itemTypeName" : "Resource-Metal-Plate",
+  "maxStackSize" : 12,
+  "maxHauledAtOnce" : 2,
+  "materialTypes" : [ "METAL" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem": 16,
+  "impedesMovement" : true,
+  "stockpileGroupName" : "PRODUCTS",
+  "i18nKey" : "RESOURCE.METAL.PLATE"
+}

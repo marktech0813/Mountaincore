@@ -1,0 +1,9 @@
+{
+  "itemTypeName" : "Product-Liquid-Tank",
+  "materialTypes" : [ "METAL" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem": 75,
+  "hoursInInventoryUntilUnused" : 1.0,
+  "stockpileGroupName" : "PRODUCTS",
+  "i18nKey" : "PRODUCT.LIQUID.TANK"
+}

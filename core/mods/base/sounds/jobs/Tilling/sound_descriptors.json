@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Tilling",
+    "filenames": [
+      "Tilling (A).wav",
+      "Tilling (B).wav",
+      "Tilling (C).wav",
+      "Tilling (D).wav"
+    ],
+    "minPitch": 0.8,
+    "maxPitch": 1.2,
+    "volumeModifier": 0.25
+  }
+]

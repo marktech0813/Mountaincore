@@ -1,0 +1,23 @@
+{
+  "name": "FEASTING_TABLE",
+  "i18nKey": "FURNITURE.FEASTING_TABLE",
+  "blocksMovement": true,
+  "defaultLayoutName": "4x2",
+  "requirements": {
+    "STONE": [
+      {
+        "itemTypeName": "Resource-Stone-Block",
+        "quantity": 8
+      }
+    ],
+    "WOOD": [
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 8
+      }
+    ]
+  },
+  "tags": {
+    "NO_MERGING_INVENTORY": []
+  }
+}

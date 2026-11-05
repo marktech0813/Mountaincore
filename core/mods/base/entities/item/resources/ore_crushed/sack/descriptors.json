@@ -1,0 +1,134 @@
+[ {
+  "uniqueName" : "Resource-Ore-Crushed-Bag-Carried",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Resource-Ore-Crushed",
+  "maxQuantity" : 16,
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Crushed Ore Cloth Top.png",
+      "coloringLayer" : "CLOTH_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1"
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 18.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -18.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Crushed Ore Cloth Top.png",
+      "coloringLayer" : "CLOTH_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1"
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 22.0,
+          "y" : -10.0
+        },
+        "overrideRenderLayer" : -100
+      } ]
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Crushed Ore Cloth Top.png",
+      "coloringLayer" : "CLOTH_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1"
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -22.0,
+          "y" : -10.0
+        },
+        "overrideRenderLayer" : -100
+      } ]
+    },
+    "UP" : {
+      "filename" : "Crushed Ore Cloth Top.png",
+      "coloringLayer" : "CLOTH_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1"
+      } ]
+    },
+    "UP_RIGHT" : {
+      "filename" : "Crushed Ore Cloth Top.png",
+      "coloringLayer" : "CLOTH_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1"
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP_LEFT" : {
+      "filename" : "Crushed Ore Cloth Top.png",
+      "coloringLayer" : "CLOTH_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1"
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    }
+  }
+}, {
+  "uniqueName" : "Resource-Ore-Crushed-Bag-Ground",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Resource-Ore-Crushed",
+  "maxQuantity" : 32,
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Crushed Ore Cloth Top.png",
+      "coloringLayer" : "CLOTH_COLOR",
+      "scale" : 0.8,
+      "childAssets" : [ {
+        "type" : "BELOW_LAYER_1"
+      } ]
+    }
+  }
+} ]

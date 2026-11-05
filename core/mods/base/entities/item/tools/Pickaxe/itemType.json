@@ -1,0 +1,21 @@
+{
+  "itemTypeName" : "Tool-Pickaxe",
+  "materialTypes" : [ "WOOD", "METAL" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem" : 20,
+  "holdPosition" : "RIGHT_HAND",
+  "relatedCraftingTypeNames" : [ "SMELTING" ],
+  "stockpileGroupName" : "TOOLS",
+  "weaponInfo" : {
+    "range" : 1,
+    "damageType" : "STABBING",
+    "modifiedByStrength" : true,
+    "minDamage" : 1,
+    "maxDamage" : 5,
+    "armorNegation" : 4,
+    "combatSkillName" : "MACES",
+    "weaponHitSoundAssetName" : "SFX_Hunting_Impact_Crushing",
+    "animatedSpriteEffectName" : "Weapon slash"
+  },
+  "i18nKey" : "TOOL.PICKAXE"
+}

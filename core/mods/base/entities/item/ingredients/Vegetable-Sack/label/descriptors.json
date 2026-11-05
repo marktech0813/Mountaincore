@@ -1,0 +1,48 @@
+[ {
+  "uniqueName" : "Ingredient-Vegetable-Sack-Label-Carried",
+  "type" : "ABOVE_LAYER_1",
+  "itemTypeName" : "Ingredient-Vegetable-Sack",
+  "maxQuantity" : 30,
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Sack label.png",
+      "coloringLayer" : "VEGETABLE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : -6.4
+      }
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Sack label.png",
+      "coloringLayer" : "VEGETABLE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : -6.4
+      }
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Sack label.png",
+      "coloringLayer" : "VEGETABLE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : -6.4
+      }
+    }
+  }
+}, {
+  "uniqueName" : "Ingredient-Vegetable-Sack-Label-Ground",
+  "type" : "ABOVE_LAYER_1",
+  "itemTypeName" : "Ingredient-Vegetable-Sack",
+  "maxQuantity" : 30,
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Sack label.png",
+      "coloringLayer" : "VEGETABLE_COLOR",
+      "offsetPixels" : {
+        "y" : -8.0
+      }
+    }
+  }
+} ]

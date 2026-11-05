@@ -1,0 +1,33 @@
+[
+  {
+    "uniqueName": "Wheat-Seeds",
+    "type": "PLANT_BRANCHES",
+    "speciesName": "Wheat",
+    "growthStages": [0],
+    "spriteDescriptors": {
+      "DOWN": {
+        "filename": "crop_planted_seeds.png",
+        "coloringLayer": "BRANCHES_COLOR",
+        "offsetPixels": {
+          "x": 0,
+          "y": 0
+        }
+      }
+    }
+  },
+{
+  "uniqueName": "Wheat-Shoots",
+  "type": "PLANT_BRANCHES",
+  "speciesName": "Wheat",
+  "growthStages": [1],
+  "spriteDescriptors": {
+    "DOWN": {
+      "filename": "crop_wheat_shoots.png",
+      "coloringLayer": "BRANCHES_COLOR",
+      "offsetPixels": {
+        "x": 0,
+        "y": 16
+      }
+    }
+  }
+}]

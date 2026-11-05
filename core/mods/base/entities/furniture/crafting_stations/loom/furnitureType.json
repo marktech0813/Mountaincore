@@ -1,0 +1,18 @@
+{
+  "name": "LOOM",
+  "i18nKey": "FURNITURE.LOOM",
+  "blocksMovement": true,
+  "defaultLayoutName": "1x1 with S workspace",
+  "requirements": {
+    "WOOD": [
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 7
+      }
+    ]
+  },
+  "tags": {
+    "CRAFTING_STATION_BEHAVIOUR": ["WEAVING", "CRAFT_ITEM", "HAULING"],
+    "EXTRA_MATERIAL_TYPES": ["CLOTH", "METAL"]
+  }
+}

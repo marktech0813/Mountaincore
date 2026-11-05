@@ -1,0 +1,13 @@
+{
+  "floorTypeName": "cobblestone",
+  "i18nKey": "FLOOR.COBBLESTONE",
+  "materialType": "STONE",
+  "type": "floor",
+  "numSprites": 5,
+  "layer": 1,
+  "overlapType": {
+    "overlapName": "ground"
+  },
+  "useMaterialColor": true,
+  "speedModifier": 0.8
+}

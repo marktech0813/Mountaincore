@@ -1,0 +1,37 @@
+{
+  "name": "Invasion retreat",
+  "i18nDescription": "GOAL.INVADER.RETREAT.DESCRIPTION",
+  "creatureCategories": ["INVADER", "MERCHANT"],
+  "selectors": [
+    {
+      "conditions": [
+        {
+          "type": "INVASION_IN_STAGE",
+          "invasionStage": "RETREATING"
+        }
+      ],
+      "priority": "HIGHEST",
+      "scheduleCategory": "ANY"
+    },
+    {
+      "conditions": [
+        {
+          "type": "TRADERS_IN_STAGE",
+          "stage": "LEAVING"
+        }
+      ],
+      "priority": "HIGHEST",
+      "scheduleCategory": "ANY"
+    }
+  ],
+  "initialActions": ["SelectRetreatLocation"],
+  "actionRelationships": {
+    "SelectRetreatLocation": {
+      "pass": ["GoToGoalTargetLocation"]
+    },
+    "GoToGoalTargetLocation": {
+      "pass": ["RemoveFromMap"]
+    },
+    "RemoveFromMap": {}
+  }
+}

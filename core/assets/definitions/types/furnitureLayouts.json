@@ -1,0 +1,2769 @@
+[ {
+  "uniqueName" : "carpentry-north-facing",
+  "rotatesToName" : "carpentry-east-facing",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : -2
+  }, {
+    "x" : 0,
+    "y" : -2
+  }, {
+    "x" : 1,
+    "y" : -2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "carpentry-east-facing",
+  "rotatesToName" : "carpentry-south-facing",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : -2,
+    "y" : 1
+  }, {
+    "x" : -2,
+    "y" : 0
+  }, {
+    "x" : -2,
+    "y" : -1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "carpentry-south-facing",
+  "rotatesToName" : "carpentry-west-facing",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 2
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "carpentry-west-facing",
+  "rotatesToName" : "carpentry-north-facing",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 2,
+    "y" : 1
+  }, {
+    "x" : 2,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : -1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "crucible-furnace-layout",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "leatherworking-south",
+  "rotatesToName" : "leatherworking-west",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -2,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 2
+  }, {
+    "x" : 0,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "leatherworking-west",
+  "rotatesToName" : "leatherworking-north",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 1,
+    "y" : -1
+  }, {
+    "x" : 2,
+    "y" : -1
+  }, {
+    "x" : 2,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "leatherworking-north",
+  "rotatesToName" : "leatherworking-east",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : -1
+  }, {
+    "x" : -1,
+    "y" : -2
+  }, {
+    "x" : 0,
+    "y" : -2
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "leatherworking-east",
+  "rotatesToName" : "leatherworking-north",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 0,
+    "y" : -2
+  }, {
+    "x" : 0,
+    "y" : -3
+  }, {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -2,
+    "y" : 0
+  }, {
+    "x" : -2,
+    "y" : -1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "stonemason-north",
+  "rotatesToName" : "stonemason-west",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : -1
+  }, {
+    "x" : 1,
+    "y" : -2
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : -2
+  }, {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : -2
+  }, {
+    "x" : -2,
+    "y" : 0
+  }, {
+    "x" : -2,
+    "y" : -2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "stonemason-east",
+  "rotatesToName" : "stonemason-north",
+  "extraTiles" : [ {
+    "x" : -2,
+    "y" : 2
+  }, {
+    "x" : -1,
+    "y" : 2
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : -2,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : -2,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "stonemason-south",
+  "rotatesToName" : "stonemason-east",
+  "extraTiles" : [ {
+    "x" : -2,
+    "y" : 2
+  }, {
+    "x" : -1,
+    "y" : 2
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : -2,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "stonemason-west",
+  "rotatesToName" : "stonemason-south",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 1
+  }, {
+    "x" : 2,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1",
+  "extraTiles" : [ ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with workspaces",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with S workspace",
+  "rotatesToName" : "1x1 with W workspace",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with W workspace",
+  "rotatesToName" : "1x1 with N workspace",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with N workspace",
+  "rotatesToName" : "1x1 with E workspace",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with E workspace",
+  "rotatesToName" : "1x1 with S workspace",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with S workspace offset 6",
+  "rotatesToName" : "1x1 with W workspace offset 6",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -6
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with W workspace offset 6",
+  "rotatesToName" : "1x1 with N workspace offset 6",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -6,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with N workspace offset 6",
+  "rotatesToName" : "1x1 with E workspace offset 6",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 6
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1 with E workspace offset 6",
+  "rotatesToName" : "1x1 with S workspace offset 6",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 6,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1NS",
+  "rotatesToName" : "1x1EW",
+  "extraTiles" : [ ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1EW",
+  "rotatesToName" : "1x1NS",
+  "extraTiles" : [ ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1NS with workspaces",
+  "rotatesToName" : "1x1EW with workspaces",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1EW with workspaces",
+  "rotatesToName" : "1x1NS with workspaces",
+  "extraTiles" : [ ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1N",
+  "rotatesToName" : "1x1E",
+  "extraTiles" : [ ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1E",
+  "rotatesToName" : "1x1S",
+  "extraTiles" : [ ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1S",
+  "rotatesToName" : "1x1W",
+  "extraTiles" : [ ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x1W",
+  "rotatesToName" : "1x1N",
+  "extraTiles" : [ ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x2",
+  "rotatesToName" : "2x1",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x1",
+  "rotatesToName" : "1x2",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x2 with workspaces",
+  "rotatesToName" : "2x1 with workspaces",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x1 with workspaces",
+  "rotatesToName" : "1x2 with workspaces",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x1 with workspaces, no rotation",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "Waterwheel S side",
+  "rotatesToName" : "Waterwheel W side",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "requirement" : "IS_RIVER"
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : -1
+    },
+    "requirement" : "IS_RIVER"
+  } ]
+}, {
+  "uniqueName" : "Waterwheel W side",
+  "rotatesToName" : "Waterwheel N side",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ {
+    "location" : {
+      "x" : -1,
+      "y" : 0
+    },
+    "requirement" : "IS_RIVER"
+  }, {
+    "location" : {
+      "x" : -1,
+      "y" : 1
+    },
+    "requirement" : "IS_RIVER"
+  } ]
+}, {
+  "uniqueName" : "Waterwheel N side",
+  "rotatesToName" : "Waterwheel E side",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "requirement" : "IS_RIVER"
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "requirement" : "IS_RIVER"
+  } ]
+}, {
+  "uniqueName" : "Waterwheel E side",
+  "rotatesToName" : "Waterwheel S side",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "requirement" : "IS_RIVER"
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "requirement" : "IS_RIVER"
+  } ]
+}, {
+  "uniqueName" : "Water Pump WE Layout",
+  "rotatesToName" : "Water Pump NS Layout",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ {
+    "location" : {
+      "x" : 2,
+      "y" : 0
+    },
+    "requirement" : "IS_RIVER"
+  } ]
+}, {
+  "uniqueName" : "Water Pump NS Layout",
+  "rotatesToName" : "Water Pump EW Layout",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : -2
+    },
+    "requirement" : "IS_RIVER"
+  } ]
+}, {
+  "uniqueName" : "Water Pump EW Layout",
+  "rotatesToName" : "Water Pump SN Layout",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ {
+    "location" : {
+      "x" : -2,
+      "y" : 0
+    },
+    "requirement" : "IS_RIVER"
+  } ]
+}, {
+  "uniqueName" : "Water Pump SN Layout",
+  "rotatesToName" : "Water Pump WE Layout",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 2
+    },
+    "requirement" : "IS_RIVER"
+  } ]
+}, {
+  "uniqueName" : "2x2",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x2 with lower workspaces",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x2+SW with lower workspaces",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : -1,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x3 with workspaces",
+  "rotatesToName" : "3x1 with workspaces",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "3x1 with workspaces",
+  "rotatesToName" : "1x3 with workspaces",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x4 with workspaces",
+  "rotatesToName" : "4x1 with workspaces",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 2
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 2
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "4x1 with workspaces",
+  "rotatesToName" : "1x4 with workspaces",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : -1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : -1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 2,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 2,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x4 NS",
+  "rotatesToName" : "4x1 EW",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "4x1 WE",
+  "rotatesToName" : "1x4 NS",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x4 SN",
+  "rotatesToName" : "4x1 WE",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "4x1 EW",
+  "rotatesToName" : "1x4 SN",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x2N",
+  "rotatesToName" : "2x1E",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x1E",
+  "rotatesToName" : "1x2S",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "1x2S",
+  "rotatesToName" : "2x1W",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x1W",
+  "rotatesToName" : "1x2N",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3 no rotation",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 2
+  } ],
+  "workspaces" : [ ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3L",
+  "rotatesToName" : "2x3L1R",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3L1R",
+  "rotatesToName" : "2x3L2R",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 2,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3L2R",
+  "rotatesToName" : "2x3L3R",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : -1,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3L3R",
+  "rotatesToName" : "2x3L",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3BL",
+  "rotatesToName" : "2x3BL1R",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3BL1R",
+  "rotatesToName" : "2x3BL2R",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3BL2R",
+  "rotatesToName" : "2x3BL3R",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3BL3R",
+  "rotatesToName" : "2x3BL",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : -2,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : -1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "3x2",
+  "rotatesToName" : "2x3",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x3",
+  "rotatesToName" : "3x2",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "mashtun layout",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 0
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "4x2",
+  "rotatesToName" : "2x4",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 2,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : -1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : -1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 2,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 2,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "2x4",
+  "rotatesToName" : "4x2",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 2
+  }, {
+    "x" : 0,
+    "y" : 3
+  }, {
+    "x" : 1,
+    "y" : 3
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 2
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 2
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 3
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 3
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 3
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 3
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "inverted-U",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : -1
+  }, {
+    "x" : 2,
+    "y" : 0
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "hitched-south",
+  "rotatesToName" : "hitched-west",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : -1
+  }, {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : -1,
+    "y" : -2
+  }, {
+    "x" : 0,
+    "y" : -2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -2
+    }
+  }, {
+    "location" : {
+      "x" : -1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : -2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "hitched-west",
+  "rotatesToName" : "hitched-north",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : -2,
+    "y" : 0
+  }, {
+    "x" : -2,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -2,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -2,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "hitched-north",
+  "rotatesToName" : "hitched-east",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 2
+  }, {
+    "x" : 0,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "hitched-east",
+  "rotatesToName" : "hitched-south",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : -1
+  }, {
+    "x" : 2,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : -1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "trading-ledger-left",
+  "rotatesToName" : "trading-ledger-up",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : -1,
+    "y" : 2
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "trading-ledger-up",
+  "rotatesToName" : "trading-ledger-right",
+  "extraTiles" : [ {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -2
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "trading-ledger-right",
+  "rotatesToName" : "trading-ledger-down",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  }, {
+    "x" : 1,
+    "y" : 2
+  }, {
+    "x" : -1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : -1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : -1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -2,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : -1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "trading-ledger-down",
+  "rotatesToName" : "trading-ledger-left",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 2
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 2
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 2
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 3
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 2
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "wagon-left",
+  "rotatesToName" : "wagon-up",
+  "extraTiles" : [ {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 2,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 2,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -1
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 2,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 3,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 2,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 3,
+      "y" : 1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "wagon-right",
+  "rotatesToName" : "wagon-down",
+  "extraTiles" : [ {
+    "x" : -2,
+    "y" : 0
+  }, {
+    "x" : -1,
+    "y" : 0
+  }, {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : -2,
+    "y" : 1
+  }, {
+    "x" : -1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : -2,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -3,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : -2,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : -3,
+      "y" : 1
+    }
+  }, {
+    "location" : {
+      "x" : -1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : -1
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "wagon-up",
+  "rotatesToName" : "wagon-right",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 1,
+    "y" : -1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : -2
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : -1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : -2
+    }
+  } ],
+  "specialTiles" : [ ]
+}, {
+  "uniqueName" : "wagon-down",
+  "rotatesToName" : "wagon-left",
+  "extraTiles" : [ {
+    "x" : 1,
+    "y" : 0
+  }, {
+    "x" : 0,
+    "y" : 1
+  }, {
+    "x" : 1,
+    "y" : 1
+  }, {
+    "x" : 0,
+    "y" : -1
+  }, {
+    "x" : 1,
+    "y" : -1
+  } ],
+  "workspaces" : [ {
+    "location" : {
+      "x" : 0,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : -1,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 0
+    },
+    "accessedFrom" : {
+      "x" : 2,
+      "y" : 0
+    }
+  }, {
+    "location" : {
+      "x" : 0,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 0,
+      "y" : 2
+    }
+  }, {
+    "location" : {
+      "x" : 1,
+      "y" : 1
+    },
+    "accessedFrom" : {
+      "x" : 1,
+      "y" : 2
+    }
+  } ],
+  "specialTiles" : [ ]
+} ]

@@ -1,0 +1,584 @@
+{
+com.badlogic.gdx.graphics.Color: {
+	btn_scalable_colour: {
+		hex: d2ab73ff
+	}
+	btn_scalable_colour_alpha_50pc: {
+		hex: d2ab737f
+	}
+	dialog_bg_colour: {
+		hex: 524851ff
+	}
+	dialog_stage_colour: {
+		hex: ffffff96
+	}
+	dropdown_body_colour: {
+		hex: a44929ff
+	}
+	dropdown_body_hover_alt_colour: {
+		hex: 524852ff
+	}
+	dropdown_body_alt_colour: {
+		hex: 655965ff
+	}
+	dropdown_body_hover_colour: {
+		hex: 913613ff
+	}
+	grey_30pc: {
+		hex: cecece4c
+	}
+	primary_font_colour_red: {
+		hex: 913614ff
+	}
+	primary_font_colour_yellow_alt: {
+		hex: ffd171ff
+	}
+	saved_greyed_out_bg_colour: {
+		hex: d7b17aff
+	}
+	textfield_bg_colour: {
+		hex: a34829ff
+	}
+	white: {
+		hex: ffffffff
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Skin$TintedDrawable: {
+	dropdown_body: {
+		name: white-pixel
+		color: dropdown_body_colour
+	}
+	dropdown_body_hover: {
+		name: white-pixel
+		color: dropdown_body_hover_colour
+	}
+	save_greyed_out_bg: {
+		name: white-pixel
+		color: saved_greyed_out_bg_colour
+	}
+	btn_scalable: {
+		name: white-pixel
+		color: btn_scalable_colour
+	}
+	dialog_bg: {
+		name: white-pixel
+		color: dialog_bg_colour
+	}
+	dialog_stage: {
+		name: white-pixel
+		color: dialog_stage_colour
+	}
+	textfield_pixel_bg: {
+		name: white-pixel
+		color: textfield_bg_colour
+	}
+	textfield_cursor: {
+		name: white-pixel
+		color: white
+	}
+	textfield_selected: {
+		name: white-pixel
+		color: dropdown_body_hover_colour
+	}
+	default-rect: {
+		name: white-pixel
+		color: white
+	}
+	dropdown_body_hover_alt: {
+		name: white-pixel
+		color: dropdown_body_hover_alt_colour
+	}
+	dropdown_body_alt: {
+		name: white-pixel
+		color: dropdown_body_alt_colour
+	}
+}
+com.ray3k.tenpatch.TenPatchDrawable: {
+	title_ribbon_bg_mike_10patch: {
+		region: title_ribbon_bg_mike
+		horizontalStretchAreas: [ 266, 278 ]
+		verticalStretchAreas: [ 135, 208 ]
+		tiling: false
+		minWidth: 545
+		minHeight: 222
+		rightWidth: 266
+		leftWidth: 266
+		bottomHeight: 67
+		topHeight: 14
+		offsetX: 0
+		offsetY: 0
+		offsetXspeed: 0
+		offsetYspeed: 0
+		frameDuration: 0.03
+		regions: []
+		playMode: 2
+		crushMode: 0
+	}
+	embark_1_peaceful_mode_ribbon_10patch: {
+		region: embark_1_peaceful_mode_ribbon
+		horizontalStretchAreas: [ 0, 879 ]
+		verticalStretchAreas: [ 0, 139 ]
+		tiling: false
+		minWidth: 880
+		minHeight: 140
+		rightWidth: 0
+		leftWidth: 0
+		bottomHeight: 121
+		topHeight: 6
+		offsetX: 0
+		offsetY: 0
+		offsetXspeed: 0
+		offsetYspeed: 0
+		frameDuration: 0.03
+		regions: []
+		playMode: 2
+		crushMode: 0
+	}
+	select_full_10patch: {
+		region: select_full
+		horizontalStretchAreas: [ 0, 653 ]
+		verticalStretchAreas: [ 0, 94 ]
+		tiling: false
+		minWidth: 654
+		minHeight: 95
+		rightWidth: 0
+		leftWidth: 10
+		bottomHeight: 0
+		topHeight: 0
+		offsetX: 0
+		offsetY: 0
+		offsetXspeed: 0
+		offsetYspeed: 0
+		frameDuration: 0.03
+		regions: []
+		playMode: 2
+		crushMode: 0
+	}
+	select_narrow_body_purple_v2_10patch: {
+		region: select_narrow_body_purple_v2
+		horizontalStretchAreas: [ 0, 29 ]
+		verticalStretchAreas: [ 0, 3, 27, 29 ]
+		tiling: false
+		minWidth: 68
+		minHeight: 30
+		rightWidth: 47
+		leftWidth: 10
+		bottomHeight: 1
+		topHeight: 1
+		offsetX: 0
+		offsetY: 0
+		offsetXspeed: 0
+		offsetYspeed: 0
+		frameDuration: 0.03
+		regions: []
+		playMode: 2
+		crushMode: 0
+	}
+}
+com.kotcrab.vis.ui.Sizes: {
+	default: {
+		scaleFactor: 1
+		spacingBottom: 8
+		spacingRight: 6
+		buttonBarSpacing: 10
+		menuItemIconSize: 22
+		borderSize: 1
+		spinnerButtonHeight: 12
+		spinnerFieldSize: 50
+		fileChooserViewModeBigIconsSize: 200
+		fileChooserViewModeMediumIconsSize: 128
+		fileChooserViewModeSmallIconsSize: 64
+		fileChooserViewModeListWidthSize: 150
+	}
+}
+com.kotcrab.vis.ui.widget.Separator$SeparatorStyle: {
+	default: {
+		thickness: 4
+	}
+	menu: {
+		thickness: 1
+	}
+}
+com.kotcrab.vis.ui.widget.tabbedpane.TabbedPane$TabbedPaneStyle: {
+	default: {
+		vertical: false
+		draggable: false
+	}
+}
+com.kotcrab.vis.ui.widget.BusyBar$BusyBarStyle: {
+	default: {
+		height: 5
+		segmentWidth: 150
+		segmentOverflow: 10
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Button$ButtonStyle: {
+	default: {
+		up: btn_scalable
+	}
+	left_arrow: {
+		up: arrow
+		disabled: arrow_greyed_out
+	}
+	right_arrow: {
+		up: arrow_right
+		disabled: arrow_greyed_out_right
+	}
+	btn_exit: {
+		up: btn_exit
+	}
+	btn_random: {
+		up: btn_random
+	}
+	btn_embark_next: {
+		up: btn_embark_next
+	}
+	btn_embark_back: {
+		up: btn_embark_back
+	}
+	checkbox: {
+		up: btn_check_box_hover_state
+		checked: btn_check_box_ticked
+	}
+	btn_homepage: {
+		up: btn_homepage
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.CheckBox$CheckBoxStyle: {
+	default: {
+		checkboxOn: btn_check_box_ticked
+		checkboxOff: btn_check_box_unticked
+		checkboxOver: btn_check_box_hover_state
+		font: default-font-16
+	}
+	checkbox_no_bg: {
+		parent: default
+		fontColor: primary_font_colour_red
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageButton$ImageButtonStyle: {
+	default: {
+		up: thin-transparent_selected_bg
+		checked: thin-selected_bg
+	}
+	small_map_btn: {
+		imageUp: embark_2_small_preview
+		up: transparent_selection_bg_patch_v2
+		checked: transparent_selected_bg_patch
+	}
+	medium_map_btn: {
+		imageUp: embark_2_medium_preview
+		up: transparent_selection_bg_patch_v2
+		checked: transparent_selected_bg_patch
+	}
+	large_map_btn: {
+		imageUp: embark_2_large_preview
+		up: transparent_selection_bg_patch_v2
+		checked: transparent_selected_bg_patch
+	}
+	thick_outline: {
+		up: transparent_selection_bg_patch_v2
+		checked: transparent_selected_bg_patch
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ImageTextButton$ImageTextButtonStyle: {
+	default: {
+		font: default-font-16
+		fontColor: primary_font_colour_red
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Label$LabelStyle: {
+	default: {
+		font: default-font-18
+		fontColor: primary_font_colour_red
+	}
+	white_text: {
+		font: default-font-18
+		fontColor: white
+	}
+	save_title_ribbon: {
+		font: header-font-36
+		fontColor: primary_font_colour_yellow_alt
+		background: save_title_ribbon_bg
+	}
+	title_ribbon: {
+		font: header-font-65
+		fontColor: primary_font_colour_red
+		background: title_ribbon_bg_mike_10patch
+	}
+	white_text_default-font-23: {
+		font: default-font-23
+		fontColor: white
+	}
+	checkbox_label: {
+		font: default-font-16
+		fontColor: white
+		background: btn_check_box_body
+	}
+	secondary_banner_title: {
+		font: header-font-36
+		fontColor: primary_font_colour_red
+		background: asset_secondary_banner_title_bg
+	}
+	options_menu_label: {
+		font: default-font-18
+		fontColor: primary_font_colour_red
+	}
+	checkbox_label_no_bg: {
+		font: default-font-16
+		fontColor: primary_font_colour_red
+	}
+	embark_ribbon: {
+		font: header-font-50
+		fontColor: primary_font_colour_red
+		background: embark_1_peaceful_mode_ribbon
+	}
+	embark_seed_label: {
+		font: default-font-23
+		fontColor: textfield_bg_colour
+	}
+	map_size_label: {
+		font: default-font-18
+		fontColor: primary_font_colour_red
+	}
+	dialog_title: {
+		font: default-font-24
+		fontColor: white
+	}
+	notification_title: {
+		font: header-font-36
+		fontColor: white
+	}
+	notification_body: {
+		font: default-font-24
+		fontColor: white
+	}
+	notification_button: {
+		font: default-font-23
+		fontColor: white
+	}
+	key_bindings_title_ribbon: {
+		font: header-font-40
+		fontColor: primary_font_colour_red
+		background: asset_key_bindings_banner_bg
+	}
+	draggable_mod: {
+		font: default-font-23
+		fontColor: white
+		background: btn_mods_draggable
+	}
+	mod_table_value_label: {
+		font: default-font-23
+		fontColor: primary_font_colour_red
+	}
+	mod_table_header_label: {
+		font: header-font-32
+		fontColor: primary_font_colour_red
+	}
+	seed_label: {
+		font: default-font-16
+		fontColor: white
+		background: asset_bg_random_seed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.List$ListStyle: {
+	default: {
+		font: default-font-16
+		fontColorSelected: primary_font_colour_yellow_alt
+		fontColorUnselected: white
+		selection: btn_dropdown_body_hover_state
+		background: dropdown_body
+	}
+	list_alt: {
+		font: default-font-16
+		fontColorSelected: primary_font_colour_yellow_alt
+		fontColorUnselected: white
+		selection: dropdown_body_hover_alt
+		background: dropdown_body_alt
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.ScrollPane$ScrollPaneStyle: {
+	default: {
+		hScroll: scroll_bg
+		hScrollKnob: scroll_fg
+		vScroll: vertical_scrollbar
+		vScrollKnob: vertical_scrollbar_fg
+	}
+	list: {
+		parent: default
+	}
+	select-box: {
+		parent: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.SelectBox$SelectBoxStyle: {
+	default: {
+		font: default-font-16
+		fontColor: white
+		background: select_full_10patch
+		scrollStyle: default
+		listStyle: default
+	}
+	select_narrow: {
+		font: default-font-16
+		fontColor: white
+		background: select_narrow_body
+		scrollStyle: default
+		listStyle: default
+	}
+	select_narrow_alt: {
+		font: default-font-16
+		fontColor: white
+		background: select_narrow_body_purple_v2_10patch
+		scrollStyle: default
+		listStyle: list_alt
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Slider$SliderStyle: {
+	default-horizontal: {
+		background: asset_audio_slider_cropped
+		knob: btn_audio_slider
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextButton$TextButtonStyle: {
+	default: {
+		font: default-font-16
+		fontColor: primary_font_colour_red
+	}
+	btn_banner_1: {
+		parent: default
+		font: header-font-36
+		up: btn_banner_1
+		over: btn_banner_hover_state
+	}
+	btn_banner_2: {
+		parent: default
+		font: header-font-36
+		up: btn_banner_2
+		over: btn_banner_hover_state
+	}
+	btn_banner_3: {
+		parent: default
+		font: header-font-36
+		up: btn_banner_3
+		over: btn_banner_hover_state
+	}
+	btn_banner_4: {
+		parent: default
+		font: header-font-36
+		up: btn_banner_4
+		over: btn_banner_hover_state
+	}
+	btn_scalable: {
+		font: default-font-16
+		fontColor: primary_font_colour_red
+		up: btn_scalable
+	}
+	btn_scalable_header-font-50: {
+		parent: btn_scalable
+		font: header-font-50
+	}
+	btn_banner_1_header-font-47: {
+		parent: btn_banner_1
+		font: header-font-47
+	}
+	btn_banner_2_header-font-47: {
+		parent: btn_banner_2
+		font: header-font-47
+	}
+	btn_banner_3_header-font-36: {
+		parent: btn_banner_3
+		font: header-font-36
+	}
+	btn_banner_3_header-font-47: {
+		parent: btn_banner_3
+		font: header-font-47
+	}
+	btn_banner_4_header-font-36: {
+		parent: btn_banner_4
+		font: header-font-36
+	}
+	btn_banner_4_header-font-47: {
+		parent: btn_banner_4
+		font: header-font-47
+	}
+	btn_dialog_1: {
+		font: default-font-23
+		up: btn_01
+		unpressedOffsetY: 6
+	}
+	btn_small_1: {
+		font: header-font-36
+		fontColor: primary_font_colour_red
+		up: btn_small_1
+	}
+	btn_small_1_header-font-50: {
+		parent: btn_small_1
+		font: header-font-50
+	}
+	btn_key_bindings_key: {
+		font: default-font-18
+		fontColor: white
+		up: btn_key_bindings_key
+		over: btn_key_bindings_key_hover_state
+		checked: btn_key_bindings_key_changed
+	}
+	btn_options_secondary: {
+		font: default-font-18
+		fontColor: white
+		up: btn_key_bindings_key
+	}
+	btn_dialog_2: {
+		font: default-font-23
+		up: btn_02
+		unpressedOffsetY: 6
+	}
+	btn_rounded_grey: {
+		font: default-font-16
+		fontColor: white
+		up: btn_copy_random_seed
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextField$TextFieldStyle: {
+	default: {
+		font: default-font-18
+		fontColor: white
+		background: textfield_pixel_bg
+		cursor: textfield_cursor
+		selection: textfield_selected
+	}
+	embark_textfield: {
+		font: default-font-23
+		fontColor: white
+		background: textfield_pixel_bg
+		cursor: textfield_cursor
+		selection: textfield_selected
+	}
+	input-dialog-text: {
+		font: default-font-24
+		fontColor: white
+		background: textfield_pixel_bg
+		cursor: textfield_cursor
+		selection: textfield_selected
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.TextTooltip$TextTooltipStyle: {
+	default: {
+		label: default
+	}
+}
+com.badlogic.gdx.scenes.scene2d.ui.Window$WindowStyle: {
+	default: {
+		background: bg_dialogue_box
+		titleFont: default-font-18
+		titleFontColor: white
+	}
+	square_dialog: {
+		background: asset_square_bg
+		titleFont: default-font-16
+	}
+	empty_dialog: {
+		titleFont: default-font-16
+	}
+}
+}

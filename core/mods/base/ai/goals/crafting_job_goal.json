@@ -1,0 +1,48 @@
+{
+  "name": "Crafting job goal",
+  "i18nDescription": "ACTION.SELECT_JOB.DESCRIPTION",
+  "interruptedByLowNeeds": true,
+  "creatureCategories": ["CIVILIAN"],
+  "selectors": [],
+  "initialActions": ["MoveLiquidInputToCraftingStation"],
+  "actionRelationships": {
+    "MoveLiquidInputToCraftingStation": {
+      "pass": ["MoveInputToCraftingStation"],
+      "fail": ["UnassignJob"]
+    },
+    "MoveInputToCraftingStation": {
+      "pass": ["CheckReadyToCraft"],
+      "fail": ["UnassignJob"]
+    },
+    "CheckReadyToCraft": {
+      "pass": ["GoToLocation"],
+      "fail": ["UnassignJob"]
+    },
+    "GoToLocation": {
+      "pass": ["FaceTowardsLocation", "EquipItemForJobFromFurniture", "WorkOnJob"],
+      "fail": ["UnassignJob"]
+    },
+    "EquipItemForJobFromInventory": {
+      "fail": ["UnassignJob"]
+    },
+    "WorkOnJob": {
+      "pass": ["CancelInterruptedFlag", "UnequipItemForJob", "CheckForPendingOutput"],
+      "fail": ["UnequipItemForJob", "UnassignJob"]
+    },
+    "CheckForPendingOutput": {
+      "pass": ["MoveOutputToExportSpot"],
+      "fail": ["CancelProductionOutputAssignmentsOnCraftingStation", "MarkCraftingAssignmentComplete"]
+    },
+    "MoveOutputToExportSpot": {
+      "pass": ["CheckForPendingOutput"],
+      "fail": ["CancelProductionOutputAssignmentsOnCraftingStation", "MarkCraftingAssignmentComplete"]
+    },
+    "CancelInterruptedFlag": {},
+    "FaceTowardsLocation": {},
+    "EquipItemForJobFromFurniture": {},
+    "CancelProductionOutputAssignmentsOnCraftingStation": {},
+    "MarkCraftingAssignmentComplete": {},
+    "UnequipItemForJob": {},
+    "UnassignJob": {}
+  }
+}

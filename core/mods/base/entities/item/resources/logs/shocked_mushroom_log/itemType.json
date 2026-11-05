@@ -1,0 +1,10 @@
+{
+  "itemTypeName" : "Resource-Shocked-Mushroom-Log",
+  "materialTypes" : [ "WOOD", "SEED" ],
+  "primaryMaterialType" : "SEED",
+  "baseValuePerItem": 8,
+  "holdPosition" : "ON_SHOULDER",
+  "impedesMovement" : true,
+  "placementSoundAssetName" : "HeavyWoodItem",
+  "i18nKey" : "RESOURCE.SHOCKED.MUSHROOM.LOG"
+}

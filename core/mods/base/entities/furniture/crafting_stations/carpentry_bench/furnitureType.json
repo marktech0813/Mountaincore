@@ -1,0 +1,29 @@
+{
+  "name" : "Carpentry_Bench",
+  "i18nKey" : "FURNITURE.CARPENTRY_WORKBENCH",
+  "blocksMovement" : true,
+  "defaultLayoutName" : "carpentry-north-facing",
+  "requirements" : {
+    "WOOD" : [ {
+      "itemTypeName" : "Resource-Logs",
+      "quantity" : 4
+    }, {
+      "itemTypeName" : "Resource-Planks",
+      "quantity" : 3
+    }, {
+      "itemTypeName" : "Resource-Stone-Block",
+      "quantity" : 2
+    }, {
+      "itemTypeName" : "Tool-Plane",
+      "quantity" : 1
+    }, {
+      "itemTypeName" : "Tool-Saw",
+      "quantity" : 1
+    } ]
+  },
+  "tags" : {
+    "CRAFTING_STATION_BEHAVIOUR" : [ "CARPENTRY", "CRAFT_ITEM", "HAULING" ],
+    "DECORATION_FROM_INPUT" : [ "Tool-Plane", "Tool-Saw" ],
+    "REQUIREMENT_TO_COLOR_MAPPINGS" : [ "Resource-Planks", "WOOD_COLOR", "WOOD_COLOR", "Resource-Logs", "BRANCHES_COLOR", "MISC_COLOR_1", "Resource-Logs", "WOOD_COLOR", "MISC_COLOR_2" ]
+  }
+}

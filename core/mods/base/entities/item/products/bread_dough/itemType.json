@@ -1,0 +1,12 @@
+{
+  "itemTypeName" : "Product-Bread-Dough",
+  "maxStackSize" : 28,
+  "maxHauledAtOnce" : 7,
+  "materialTypes" : [ "VEGETABLE" ],
+  "primaryMaterialType" : "VEGETABLE",
+  "baseValuePerItem": 3,
+  "equippedWhileWorkingOnJob" : false,
+  "hoursInInventoryUntilUnused" : 1.0,
+  "i18nKey" : "PRODUCT.BREAD.DOUGH",
+  "specificMaterialNames": ["Wheat"]
+}

@@ -1,0 +1,11 @@
+{
+  "itemTypeName" : "Rusted scrap",
+  "maxStackSize" : 50,
+  "maxHauledAtOnce" : 50,
+  "materialTypes" : [ "METAL" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem": -1,
+  "equippedWhileWorkingOnJob" : false,
+  "hoursInInventoryUntilUnused" : 0.5,
+  "i18nKey" : "RUSTED_SCRAP"
+}

@@ -1,0 +1,11 @@
+{
+  "itemTypeName" : "Weapon-Bone-Arrow-Heads",
+  "maxStackSize" : 50,
+  "maxHauledAtOnce" : 20,
+  "materialTypes" : [ "BONE" ],
+  "primaryMaterialType" : "BONE",
+  "baseValuePerItem": 1,
+  "relatedCraftingTypeNames" : [ "BLACKSMITHING" ],
+  "stockpileGroupName" : "WEAPONS",
+  "i18nKey" : "WEAPON.BONE.ARROW.HEADS"
+}

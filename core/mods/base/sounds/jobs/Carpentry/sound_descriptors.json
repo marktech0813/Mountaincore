@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Sawing",
+    "filenames": [
+      "Woodcutter Sawing (A-FO).wav",
+      "Woodcutter Sawing (B-FO).wav",
+      "Woodcutter Sawing (C-FO).wav"
+    ],
+    "minPitch": 0.90,
+    "maxPitch": 1.0,
+    "volumeModifier": 0.15,
+    "looping": false
+  }
+]

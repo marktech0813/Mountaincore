@@ -1,0 +1,122 @@
+[ {
+  "uniqueName" : "Ingredient-Seeds-Bag-Carried",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Ingredient-Seeds",
+  "maxQuantity" : 50,
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Bag.png",
+      "coloringLayer" : "SEED_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "ABOVE_LAYER_2",
+        "offsetPixels" : {
+          "x" : 8.0,
+          "y" : 9.5
+        }
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "y" : -4.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Bag.png",
+      "coloringLayer" : "SEED_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "ABOVE_LAYER_2",
+        "offsetPixels" : {
+          "x" : 8.0,
+          "y" : 9.5
+        }
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "y" : -4.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Bag.png",
+      "coloringLayer" : "SEED_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "ABOVE_LAYER_2",
+        "offsetPixels" : {
+          "x" : 8.0,
+          "y" : 9.5
+        }
+      } ],
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "y" : -4.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP" : {
+      "filename" : "Bag.png",
+      "coloringLayer" : "SEED_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "ABOVE_LAYER_2",
+        "offsetPixels" : {
+          "x" : 8.0,
+          "y" : 9.5
+        }
+      } ]
+    },
+    "UP_RIGHT" : {
+      "filename" : "Bag.png",
+      "coloringLayer" : "SEED_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "ABOVE_LAYER_2",
+        "offsetPixels" : {
+          "x" : 8.0,
+          "y" : 9.5
+        }
+      } ]
+    },
+    "UP_LEFT" : {
+      "filename" : "Bag.png",
+      "coloringLayer" : "SEED_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "ABOVE_LAYER_2",
+        "offsetPixels" : {
+          "x" : 8.0,
+          "y" : 9.5
+        }
+      } ]
+    }
+  }
+}, {
+  "uniqueName" : "Ingredient-Seeds-Bag-Ground",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Ingredient-Seeds",
+  "maxQuantity" : 50,
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Bag.png",
+      "coloringLayer" : "SEED_COLOR",
+      "scale" : 0.7,
+      "childAssets" : [ {
+        "type" : "ABOVE_LAYER_2",
+        "offsetPixels" : {
+          "x" : 8.0,
+          "y" : 9.5
+        }
+      } ]
+    }
+  }
+} ]

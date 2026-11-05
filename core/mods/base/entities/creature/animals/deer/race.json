@@ -1,0 +1,63 @@
+{
+  "name" : "Deer",
+  "i18nKey" : "RACE.DEER",
+  "minStrength" : 5.0,
+  "maxStrength" : 12.0,
+  "bodyStructureName" : "hooved-quadruped",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "SKIN_COLOR" : {
+      "swatch" : "deer-skin-swatch.png"
+    },
+    "MARKING_COLOR" : {
+      "swatch" : "deer-markings-swatch.png"
+    },
+    "HAIR_COLOR" : {
+      "swatch" : "deer-antlers-swatch.png"
+    }
+  },
+  "mapPlacement" : "ANIMAL",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ "SLEEP" ],
+    "group" : {
+      "minSize" : 2,
+      "maxSize" : 4
+    },
+    "aggressionResponse" : "FLEE"
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes": {
+        "CREATURE_HAIR": 1.0
+      }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "maxDefensePoints" : 6,
+      "maxDefenseRegainedPerRound" : 1
+    },
+    "skin" : {
+      "itemTypeName" : "Carcass-Hide",
+      "quantity" : 1,
+      "materialName" : "Deer Hide"
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Meat-Medium",
+      "materialName" : "Deer Meat",
+      "quantity" : 2
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : { }
+  }
+}

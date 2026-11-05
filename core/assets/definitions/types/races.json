@@ -1,0 +1,991 @@
+[ {
+  "name" : "Boar",
+  "i18nKey" : "RACE.BOAR",
+  "minStrength" : 8.0,
+  "maxStrength" : 15.0,
+  "bodyStructureName" : "hooved-quadruped",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "SKIN_COLOR" : {
+      "swatch" : "boar-skin-swatch.png",
+      "hidden" : false
+    },
+    "BONE_COLOR" : {
+      "colorCode" : "#fbfbf9",
+      "hidden" : false
+    },
+    "HAIR_COLOR" : {
+      "swatch" : "boar-hair-swatch.png",
+      "hidden" : false
+    },
+    "MISC_COLOR_1" : {
+      "colorCode" : "#aa8c9a",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "ANIMAL",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ "SLEEP" ],
+    "group" : {
+      "minSize" : 2,
+      "maxSize" : 5
+    },
+    "aggressionResponse" : "ATTACK",
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 12,
+      "maxDefenseRegainedPerRound" : 2,
+      "damageReduction" : {
+        "STABBING" : 1,
+        "SLASHING" : 1,
+        "CRUSHING" : 1
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "skin" : {
+      "itemTypeName" : "Carcass-Hide",
+      "quantity" : 1,
+      "materialName" : "Boar Hide"
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Meat-Medium",
+      "materialName" : "Boar Meat",
+      "quantity" : 3
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Deer",
+  "i18nKey" : "RACE.DEER",
+  "minStrength" : 5.0,
+  "maxStrength" : 12.0,
+  "bodyStructureName" : "hooved-quadruped",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "SKIN_COLOR" : {
+      "swatch" : "deer-skin-swatch.png",
+      "hidden" : false
+    },
+    "MARKING_COLOR" : {
+      "swatch" : "deer-markings-swatch.png",
+      "hidden" : false
+    },
+    "HAIR_COLOR" : {
+      "swatch" : "deer-antlers-swatch.png",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "ANIMAL",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ "SLEEP" ],
+    "group" : {
+      "minSize" : 2,
+      "maxSize" : 4
+    },
+    "aggressionResponse" : "FLEE",
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : {
+        "CREATURE_HAIR" : 1.0
+      }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 6,
+      "maxDefenseRegainedPerRound" : 1,
+      "damageReduction" : { },
+      "restrictedToRaceNames" : [ ]
+    },
+    "skin" : {
+      "itemTypeName" : "Carcass-Hide",
+      "quantity" : 1,
+      "materialName" : "Deer Hide"
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Meat-Medium",
+      "materialName" : "Deer Meat",
+      "quantity" : 2
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Elephant",
+  "i18nKey" : "RACE.ELEPHANT",
+  "minStrength" : 9.0,
+  "maxStrength" : 21.0,
+  "bodyStructureName" : "pachyderm",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "SKIN_COLOR" : {
+      "swatch" : "elephant-skin-swatch.png",
+      "hidden" : false
+    },
+    "BONE_COLOR" : {
+      "swatch" : "elephant-tusk-swatch.png",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "ANIMAL",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ "SLEEP" ],
+    "group" : {
+      "minSize" : 3,
+      "maxSize" : 5
+    },
+    "aggressionResponse" : "ATTACK",
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 26,
+      "maxDefenseRegainedPerRound" : 3,
+      "damageReduction" : {
+        "STABBING" : 1,
+        "SLASHING" : 1,
+        "CRUSHING" : 1
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "STABBING",
+      "modifiedByStrength" : true,
+      "minDamage" : 3,
+      "maxDamage" : 8,
+      "armorNegation" : 1,
+      "twoHanded" : false,
+      "combatSkillName" : "UNARMED_COMBAT",
+      "weaponHitSoundAssetName" : "SFX_Stab_Splat",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Weapon slash",
+      "ranged" : false
+    },
+    "skin" : {
+      "itemTypeName" : "Carcass-Hide",
+      "quantity" : 4,
+      "materialName" : "Elephant Hide"
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Meat-Large",
+      "materialName" : "Elephant Meat",
+      "quantity" : 4
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Fox",
+  "i18nKey" : "RACE.FOX",
+  "minStrength" : 4.0,
+  "maxStrength" : 10.0,
+  "bodyStructureName" : "pawed-quadruped",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "SKIN_COLOR" : {
+      "swatch" : "fox-skin-swatch.png",
+      "hidden" : false
+    },
+    "MARKING_COLOR" : {
+      "swatch" : "fox-markings-swatch.png",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "ANIMAL",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ "SLEEP" ],
+    "aggressionResponse" : "MIXED",
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 10,
+      "maxDefenseRegainedPerRound" : 1,
+      "damageReduction" : { },
+      "restrictedToRaceNames" : [ ]
+    },
+    "skin" : {
+      "quantity" : 0
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Meat-Small",
+      "materialName" : "Fox Meat",
+      "quantity" : 2
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Horse",
+  "i18nKey" : "RACE.HORSE",
+  "minStrength" : 9.0,
+  "maxStrength" : 17.0,
+  "bodyStructureName" : "hooved-quadruped",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE",
+    "minStrength" : 9.0,
+    "maxStrength" : 17.0
+  } ],
+  "colors" : {
+    "SKIN_COLOR" : {
+      "swatch" : "horse-skin-swatch.png",
+      "hidden" : false
+    },
+    "MARKING_COLOR" : {
+      "swatch" : "horse-nose-and-spots-swatch.png",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "NONE",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ "SLEEP" ],
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : {
+        "CREATURE_BODYPAINT" : 0.2
+      }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : {
+        "CREATURE_BODYPAINT" : 0.2
+      }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 12,
+      "maxDefenseRegainedPerRound" : 2,
+      "damageReduction" : {
+        "STABBING" : 0,
+        "SLASHING" : 0,
+        "CRUSHING" : 0
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "CRUSHING",
+      "modifiedByStrength" : true,
+      "minDamage" : 2,
+      "maxDamage" : 7,
+      "armorNegation" : 0,
+      "twoHanded" : false,
+      "combatSkillName" : "UNARMED_COMBAT",
+      "weaponHitSoundAssetName" : "SFX_Hunting_Impact_Crushing",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Weapon slash",
+      "ranged" : false
+    },
+    "skin" : {
+      "itemTypeName" : "Carcass-Hide",
+      "quantity" : 2,
+      "materialName" : "Horse Hide"
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Meat-Medium",
+      "materialName" : "Horse Meat",
+      "quantity" : 3
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Dwarf",
+  "i18nKey" : "RACE.DWARF",
+  "nameGeneration" : "Dwarven",
+  "minStrength" : 7.0,
+  "maxStrength" : 19.0,
+  "bodyStructureName" : "Humanoid",
+  "bodyShapes" : [ {
+    "value" : "FAT",
+    "maxStrength" : 10.0
+  }, {
+    "value" : "STRONG",
+    "minStrength" : 14.5
+  }, {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "HAIR_COLOR" : {
+      "colorChart" : "dwarf-hair-swatch.png",
+      "hidden" : false
+    },
+    "SKIN_COLOR" : {
+      "colorChart" : "dwarf-skin-swatch.png",
+      "hidden" : false
+    },
+    "EYE_COLOR" : {
+      "colorCode" : "#000000",
+      "hidden" : false
+    },
+    "CLOTHING_COLOR" : {
+      "colorChart" : "dwarf-accessory-swatch.png",
+      "hidden" : false
+    },
+    "ACCESSORY_COLOR" : {
+      "colorChart" : "dwarf-accessory-swatch.png",
+      "hidden" : false
+    },
+    "BONE_COLOR" : {
+      "colorCode" : "#fbfbf9",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "NONE",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Default Settler Schedule",
+    "needs" : [ "FOOD", "DRINK", "SLEEP" ],
+    "aggressionResponse" : "FLEE",
+    "isSapient" : true
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : {
+        "CREATURE_HAIR" : 0.4
+      }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : {
+        "CREATURE_EYEBROWS" : 1.0,
+        "CREATURE_BEARD" : 1.0
+      }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 20,
+      "maxDefenseRegainedPerRound" : 3,
+      "damageReduction" : {
+        "STABBING" : 1,
+        "SLASHING" : 2,
+        "CRUSHING" : 2
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "CRUSHING",
+      "modifiedByStrength" : true,
+      "minDamage" : 1,
+      "maxDamage" : 4,
+      "armorNegation" : 0,
+      "twoHanded" : false,
+      "weaponHitSoundAssetName" : "SFX_Punch_Impact",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Weapon slash",
+      "ranged" : false
+    },
+    "skin" : {
+      "itemTypeName" : "Carcass-Hide",
+      "quantity" : 1,
+      "materialName" : "Dwarf Flesh"
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Carp",
+  "i18nKey" : "RACE.CARP",
+  "minStrength" : 1.0,
+  "maxStrength" : 2.0,
+  "bodyStructureName" : "Fish",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : { },
+  "mapPlacement" : "NONE",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "needs" : [ ],
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "skin" : {
+      "quantity" : 0
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Carp-Prepared",
+      "materialName" : "Carp Meat",
+      "quantity" : 1
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Perch",
+  "i18nKey" : "RACE.PERCH",
+  "minStrength" : 1.0,
+  "maxStrength" : 2.0,
+  "bodyStructureName" : "Fish",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : { },
+  "mapPlacement" : "NONE",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "needs" : [ ],
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "skin" : {
+      "quantity" : 0
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Perch-Prepared",
+      "materialName" : "Perch Meat",
+      "quantity" : 1
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Pike",
+  "i18nKey" : "RACE.PIKE",
+  "minStrength" : 1.0,
+  "maxStrength" : 2.0,
+  "bodyStructureName" : "Fish",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : { },
+  "mapPlacement" : "NONE",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "needs" : [ ],
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "skin" : {
+      "quantity" : 0
+    },
+    "meat" : {
+      "itemTypeName" : "Carcass-Pike-Prepared",
+      "materialName" : "Pike Meat",
+      "quantity" : 1
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Fungolem",
+  "i18nKey" : "RACE.FUNGOLEM",
+  "minStrength" : 0.0,
+  "maxStrength" : 0.0,
+  "bodyStructureName" : "Humanoid",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "HAIR_COLOR" : {
+      "swatch" : "fungolem-hair-swatch.png",
+      "hidden" : false
+    },
+    "SKIN_COLOR" : {
+      "colorCode" : "#fcf2f0",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "CAVE_MONSTER",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ "SLEEP" ],
+    "group" : {
+      "minSize" : 2,
+      "maxSize" : 12
+    },
+    "aggressionResponse" : "MIXED",
+    "isSapient" : false
+  },
+  "genders" : {
+    "FEMALE" : {
+      "weighting" : 1.0,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 3,
+      "maxDefenseRegainedPerRound" : 0,
+      "damageReduction" : {
+        "STABBING" : 0,
+        "SLASHING" : 0,
+        "CRUSHING" : 0
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "CRUSHING",
+      "modifiedByStrength" : false,
+      "minDamage" : 1,
+      "maxDamage" : 2,
+      "armorNegation" : 0,
+      "twoHanded" : false,
+      "combatSkillName" : "UNARMED_COMBAT",
+      "weaponHitSoundAssetName" : "SFX_Punch_Impact",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Weapon slash",
+      "ranged" : false
+    },
+    "meat" : {
+      "itemTypeName" : "Ingredient-Vegetable-Crate",
+      "materialName" : "Fungolem Mushroom",
+      "quantity" : 4
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Spider",
+  "i18nKey" : "RACE.SPIDER",
+  "minStrength" : 3.0,
+  "maxStrength" : 6.0,
+  "bodyStructureName" : "arachnid",
+  "bodyShapes" : [ {
+    "value" : "AVERAGE"
+  } ],
+  "colors" : {
+    "SKIN_COLOR" : {
+      "colorCode" : "#665446",
+      "hidden" : false
+    },
+    "EYE_COLOR" : {
+      "colorCode" : "#b25f3f",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "CAVE_MONSTER",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ ],
+    "group" : {
+      "minSize" : 1,
+      "maxSize" : 12
+    },
+    "aggressionResponse" : "ATTACK",
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 6,
+      "maxDefenseRegainedPerRound" : 1,
+      "damageReduction" : {
+        "STABBING" : 0,
+        "SLASHING" : 0,
+        "CRUSHING" : 0
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "STABBING",
+      "modifiedByStrength" : true,
+      "minDamage" : 1,
+      "maxDamage" : 3,
+      "armorNegation" : 0,
+      "twoHanded" : false,
+      "combatSkillName" : "UNARMED_COMBAT",
+      "weaponHitSoundAssetName" : "SFX_Stab_Splat",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Claw slash",
+      "ranged" : false
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Undead Dwarf",
+  "i18nKey" : "RACE.UNDEAD_DWARF",
+  "minStrength" : 2.0,
+  "maxStrength" : 17.0,
+  "bodyStructureName" : "Undead Humanoid",
+  "bodyShapes" : [ {
+    "value" : "FAT",
+    "maxStrength" : 10.0
+  }, {
+    "value" : "AVERAGE"
+  }, {
+    "value" : "STRONG",
+    "maxStrength" : 14.5
+  } ],
+  "colors" : {
+    "BONE_COLOR" : {
+      "colorCode" : "#fbfbf9",
+      "hidden" : false
+    },
+    "OTHER_COLOR" : {
+      "colorCode" : "#DB0B23",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "CAVE_MONSTER",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ ],
+    "group" : {
+      "minSize" : 1,
+      "maxSize" : 8
+    },
+    "aggressionResponse" : "ATTACK",
+    "isSapient" : false
+  },
+  "genders" : {
+    "NONE" : {
+      "weighting" : 1.0,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 10,
+      "maxDefenseRegainedPerRound" : 1,
+      "damageReduction" : {
+        "STABBING" : 3,
+        "SLASHING" : 3,
+        "CRUSHING" : -5
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "SLASHING",
+      "modifiedByStrength" : true,
+      "minDamage" : 2,
+      "maxDamage" : 6,
+      "armorNegation" : 0,
+      "twoHanded" : false,
+      "combatSkillName" : "UNARMED_COMBAT",
+      "weaponHitSoundAssetName" : "SFX_Hunting_Impact_Slicing",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Weapon slash",
+      "ranged" : false
+    },
+    "bones" : {
+      "materialName" : "Bone"
+    }
+  },
+  "tags" : {
+    "TRANSFORM_TO_ITEMS_ON_DEATH" : [ "Resource-Bone-Medium", "2" ]
+  }
+}, {
+  "name" : "Wurm",
+  "i18nKey" : "RACE.WURM",
+  "minStrength" : 12.0,
+  "maxStrength" : 20.0,
+  "bodyStructureName" : "Serpent",
+  "bodyShapes" : [ {
+    "value" : "ANY"
+  } ],
+  "colors" : {
+    "SKIN_COLOR" : {
+      "swatch" : "wurm-skin-swatch.png",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "CAVE_MONSTER",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Diurnal animal",
+    "needs" : [ ],
+    "group" : {
+      "minSize" : 1,
+      "maxSize" : 3
+    },
+    "aggressionResponse" : "ATTACK",
+    "isSapient" : false
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    },
+    "FEMALE" : {
+      "weighting" : 0.5,
+      "hideAssetTypes" : { }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 20,
+      "maxDefenseRegainedPerRound" : 3,
+      "damageReduction" : {
+        "STABBING" : 0,
+        "SLASHING" : 0,
+        "CRUSHING" : 4
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "unarmedWeapon" : {
+      "range" : 1,
+      "damageType" : "SLASHING",
+      "modifiedByStrength" : true,
+      "minDamage" : 4,
+      "maxDamage" : 12,
+      "armorNegation" : 0,
+      "twoHanded" : false,
+      "combatSkillName" : "UNARMED_COMBAT",
+      "weaponHitSoundAssetName" : "SFX_Stab_Splat",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Claw slash",
+      "ranged" : false
+    }
+  },
+  "tags" : { }
+}, {
+  "name" : "Orc",
+  "i18nKey" : "RACE.ORC",
+  "nameGeneration" : "Orcish",
+  "minStrength" : 8.0,
+  "maxStrength" : 23.0,
+  "bodyStructureName" : "Humanoid",
+  "bodyShapes" : [ {
+    "value" : "FAT",
+    "minStrength" : 8.0,
+    "maxStrength" : 14.0
+  }, {
+    "value" : "AVERAGE",
+    "minStrength" : 13.0,
+    "maxStrength" : 19.0
+  }, {
+    "value" : "STRONG",
+    "minStrength" : 18.0,
+    "maxStrength" : 23.0
+  } ],
+  "colors" : {
+    "EYE_COLOR" : {
+      "swatch" : "orc-eye-swatch.png",
+      "hidden" : false
+    },
+    "SKIN_COLOR" : {
+      "colorChart" : "orc-skin-swatch.png",
+      "hidden" : false
+    },
+    "HAIR_COLOR" : {
+      "colorChart" : "orc-hair-swatch.png",
+      "hidden" : false
+    },
+    "BONE_COLOR" : {
+      "swatch" : "orc-horn-swatch.png",
+      "hidden" : false
+    },
+    "ACCESSORY_COLOR" : {
+      "colorChart" : "orc-accessory-swatch.png",
+      "hidden" : false
+    }
+  },
+  "mapPlacement" : "NONE",
+  "behaviour" : {
+    "behaviourName" : "Creature",
+    "scheduleName" : "Military day shift",
+    "needs" : [ "FOOD", "SLEEP" ],
+    "aggressionResponse" : "ATTACK",
+    "isSapient" : true
+  },
+  "genders" : {
+    "MALE" : {
+      "weighting" : 1.0,
+      "hideAssetTypes" : {
+        "CREATURE_HAIR" : 0.95,
+        "CREATURE_BEARD" : 0.9,
+        "CREATURE_HORNS" : 0.6,
+        "CREATURE_TUSKS" : 0.2,
+        "CREATURE_FACEPAINT" : 0.6,
+        "CREATURE_BODYPAINT" : 0.6
+      }
+    }
+  },
+  "features" : {
+    "defense" : {
+      "type" : "RACIAL",
+      "maxDefensePoints" : 20,
+      "maxDefenseRegainedPerRound" : 3,
+      "damageReduction" : {
+        "STABBING" : 1,
+        "SLASHING" : 1,
+        "CRUSHING" : 1
+      },
+      "restrictedToRaceNames" : [ ]
+    },
+    "unarmedWeapon" : {
+      "range" : 8,
+      "damageType" : "CRUSHING",
+      "modifiedByStrength" : true,
+      "minDamage" : 1,
+      "maxDamage" : 3,
+      "armorNegation" : 0,
+      "twoHanded" : false,
+      "combatSkillName" : "UNARMED_COMBAT",
+      "weaponHitSoundAssetName" : "SFX_Punch_Impact",
+      "weaponMissSoundAssetName" : "SFX_Melee_Miss",
+      "animatedSpriteEffectName" : "Weapon slash",
+      "ranged" : true
+    },
+    "blood" : {
+      "colorCode" : "#e62d23"
+    }
+  },
+  "tags" : { }
+} ]

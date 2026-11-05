@@ -1,0 +1,10 @@
+{
+  "itemTypeName" : "Resource-Stone-Unrefined",
+  "materialTypes" : [ "STONE" ],
+  "primaryMaterialType" : "STONE",
+  "baseValuePerItem": 2,
+  "impedesMovement" : true,
+  "stockpileGroupName" : "RAW_MATERIALS",
+  "placementSoundAssetName" : "HeavyStoneItem",
+  "i18nKey" : "RESOURCE.STONE.UNREFINED"
+}

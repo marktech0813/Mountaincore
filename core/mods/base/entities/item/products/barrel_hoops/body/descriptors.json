@@ -1,0 +1,112 @@
+[ {
+  "uniqueName" : "Product-Barrel-Hoops-Body-Carried",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Product-Barrel-Hoops",
+  "maxQuantity" : 12,
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Barrel hoops.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 18.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -18.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Barrel hoops.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 22.0,
+          "y" : -10.0
+        },
+        "overrideRenderLayer" : -100
+      } ]
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Barrel hoops.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      }, {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -22.0,
+          "y" : -10.0
+        },
+        "overrideRenderLayer" : -100
+      } ]
+    },
+    "UP_RIGHT" : {
+      "filename" : "Barrel hoops.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_LEFT_HAND",
+        "offsetPixels" : {
+          "x" : 16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP_LEFT" : {
+      "filename" : "Barrel hoops.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8,
+      "parentEntityAssets" : [ {
+        "type" : "CREATURE_RIGHT_HAND",
+        "offsetPixels" : {
+          "x" : -16.0,
+          "y" : -16.0
+        },
+        "overrideRenderLayer" : 100
+      } ]
+    },
+    "UP" : {
+      "filename" : "Barrel hoops.png",
+      "coloringLayer" : "METAL_COLOR",
+      "scale" : 0.8
+    }
+  }
+}, {
+  "uniqueName" : "Product-Barrel-Hoops-Body-Ground",
+  "type" : "ITEM_BASE_LAYER",
+  "itemTypeName" : "Product-Barrel-Hoops",
+  "maxQuantity" : 12,
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Barrel hoops.png",
+      "coloringLayer" : "METAL_COLOR"
+    }
+  }
+} ]

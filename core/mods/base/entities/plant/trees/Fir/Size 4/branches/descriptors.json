@@ -1,0 +1,23 @@
+[ {
+  "uniqueName" : "Tree-Fir-Size4-Branches",
+  "type" : "PLANT_BRANCHES",
+  "speciesName" : "Fir",
+  "growthStages" : [ 3 ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "fir-3-t.png",
+      "coloringLayer" : "BRANCHES_COLOR",
+      "offsetPixels" : {
+        "x" : -4.0,
+        "y" : 149.0
+      },
+      "childAssets" : [ {
+        "type" : "PLANT_LEAVES",
+        "offsetPixels" : {
+          "x" : 2.0,
+          "y" : 38.0
+        }
+      } ]
+    }
+  }
+} ]

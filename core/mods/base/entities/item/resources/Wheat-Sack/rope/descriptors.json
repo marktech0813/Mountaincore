@@ -1,0 +1,72 @@
+[ {
+  "uniqueName" : "Resource-Wheat-Sack-Rope-Carried",
+  "type" : "ABOVE_LAYER_2",
+  "itemTypeName" : "Resource-Wheat-Sack",
+  "maxQuantity" : 30,
+  "itemPlacements" : [ "BEING_CARRIED" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Sack rope.png",
+      "coloringLayer" : "ROPE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : 13.6
+      }
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Sack rope.png",
+      "coloringLayer" : "ROPE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : 13.6
+      }
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Sack rope.png",
+      "coloringLayer" : "ROPE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : 13.6
+      }
+    },
+    "UP_RIGHT" : {
+      "filename" : "Sack rope.png",
+      "coloringLayer" : "ROPE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : 13.6
+      }
+    },
+    "UP_LEFT" : {
+      "filename" : "Sack rope.png",
+      "coloringLayer" : "ROPE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : 13.6
+      }
+    },
+    "UP" : {
+      "filename" : "Sack rope.png",
+      "coloringLayer" : "ROPE_COLOR",
+      "scale" : 0.8,
+      "offsetPixels" : {
+        "y" : 13.6
+      }
+    }
+  }
+}, {
+  "uniqueName" : "Resource-Wheat-Sack-Rope-Ground",
+  "type" : "ABOVE_LAYER_2",
+  "itemTypeName" : "Resource-Wheat-Sack",
+  "maxQuantity" : 30,
+  "itemPlacements" : [ "ON_GROUND" ],
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Sack rope.png",
+      "coloringLayer" : "ROPE_COLOR",
+      "offsetPixels" : {
+        "y" : 17.0
+      }
+    }
+  }
+} ]

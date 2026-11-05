@@ -1,0 +1,15 @@
+{
+  "itemTypeName" : "Resource-Grain-Sack",
+  "maxStackSize" : 30,
+  "maxHauledAtOnce" : 30,
+  "materialTypes" : [ "VEGETABLE", "CLOTH", "ROPE" ],
+  "primaryMaterialType" : "VEGETABLE",
+  "baseValuePerItem": 5,
+  "hoursInInventoryUntilUnused" : 2.0,
+  "stockpileGroupName" : "GRANARY",
+  "describeAsMaterialOnly" : true,
+  "i18nKey" : "RESOURCE.GRAIN.SACK",
+  "specificMaterialNames": ["Barley"],
+  "tradeExportable": true,
+  "tradeImportable": true
+}

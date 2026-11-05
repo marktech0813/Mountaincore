@@ -1,0 +1,17 @@
+{
+  "itemTypeName" : "Product-Waterskin",
+  "maxStackSize" : 12,
+  "maxHauledAtOnce" : 4,
+  "hoursInInventoryUntilUnused": 240,
+  "materialTypes" : [ "SKIN" ],
+  "primaryMaterialType" : "SKIN",
+  "baseValuePerItem": 3,
+  "relatedCraftingTypeNames" : [ "LEATHERWORKING" ],
+  "stockpileGroupName" : "PRODUCTS",
+  "tags" : {
+    "LIQUID_CONTAINER" : [ "1", "Water" ],
+    "USAGE_SOUND" : [ "WaterCollect" ],
+    "ITEM_ASSIGNMENT" : [ "PREFER_MILITARY" ]
+  },
+  "i18nKey" : "PRODUCT.WATERSKIN"
+}

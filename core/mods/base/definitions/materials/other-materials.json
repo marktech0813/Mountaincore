@@ -1,0 +1,60 @@
+[
+  {
+    "materialName": "Green Vitriol",
+    "materialType": "VITRIOL",
+    "useAsExampleMaterialForMaterialType": true,
+    "colorCode": "#7fccbb"
+  },
+  {
+    "materialName": "Snowfall",
+    "materialType": "LIQUID"
+  },
+
+  {
+    "materialName": "brick",
+    "materialType": "OTHER"
+  },
+  {
+    "materialName": "Grass",
+    "materialType": "EARTH",
+    "colorCode": "#639448"
+  },
+  {
+    "materialName": "Dirt",
+    "materialType": "EARTH",
+    "useAsExampleMaterialForMaterialType": true,
+    "colorCode": "#91694c"
+  },
+  {
+    "materialName": "Tilled earth",
+    "materialType": "EARTH",
+    "useInRandomGeneration": false
+  },
+  {
+    "materialName": "clay_soil",
+    "materialType": "OTHER"
+  },
+  {
+    "materialName": "Gravel",
+    "materialType": "OTHER",
+    "useAsExampleMaterialForMaterialType": true,
+    "colorCode": "#7e796f"
+  },
+  {
+    "materialName": "Plant",
+    "materialType": "OTHER",
+    "combustible": true
+  },
+  {
+    "materialName": "Bone",
+    "materialType": "BONE",
+    "colorCode": "#fbfbf9",
+    "useAsExampleMaterialForMaterialType": true,
+    "excludeFromItemDescription": true
+  },
+  {
+    "materialName": "Ash",
+    "materialType": "OTHER",
+    "colorCode": "#2c2927"
+  }
+]

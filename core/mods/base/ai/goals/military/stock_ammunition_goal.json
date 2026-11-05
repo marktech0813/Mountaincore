@@ -1,0 +1,36 @@
+{
+  "name": "Stock ammunition (military)",
+  "expiryHours": 12,
+  "i18nDescription": "GOAL.ADD_TO_INVENTORY.DESCRIPTION",
+  "interruptedByLowNeeds": true,
+  "interruptedByCombat": true,
+  "creatureCategories": ["MILITARY"],
+  "selectors": [
+    {
+      "conditions": [
+        {
+          "type": "ASSIGNED_WEAPON_REQUIRES_AMMO",
+          "operator": "LESS_THAN",
+          "value": 11,
+          "targetQuantity": 20
+        }
+      ],
+      "priority": "JOB_URGENT",
+      "scheduleCategory": "ANY"
+    }
+  ],
+  "initialActions": ["FindAmmoForAssignedWeapon"],
+  "actionRelationships": {
+    "FindAmmoForAssignedWeapon": {
+      "pass": ["GoToLocation"]
+    },
+    "GoToLocation": {
+      "pass": ["PickUpEntity"],
+      "fail": ["CancelHaulingAllocation"]
+    },
+    "PickUpEntity": {
+      "fail": ["CancelHaulingAllocation"]
+    },
+    "CancelHaulingAllocation": {}
+  }
+}

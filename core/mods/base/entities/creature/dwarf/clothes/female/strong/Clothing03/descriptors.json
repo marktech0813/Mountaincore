@@ -1,0 +1,36 @@
+[ {
+  "uniqueName" : "Dwarf-Female-Strong-Clothing03",
+  "type" : "BODY_CLOTHING",
+  "raceName" : "Dwarf",
+  "bodyShape" : "STRONG",
+  "gender" : "FEMALE",
+  "profession" : "BREWER",
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Dwarf-Female-Strong-Clothing03-F.png"
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Dwarf-Female-Strong-Clothing03-F34.png",
+      "offsetPixels" : {
+        "x" : 1.5
+      }
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Dwarf-Female-Strong-Clothing03-F34.png",
+      "offsetPixels" : {
+        "x" : -1.5
+      },
+      "flipX" : true
+    },
+    "UP_RIGHT" : {
+      "filename" : "Dwarf-Female-Strong-Clothing03-B34.png"
+    },
+    "UP_LEFT" : {
+      "filename" : "Dwarf-Female-Strong-Clothing03-B34.png",
+      "flipX" : true
+    },
+    "UP" : {
+      "filename" : "Dwarf-Female-Strong-Clothing03-B.png"
+    }
+  }
+} ]

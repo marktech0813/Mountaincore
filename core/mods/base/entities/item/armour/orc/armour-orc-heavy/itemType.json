@@ -1,0 +1,23 @@
+{
+  "itemTypeName" : "Armour-Orc-Heavy",
+  "materialTypes" : [ "METAL", "METAL", "CLOTH", "SKIN" ],
+  "primaryMaterialType" : "METAL",
+  "baseValuePerItem" : 20,
+  "stockpileGroupName" : "WEAPONS",
+  "tags" : {
+    "ASSET_OVERRIDE_BY_SKILL" : [ "HEAVY_ARMOR", "CLOTHING_COLOR" ]
+  },
+  "defenseInfo" : {
+    "type" : "ARMOR",
+    "maxDefensePoints" : 16,
+    "maxDefenseRegainedPerRound" : 3,
+    "damageReduction" : {
+      "STABBING" : 0,
+      "SLASHING" : 1,
+      "CRUSHING" : 0
+    },
+    "restrictedToRaceNames" : [ "Orc" ]
+  },
+  "i18nKey" : "ARMOUR.ORC.HEAVY",
+  "tradeExportable": true
+}

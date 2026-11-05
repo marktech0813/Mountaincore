@@ -1,0 +1,457 @@
+[
+  {
+    "recipeName": "Cut planks",
+    "craftingTypeName": "WOODCUTTING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Logs",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Resource-Planks",
+      "quantity": 2
+    },
+    "materialTypesToCopyOver": ["WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 5.5
+  },
+  {
+    "recipeName": "Cut mushroom planks",
+    "craftingTypeName": "WOODCUTTING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Mushroom-Lumber",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Resource-Planks",
+      "quantity": 2
+    },
+    "itemTypeRequiredName": "Tool-Axe",
+    "materialTypesToCopyOver": ["WOOD"],
+    "minimumTimeToCompleteCrafting": 1,
+    "maximumTimeToCompleteCrafting": 3
+  },
+  {
+    "recipeName": "Craft barrel staves",
+    "craftingTypeName": "WOODCUTTING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Logs",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Barrel-Staves",
+      "quantity": 3
+    },
+    "materialTypesToCopyOver": ["WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+
+  {
+    "recipeName": "Craft barrel hoops",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Barrel-Hoops",
+      "quantity": 3
+    },
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 8.5
+  },
+  {
+    "recipeName": "Craft liquid tank",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Plate",
+        "quantity": 3
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Liquid-Tank",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Craft cauldron",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 8
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Cauldron",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 10.5
+  },
+  {
+    "recipeName": "Craft anvil",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 8
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Anvil",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 11.5
+  },
+  {
+    "recipeName": "Craft tool axe",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 2
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Tool-Axe",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Craft tool chisel",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 1
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Tool-Chisel",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Craft tool kitchen knife",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Tool-Kitchen-Knife",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Craft tool large hammer",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 2
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Tool-Large-Hammer",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Craft tool pickaxe",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 2
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Tool-Pickaxe",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Craft tool saw",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 2
+      },
+      {
+        "itemTypeName": "Resource-Planks",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Tool-Saw",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Craft tool small hammer",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "itemTypeName": "Tool-Small-Hammer",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Craft tool tongs",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "itemTypeName": "Tool-Tongs",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["METAL"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+
+  {
+    "recipeName": "Mill wheat",
+    "verbOverrideI18nKey": "PROFESSION.MILLER",
+    "craftingTypeName": "MILLING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Wheat-Sack",
+        "quantity": 2
+      }
+    ],
+    "output": {
+      "itemTypeName": "Resource-Flour-Sack",
+      "quantity": 3
+    },
+    "materialTypesToCopyOver": ["VEGETABLE"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+
+  {
+    "recipeName": "Create dough",
+    "verbOverrideI18nKey": "ACTION.PREPARATION",
+    "craftingTypeName": "DOUGH_PREPARATION",
+    "input": [
+      {
+        "itemTypeName": "Resource-Flour-Sack",
+        "quantity": 3
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Bread-Dough",
+      "quantity": 7
+    },
+    "materialTypesToCopyOver": ["VEGETABLE"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+  {
+    "recipeName": "Create ration dough",
+    "verbOverrideI18nKey": "ACTION.PREPARATION",
+    "craftingTypeName": "DOUGH_PREPARATION",
+    "input": [
+      {
+        "itemTypeName": "Resource-Flour-Sack",
+        "quantity": 4
+      },
+      {
+        "itemTypeName": "Resource-Stone-Unrefined",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Ration-Dough",
+      "quantity": 4
+    },
+    "materialTypesToCopyOver": ["VEGETABLE", "STONE"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  },
+
+  {
+    "recipeName": "Convert coal to coke",
+    "craftingTypeName": "COKE_OVEN_BAKING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Ore-Crushed",
+        "materialName": "Bituminous Coal",
+        "quantity": 15
+      }
+    ],
+    "output": {
+      "itemTypeName": "Fuel-Sack",
+      "materialName": "Coke",
+      "quantity": 15
+    },
+    "extraGameHoursToComplete": 28.0,
+    "minimumTimeToCompleteCrafting": 1.5,
+    "maximumTimeToCompleteCrafting": 3.5
+  },
+
+
+  {
+    "recipeName": "Craft rope",
+    "craftingTypeName": "WEAVING",
+    "verbOverrideI18nKey": "CRAFTING_TYPE.WEAVING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Hemp-Fibre-Bundle",
+        "materialName": "Hemp_Fibre",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Rope",
+      "materialName": "Hemp-Rope",
+      "quantity": 1
+    },
+    "minimumTimeToCompleteCrafting": 1.5,
+    "maximumTimeToCompleteCrafting": 8.5
+  },
+  {
+    "recipeName": "Craft cloth",
+    "craftingTypeName": "WEAVING",
+    "verbOverrideI18nKey": "CRAFTING_TYPE.WEAVING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Hemp-Fibre-Bundle",
+        "materialName": "Hemp_Fibre",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Linen",
+      "materialName": "Hemp-Linen",
+      "quantity": 1
+    },
+    "minimumTimeToCompleteCrafting": 1.5,
+    "maximumTimeToCompleteCrafting": 8.5
+  },
+  {
+    "recipeName": "Craft leather",
+    "craftingTypeName": "TANNING_HIDE",
+    "input": [
+      {
+        "itemTypeName": "Carcass-Hide",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Leather",
+      "quantity": 1
+    },
+    "materialTypesToCopyOver": ["SKIN"],
+    "minimumTimeToCompleteCrafting": 1.5,
+    "maximumTimeToCompleteCrafting": 15,
+    "extraGameHoursToComplete": 48.0
+  },
+  {
+    "recipeName": "Craft waterskin",
+    "craftingTypeName": "LEATHERWORKING",
+    "input": [
+      {
+        "itemTypeName": "Product-Leather",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Product-Waterskin",
+      "quantity": 1
+    },
+    "itemTypeRequiredName": "Tool-Kitchen-Knife",
+    "materialTypesToCopyOver": ["SKIN"],
+    "minimumTimeToCompleteCrafting": 1.5,
+    "maximumTimeToCompleteCrafting": 3
+  },
+  {
+    "recipeName": "Craft metal arrow heads",
+    "craftingTypeName": "BLACKSMITHING",
+    "input": [
+      {
+        "itemTypeName": "Resource-Metal-Ingot",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "itemTypeName": "Weapon-Metal-Arrow-Heads",
+      "quantity": 10
+    },
+    "itemTypeRequiredName": "Tool-Large-Hammer",
+    "materialTypesToCopyOver": ["METAL", "WOOD"],
+    "minimumTimeToCompleteCrafting": 2.5,
+    "maximumTimeToCompleteCrafting": 7.5
+  }
+]

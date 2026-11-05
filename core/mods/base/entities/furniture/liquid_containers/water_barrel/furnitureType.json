@@ -1,0 +1,20 @@
+{
+  "name": "WATER_BARREL",
+  "i18nKey": "FURNITURE.WATER_BARREL",
+  "blocksMovement": true,
+  "defaultLayoutName": "1x1 with workspaces",
+  "autoConstructed": true,
+  "requirements": {
+    "WOOD": [
+      {
+        "itemTypeName": "Product-Barrel",
+        "quantity": 1
+      }
+    ]
+  },
+  "tags": {
+    "LIQUID_CONTAINER": ["6", "Water"],
+    "LIQUID_CONTAINER_REFILL_THRESHOLD": ["4"],
+    "FURNITURE_BEHAVIOUR": ["FILL_LIQUID_CONTAINER", "ItemType_Product-Bucket"]
+  }
+}

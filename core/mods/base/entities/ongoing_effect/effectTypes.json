@@ -1,0 +1,25 @@
+[{
+  "name": "Fire",
+  "i18nKey": "EFFECT.FIRE",
+  "particleEffectTypeName": "Fire",
+  "playSoundAssetName": "Burning",
+  "initialColor": "#ffffff00",
+  "states": {
+    "STARTING": {
+      "duration": 5
+    },
+    "ACTIVE": {
+      "duration": 37
+    },
+    "FADING": {
+      "duration": 1.5
+    }
+  },
+  "triggersNotification": "FIRE_STARTED",
+  "canBeExtinguished": true,
+
+  "tags": {
+    "ATTACHES_LIGHT_SOURCE": ["#f7ffa9", "#f8cc5d", "#ff8f2c"],
+    "PARTICLE_EFFECTS_WHILE_PROCESSING": ["Smoking (small offset)"]
+  }
+}]

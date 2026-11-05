@@ -1,0 +1,9 @@
+{
+  "itemTypeName" : "Resource-Gems-Unrefined",
+  "materialTypes" : [ "STONE", "GEM" ],
+  "primaryMaterialType" : "GEM",
+  "baseValuePerItem": 10,
+  "impedesMovement" : true,
+  "stockpileGroupName" : "RAW_MATERIALS",
+  "i18nKey" : "RESOURCE.GEMS.UNREFINED"
+}

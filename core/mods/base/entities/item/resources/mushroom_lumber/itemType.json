@@ -1,0 +1,13 @@
+{
+  "itemTypeName" : "Resource-Mushroom-Lumber",
+  "maxStackSize" : 16,
+  "materialTypes" : [ "WOOD" ],
+  "primaryMaterialType" : "WOOD",
+  "baseValuePerItem": 7,
+  "holdPosition" : "ON_SHOULDER",
+  "impedesMovement" : true,
+  "stockpileGroupName" : "RAW_MATERIALS",
+  "placementSoundAssetName" : "HeavyWoodItem",
+  "i18nKey" : "RESOURCE.MUSHROOM.LUMBER",
+  "specificMaterialNames": ["Fungiwood", "Barkshroom"]
+}

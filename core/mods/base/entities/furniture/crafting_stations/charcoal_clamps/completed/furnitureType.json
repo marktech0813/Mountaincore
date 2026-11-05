@@ -1,0 +1,13 @@
+{
+  "name": "CHARCOAL_CLAMP_COMPLETED",
+  "i18nKey": "FURNITURE.CHARCOAL_CLAMP",
+  "blocksMovement": true,
+  "defaultLayoutName": "2x2 with lower workspaces",
+  "hiddenFromPlacementMenu": true,
+  "requirements": {
+    "WOOD": []
+  },
+  "tags": {
+    "CHARCOAL_CLAMP_BEHAVIOUR": []
+  }
+}

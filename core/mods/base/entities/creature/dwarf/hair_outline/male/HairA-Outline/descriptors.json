@@ -1,0 +1,46 @@
+[ {
+  "uniqueName" : "Dwarf-HairA-Outline",
+  "type" : "HAIR_OUTLINE",
+  "raceName" : "Dwarf",
+  "gender" : "MALE",
+  "spriteDescriptors" : {
+    "DOWN" : {
+      "filename" : "Dwarf-HairA-Outline-All.png",
+      "offsetPixels" : {
+        "x" : -0.5
+      }
+    },
+    "DOWN_RIGHT" : {
+      "filename" : "Dwarf-HairA-Outline-All.png",
+      "offsetPixels" : {
+        "x" : -0.5
+      }
+    },
+    "DOWN_LEFT" : {
+      "filename" : "Dwarf-HairA-Outline-All.png",
+      "offsetPixels" : {
+        "x" : 0.5
+      },
+      "flipX" : true
+    },
+    "UP_RIGHT" : {
+      "filename" : "Dwarf-HairA-Outline-All.png",
+      "offsetPixels" : {
+        "x" : -0.5
+      }
+    },
+    "UP_LEFT" : {
+      "filename" : "Dwarf-HairA-Outline-All.png",
+      "offsetPixels" : {
+        "x" : 0.5
+      },
+      "flipX" : true
+    },
+    "UP" : {
+      "filename" : "Dwarf-HairA-Outline-All.png",
+      "offsetPixels" : {
+        "x" : -0.5
+      }
+    }
+  }
+} ]

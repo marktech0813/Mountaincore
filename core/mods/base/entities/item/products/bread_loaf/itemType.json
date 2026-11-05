@@ -1,0 +1,12 @@
+{
+  "itemTypeName" : "Product-Bread-Loaf",
+  "maxStackSize" : 13,
+  "maxHauledAtOnce" : 13,
+  "materialTypes" : [ "FOODSTUFF" ],
+  "primaryMaterialType" : "FOODSTUFF",
+  "baseValuePerItem": 5,
+  "equippedWhileWorkingOnJob" : false,
+  "hoursInInventoryUntilUnused" : 1.0,
+  "consumeSoundAssetName" : "EatFood",
+  "i18nKey" : "PRODUCT.BREAD.LOAF"
+}

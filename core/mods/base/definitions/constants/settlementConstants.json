@@ -1,0 +1,30 @@
+{
+  "kitchenProfession": "CHEF",
+
+  "haulingJobType": "HAULING",
+  "constructRoofingJobType": "CONSTRUCT_ROOFING",
+  "deconstructRoofingJobType": "DECONSTRUCT_ROOFING",
+  "constructPipingJobType": "CONSTRUCT_PIPING",
+  "deconstructPipingJobType": "DECONSTRUCT_PIPING",
+  "constructMechanismJobType": "CONSTRUCT_MECHANISM",
+  "deconstructMechanismJobType": "DECONSTRUCT_MECHANISM",
+
+  "currency": [
+    {
+      "itemTypeName": "Treasure-Coin",
+      "materialName": "Gold",
+      "value": 10
+    },
+    {
+      "itemTypeName": "Treasure-Coin",
+      "materialName": "Silver",
+      "value": 1
+    }
+  ],
+
+  "fishingJobType": "FISHING",
+  "fishAvailable": ["Carp", "Pike", "Perch"],
+
+  "mushroomShockTimeHours": 24.0,
+  "numAnnualFish": 120
+}

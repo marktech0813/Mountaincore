@@ -1,0 +1,277 @@
+[
+  {
+    "roomName": "STOCKPILE",
+    "i18nKey": "ROOMS.STOCKPILE",
+    "colorCode": "#c88a64",
+    "drawableName": "btn_room_stockpiles",
+    "tags": {
+      "STOCKPILE": []
+    },
+    "furnitureNames": []
+  },
+
+  {
+    "roomName": "FARM_PLOT",
+    "i18nKey": "ROOMS.FARM",
+    "colorCode": "#a7a96e",
+    "drawableName": "btn_room_farming",
+    "requiredFloorMaterialType": "EARTH",
+    "tags": {
+      "FARM_PLOT": ["tilled_earth", "Tilled earth", "TILLING", "PLANTING", "HARVESTING"]
+    },
+    "furnitureNames": []
+  },
+  {
+    "roomName": "MUSHROOM_FARM",
+    "i18nKey": "ROOMS.MUSHROOM_FARM",
+    "colorCode": "#aeb084",
+    "drawableName": "btn_room_mushrooms",
+    "tags": {
+      "MUSHROOM_FARM_BEHAVIOUR": []
+    },
+    "furnitureNames": ["INNOCULATION_LOG", "INNOCULATED_LOG", "SHOCKED_LOG", "MUSHROOM_SHOCK_TANK"]
+  },
+  {
+    "roomName": "FUEL_REFINERY",
+    "i18nKey": "ROOMS.FUEL_REFINERY",
+    "colorCode": "#639679",
+    "drawableName": "btn_room_earth",
+    "tags": {
+    },
+    "furnitureNames": [
+      "CHARCOAL_CLAMP",
+      "CHARCOAL_CLAMP_COVERED",
+      "CHARCOAL_CLAMP_COMPLETED",
+      "COKE_OVEN",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "SAWMILL",
+    "i18nKey": "ROOMS.SAWMILL",
+    "colorCode": "#9f7e69",
+    "drawableName": "btn_room_lumber",
+    "furnitureNames": [
+      "WOODCUTTERS_BENCH",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "CARPENTRY_WORKSHOP",
+    "i18nKey": "ROOMS.CARPENTRY_WORKSHOP",
+    "colorCode": "#c17e53",
+    "drawableName": "btn_room_carpentry",
+    "furnitureNames": [
+      "Carpentry_Bench",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "MASONRY_WORKSHOP",
+    "i18nKey": "ROOMS.MASONRY_WORKSHOP",
+    "colorCode": "#8c7e8c",
+    "drawableName": "btn_room_stonemason",
+    "furnitureNames": [
+      "Stonemason_Bench",
+      "ORE_CRUSHING_STATION",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "SMELTERY",
+    "i18nKey": "ROOMS.SMELTERY",
+    "colorCode": "#909a87",
+    "drawableName": "btn_room_smeltery",
+    "furnitureNames": [
+      "BLOOMERY_FURNACE",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "SMITHY",
+    "i18nKey": "ROOMS.SMITHY",
+    "colorCode": "#909a87",
+    "drawableName": "btn_room_metalworks",
+    "furnitureNames": [
+      "FORGE",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "BEDROOM",
+    "i18nKey": "ROOMS.BEDROOM",
+    "colorCode": "#88a4b7",
+    "drawableName": "btn_room_bedroom",
+    "furnitureNames": [
+      "SINGLE_BED",
+      "SLEEPING_SPOT"
+    ]
+  },
+  {
+    "roomName": "BARRACKS",
+    "i18nKey": "ROOMS.BARRACKS",
+    "colorCode": "#6e3f43",
+    "drawableName": "btn_room_barracks",
+    "furnitureNames": [
+      "BARRACKS_BED",
+      "BARRACKS_SLEEPING_SPOT",
+      "TRAINING_DUMMY",
+      "ARCHERY_TARGET",
+      "Armour_Stand",
+      "Weapon_Rack"
+    ]
+  },
+  {
+    "roomName": "KITCHEN",
+    "i18nKey": "ROOMS.KITCHEN",
+    "colorCode": "#b98da0",
+    "drawableName": "btn_room_kitchen",
+    "tags": {
+      "KITCHEN_BEHAVIOUR": []
+    },
+    "furnitureNames": [
+      "WATER_BARREL",
+      "BUTCHERY_WORKTOP",
+      "KITCHEN_WORKTOP",
+      "CHEFS_CAULDRON",
+      "FLOUR_MILL",
+      "FISH_BARREL",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "BAKERY",
+    "i18nKey": "ROOMS.BAKERY",
+    "colorCode": "#b98da0",
+    "drawableName": "btn_room_bakery",
+    "tags": {
+      "KITCHEN_BEHAVIOUR": []
+    },
+    "furnitureNames": [
+      "BAKERS_WORKTOP",
+      "BAKING_OVEN",
+      "IMPORT_PALLET",
+      "Dough_Proofing_Table"
+    ]
+  },
+  {
+    "roomName": "FEASTING_HALL",
+    "i18nKey": "ROOMS.FEASTING_HALL",
+    "colorCode": "#946769",
+    "drawableName": "btn_room_feast",
+    "furnitureNames": [
+      "SERVING_TABLE",
+      "FEASTING_TABLE",
+      "FEASTING_CHAIR",
+      "FEASTING_CAULDRON",
+      "BEER_TAPPER",
+      "WATER_BARREL"
+    ]
+  },
+  {
+    "roomName": "BREWERY",
+    "i18nKey": "ROOMS.BREWERY",
+    "colorCode": "#a08750",
+    "drawableName": "btn_room_brewery",
+    "furnitureNames": [
+      "INDUSTRIAL_WATER_BARREL",
+      "MALTING_STATION",
+      "MASH_TUN",
+      "BREW_KETTLE",
+      "FERMENTATION_TANK",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "TEXTILE_WORKSHOP",
+    "i18nKey": "ROOMS.TEXTILE_WORKSHOP",
+    "colorCode": "#95619d",
+    "drawableName": "btn_room_weaver",
+    "furnitureNames": [
+      "RETTING_TANK",
+      "LOOM",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+
+  {
+    "roomName": "GRAVEYARD",
+    "i18nKey": "ROOMS.GRAVEYARD",
+    "colorCode": "#5f5956",
+    "drawableName": "btn_room_graveyard",
+    "tags": {
+      "GRAVEYARD_BEHAVIOUR": []
+    },
+    "furnitureNames": [
+      "SARCOPHAGUS",
+      "DUG_GRAVE",
+      "FILLED_GRAVE"
+    ]
+  },
+  {
+    "roomName": "ARMOURY",
+    "i18nKey": "ROOMS.ARMOURY",
+    "colorCode": "#78362a",
+    "drawableName": "btn_room_armory",
+    "tags": {
+    },
+    "furnitureNames": [
+      "Leatherworking_Station",
+      "FLETCHERS_WORKBENCH",
+      "WEAPON_FORGE",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET",
+      "Armour_Stand",
+      "Weapon_Rack"
+    ]
+  },
+  {
+    "roomName": "LEATHER_WORKSHOP",
+    "i18nKey": "ROOMS.LEATHER_WORKSHOP",
+    "colorCode": "#8c7952",
+    "drawableName": "btn_room_leather",
+    "furnitureNames": [
+      "Tanning_Frame",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "ARTISAN_WORKSHOP",
+    "i18nKey": "ROOMS.ARTISAN_WORKSHOP",
+    "colorCode": "#96841d",
+    "drawableName": "btn_room_artisan",
+    "furnitureNames": [
+      "BONE_CRAFTING_BENCH",
+      "ARTISAN_WORKSTATION",
+      "IMPORT_PALLET",
+      "EXPORT_PALLET"
+    ]
+  },
+  {
+    "roomName": "TRADING_DEPOT",
+    "i18nKey": "ROOMS.TRADING_DEPOT",
+    "colorCode": "#e3e1e3",
+    "drawableName": "btn_room_trade_depot",
+    "tags": {
+      "TRADE_DEPOT_BEHAVIOUR": []
+    },
+    "furnitureNames": [
+      "LEDGER_TABLE",
+      "TRADE_CHEST",
+      "HITCHING_POST",
+      "TRADE_BANNER",
+      "TRADING_IMPORT",
+      "TRADING_EXPORT"
+    ]
+  }
+]

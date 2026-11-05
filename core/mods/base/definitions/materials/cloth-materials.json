@@ -1,0 +1,27 @@
+[
+  {
+    "materialName": "Tobacco cloth",
+    "materialType": "CLOTH",
+    "colorCode": "#bab496",
+    "combustible": true
+  },
+  {
+    "materialName": "Hemp-Linen",
+    "materialType": "CLOTH",
+    "colorCode": "#e9dcc2",
+    "combustible": true,
+    "useAsExampleMaterialForMaterialType": true
+  },
+  {
+    "materialName": "Light hemp",
+    "materialType": "CLOTH",
+    "colorCode": "#c6baa2",
+    "combustible": true
+  },
+  {
+    "materialName": "Bronzed hemp",
+    "materialType": "CLOTH",
+    "colorCode": "#d29849",
+    "combustible": true
+  }
+]

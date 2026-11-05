@@ -1,0 +1,73 @@
+[ {
+  "name" : "RAW_MATERIALS",
+  "i18nKey" : "STOCKPILE.GROUP.RAW_MATERIALS",
+  "drawableName" : "btn_stockpile_raw_materials",
+  "overviewDrawableName" : "Inv_Overview_Raw",
+  "colorCode" : "#F2ED5A",
+  "iconName" : "stone-pile",
+  "includesCreatureCorpses" : false
+}, {
+  "name" : "PRODUCTS",
+  "i18nKey" : "STOCKPILE.GROUP.PRODUCTS",
+  "drawableName" : "btn_stockpile_products",
+  "overviewDrawableName" : "Inv_Overview_Products",
+  "colorCode" : "#edc154",
+  "iconName" : "gold-stack",
+  "includesCreatureCorpses" : false
+}, {
+  "name" : "TOOLS",
+  "i18nKey" : "STOCKPILE.GROUP.TOOLS",
+  "drawableName" : "btn_stockpile_tools",
+  "overviewDrawableName" : "Inv_Overview_Tools",
+  "colorCode" : "#c6c6c6",
+  "iconName" : "stone-crafting",
+  "includesCreatureCorpses" : false
+}, {
+  "name" : "FUEL",
+  "i18nKey" : "STOCKPILE.GROUP.FUEL",
+  "drawableName" : "btn_stockpile_fuel",
+  "overviewDrawableName" : "Inv_Overview_Fuel",
+  "colorCode" : "#565757",
+  "iconName" : "pyre",
+  "includesCreatureCorpses" : false
+}, {
+  "name" : "SEEDS",
+  "i18nKey" : "STOCKPILE.GROUP.SEEDS",
+  "drawableName" : "btn_stockpile_seeds",
+  "overviewDrawableName" : "Inv_Overview_Seeds",
+  "colorCode" : "#975a2c",
+  "iconName" : "swap-bag",
+  "includesCreatureCorpses" : false
+}, {
+  "name" : "GRANARY",
+  "i18nKey" : "STOCKPILE.GROUP.GRANARY",
+  "drawableName" : "btn_stockpile_grain",
+  "overviewDrawableName" : "Inv_Overview_Grain",
+  "colorCode" : "#eda948",
+  "iconName" : "grain",
+  "includesCreatureCorpses" : false
+}, {
+  "name" : "FOOD",
+  "i18nKey" : "STOCKPILE.GROUP.FOOD",
+  "drawableName" : "btn_stockpile_food",
+  "overviewDrawableName" : "Inv_Overview_Food",
+  "colorCode" : "#7cb167",
+  "iconName" : "fruit-bowl",
+  "includesCreatureCorpses" : true
+}, {
+  "name" : "WEAPONS",
+  "i18nKey" : "STOCKPILE.GROUP.WEAPONS",
+  "drawableName" : "btn_stockpile_weapons",
+  "overviewDrawableName" : "Inv_Overview_Weapons",
+  "colorCode" : "#7a6ede",
+  "iconName" : "crossed-swords",
+  "includesCreatureCorpses" : false
+}, {
+  "name" : "TREASURE",
+  "i18nKey" : "STOCKPILE.GROUP.TREASURE",
+  "drawableName" : "btn_stockpile_treasure",
+  "overviewDrawableName" : "Inv_Overview_Treasure",
+  "colorCode" : "#ffcd46",
+  "iconName" : "crossed-swords",
+  "includesCreatureCorpses" : false
+} ]

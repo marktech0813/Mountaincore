@@ -1,0 +1,40 @@
+[
+  {
+    "uniqueName": "Purple-Helmet-Spots-Cap01",
+    "type": "PLANT_LEAVES",
+    "speciesName": "Purple Helmet",
+    "growthStages": [0],
+    "spriteDescriptors": {
+      "DOWN": {
+        "filename": "Farmable-Mushroom-Cap01-Base.png",
+        "scale": 0.75,
+        "coloringLayer": "LEAF_COLOR",
+        "childAssets": [
+          {
+            "type": "PLANT_FRUIT",
+            "specificAssetName": "Purple-Helmet-Cap01-Spots"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "uniqueName": "Purple-Helmet-Spots-Cap02",
+    "type": "PLANT_LEAVES",
+    "speciesName": "Purple Helmet",
+    "growthStages": [0],
+    "spriteDescriptors": {
+      "DOWN": {
+        "filename": "Farmable-Mushroom-Cap02-Base.png",
+        "scale": 0.75,
+        "coloringLayer": "LEAF_COLOR",
+        "childAssets": [
+          {
+            "type": "PLANT_FRUIT",
+            "specificAssetName": "Purple-Helmet-Cap02-Spots"
+          }
+        ]
+      }
+    }
+  }
+]
